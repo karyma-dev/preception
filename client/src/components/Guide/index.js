@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function DataMetric() {
+export default function Guide() {
   return (
     <div>
-      <h1>DataMetric</h1>
+      <h1>Guide</h1>
     </div>
   )
 }
