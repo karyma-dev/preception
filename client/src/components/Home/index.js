@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Contact from '../Contact'
 
 export default function Home() {
   return (
@@ -58,14 +59,59 @@ export default function Home() {
         </div>
         <div>
           <q>
-            If you're not trying to utilize technology in some form, you're going to be left
-            behind.. This is something I want to incorportate into every training [as a coach]
+            The results became visually evident in short time. Players were displaying and repeating
+            the habits reinforced through the training (i.e. constant shoulder checking/scanning)
+            and then also started to more noticeably apply these habits into their other regular
+            training sessions and matches
           </q>
           <p>
-            Kevin Harmse, Former Professional Soccer Player, Assistant - Simon Fraser University
+            Josh Smith, CSA <q>A</q> Licensed Coach
           </p>
         </div>
       </section>
+
+      <section>
+        <h3>Preception Team</h3>
+
+        <div>
+          <img src='' alt='' />
+          <h4>
+            Founder CEO <br /> Leigh Sembaluk
+          </h4>
+          <button>Read Blogs</button>
+          <button>Purchase Book</button>
+        </div>
+
+        <div>
+          <img src='' alt='' />
+          <h4>
+            Data Analyst <br /> Alex Zucca
+          </h4>
+        </div>
+
+        <div>
+          <img src='' alt='' />
+          <h4>
+            Data Analyst <br /> Felipe Pardo
+          </h4>
+        </div>
+
+        <div>
+          <img src='' alt='' />
+          <h4>
+            Developer <br /> Yuan Wang
+          </h4>
+        </div>
+
+        <div>
+          <img src='' alt='' />
+          <h4>
+            Researcher <br /> Jordan Shimell
+          </h4>
+        </div>
+      </section>
+
+      <Contact />
     </Fragment>
   )
 }
