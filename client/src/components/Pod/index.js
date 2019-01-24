@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Guide() {
+export default function Pod() {
   return (
     <div>
       <h1>Guide</h1>
