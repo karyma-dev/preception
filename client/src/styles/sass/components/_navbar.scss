@@ -1,0 +1,19 @@
+.navbar {
+  background-image: url('../../images/navbar.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-links-item {
+  margin: 0 1rem;
+  display: inline-block;
+}
