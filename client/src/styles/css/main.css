@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: in;
+  box-sizing: inherit;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,22 +18,7 @@ body {
   font-size: 0.8rem;
   line-height: 1.6;
   color: white;
-}
-
-h1 {
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-}
-
-h3 {
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
+  font-size: 10%;
 }
 
 .header {
@@ -40,12 +26,26 @@ h3 {
   background-image: url("../../images/hero.png");
   background-position: 50%;
   background-size: cover;
+  position: relative;
+  text-align: center;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.header--primary-header {
+  position: absolute;
+  font-size: 5rem;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  top: 30%;
+  left: 50%;
+  letter-spacing: 0.2em;
+}
+.header--secondary-header {
+  position: absolute;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  top: 75%;
+  left: 50%;
+  letter-spacing: 0.1em;
 }
 
 .navbar {

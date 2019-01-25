@@ -5,13 +5,16 @@ export default function Home() {
   return (
     <Fragment>
       <header className="header">
-        <h1>Preception</h1>
-        <h2>The Future of Training</h2>
+        <h1 className="header--primary-header">Preception</h1>
+        <h2 className="header--secondary-header">The Future of Training</h2>
+
+      </header>
+
+      <section>
         <p>We are a training tool for something that cannot be trained any other way...</p>
         <p>The Ability to act first.</p>
         <button>Contact Us</button>
-      </header>
-
+      </section>
       <section>
         <h3>The 4 Step Process</h3>
         <div>
