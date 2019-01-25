@@ -3,12 +3,11 @@
   background-image: url('../../images/hero.png');
   @include homepage-background-properties();
 
-
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     height: 60vh;
 
     margin-top: 0;
-    display:block;
+    display: block;
     text-align: center;
     background-position-y: 6rem;
     background-position-x: 50%;
@@ -45,7 +44,6 @@
 }
 
 .quotes-section {
-  
   background-image: url('../../images/sidekick.png');
   height: 50vh;
   @include homepage-background-properties();
@@ -55,13 +53,13 @@
     background-image: none;
     display: inline-block;
     position: absolute;
-    top:50%;
+    top: 50%;
     height: 30vh;
     text-align: center;
   }
 
   &--primary-para {
-    padding-top:4rem;
+    padding-top: 4rem;
     font-size: $default-font-size;
     justify-content: flex-start;
 
@@ -70,7 +68,6 @@
       margin: 0 3rem;
       padding-top: 0;
     }
-
   }
   &--secondary-para {
     padding-top: 5rem;
@@ -80,24 +77,18 @@
       padding-top: 1rem;
       font-size: 14px;
       margin: 0 4rem;
-
     }
-    
   }
   &--button {
-
     @media only screen and (max-width: 767px) and (orientation: portrait) {
-      height:2.5rem !important; 
+      height: 2.5rem !important;
       width: 10rem !important;
       font-size: 1rem !important;
     }
-
   }
 }
 
-
-
-.four-step-progress-section{
+.four-step-progress-section {
   @include homepage-background-properties();
 }
 
@@ -119,8 +110,5 @@
 
 .team-section {
   @include homepage-background-properties();
-  flex-direction: row
+  flex-direction: row;
 }
-
-
-

@@ -1,6 +1,10 @@
 import React, { Fragment } from 'react'
 import Contact from '../Contact'
 
+import ooda from '../../images/ooda.png'
+import pod from '../../images/pod.png'
+import roadmapWeb from '../../images/roadmap-web.png'
+
 export default function Home() {
   return (
     <Fragment>
@@ -8,26 +12,28 @@ export default function Home() {
         <div className="header--primary-header">Preception</div>
         <div className="header--secondary-header">The Future of Training</div>
       </header>
+
       <section className="quotes-section">
-        <p className="quotes-section--primary-para">We are a training tool for something that cannot be trained any other way...</p>
-        <p className="quotes-section--secondary-para">The Ability to act<br /> first</p>
+        <p className="quotes-section--primary-para">
+          We are a training tool for something that cannot be trained any other way...
+        </p>
+        <p className="quotes-section--secondary-para">
+          The Ability to act
+          <br /> first
+        </p>
         <input type="button" className="btn quotes-section--button" value="Contact Us" />
       </section>
+
       <section className="four-step-progress-section">
         <h3>The 4 Step Process</h3>
-        <div>
-          <span>Observe</span>
-          <span>Orient</span>
-          <span>Decide</span>
-          <span>Act</span>
-        </div>
-        <button>Learn More</button>
+        <img src={ooda} alt="ooda model" />
+        <button className="btn">Learn More</button>
       </section>
 
       <section className="how-it-works-section">
         <h3>How It Works</h3>
-        <img src="" alt="" />
-        <button>Learn More</button>
+        <img src={pod} alt="preception on demand system" />
+        <button className="btn">Learn More</button>
       </section>
 
       <section className="performance-metrics-section">
@@ -40,11 +46,12 @@ export default function Home() {
           <li>Awareness Balance</li>
           <li>Orientation Rating</li>
         </ul>
-        <button>Learn More</button>
+        <button className="btn">Learn More</button>
       </section>
 
       <section className="roadmap-section">
         <h3>Roadmap</h3>
+        <img src={roadmapWeb} alt="roadmap" />
       </section>
 
       <section className="testimonal-section">
@@ -79,8 +86,8 @@ export default function Home() {
           <h4>
             Founder CEO <br /> Leigh Sembaluk
           </h4>
-          <button>Read Blogs</button>
-          <button>Purchase Book</button>
+          <button className="btn">Read Blogs</button>
+          <button className="btn">Purchase Book</button>
         </div>
 
         <div>
