@@ -1,7 +1,7 @@
 .header {
   height: 95vh;
+
   background-image: url('../../images/hero.png');
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,20 +11,48 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
 
-  
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    height: auto;
+    background-size: contain;
+    margin-top: 0;
+    display:block;
+    text-align: center;
+    background-position-y: 4.5rem;
+  }
+
+
   &--primary-header {
-    font-size: 10vh;
+    font-size: 5rem;
     font-weight: 600;
-    letter-spacing: 0.4rem;
+    letter-spacing: 1rem;
+    padding-bottom: 15rem;
+
+    @media only screen and (max-width: 767px) and (orientation: portrait) {
+      font-size: 2rem;
+      letter-spacing: 0;
+      padding-bottom: 0;
+      
+
+    }
+    
   }
 
   &--secondary-header {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.4rem;
-    letter-spacing: 0.1em;
+
+
+    @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+      font-size: 1rem;
+      letter-spacing: 0;
+      margin-bottom: 10rem;
+      letter-spacing: 0;
+      background-color: grey;
+    }
+
   }
 }
 
