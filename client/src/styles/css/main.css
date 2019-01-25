@@ -19,24 +19,6 @@ body {
   color: white;
 }
 
-h1 {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-}
-
-h3 {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +26,11 @@ h3 {
 }
 
 .navbar {
-  background: url("../../images/navbar.png");
+  background-image: url("../../images/navbar.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
