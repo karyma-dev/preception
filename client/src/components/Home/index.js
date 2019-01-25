@@ -8,11 +8,10 @@ export default function Home() {
         <div className="header--primary-header">Preception</div>
         <div className="header--secondary-header">The Future of Training</div>
       </header>
-
-      <section>
-        <p>We are a training tool for something that cannot be trained any other way...</p>
-        <p>The Ability to act first.</p>
-        <button>Contact Us</button>
+      <section className="quotes-section">
+        <p className="quotes-section--primary-para">We are a training tool for something that cannot be trained any other way...</p>
+        <p className="quotes-section--secondary-para">The Ability to act<br /> first</p>
+        <input type="button" className="btn quotes-section--button" value="Contact Us" />
       </section>
       <section>
         <h3>The 4 Step Process</h3>

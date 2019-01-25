@@ -1,26 +1,18 @@
 .header {
-  height: 95vh;
-
+  height: 85vh;
   background-image: url('../../images/hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: $gutter-height 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  @include homepage-background-properties();
+
 
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: auto;
-    background-size: contain;
+    height: 60vh;
+
     margin-top: 0;
     display:block;
     text-align: center;
-    background-position-y: 4.5rem;
+    background-position-y: 6rem;
+    background-position-x: 50%;
   }
-
 
   &--primary-header {
     font-size: 5rem;
@@ -30,12 +22,9 @@
 
     @media only screen and (max-width: 767px) and (orientation: portrait) {
       font-size: 2rem;
-      letter-spacing: 0;
+      letter-spacing: 0.5rem;
       padding-bottom: 0;
-      
-
     }
-    
   }
 
   &--secondary-header {
@@ -43,16 +32,41 @@
     font-weight: 300;
     letter-spacing: 0.4rem;
 
-
     @media only screen and (max-width: 767px) and (orientation: portrait) {
-
-      font-size: 1rem;
+      font-size: 1.83rem;
       letter-spacing: 0;
       margin-bottom: 10rem;
+      font-weight: 600;
+      height: 14vh;
       letter-spacing: 0;
-      background-color: grey;
+      background-color: $mobile-secondary-header-background;
     }
+  }
+}
+
+.quotes-section {
+  
+  background-image: url('../../images/sidekick.png');
+  height: 50vh;
+  @include homepage-background-properties();
+  justify-content: flex-start;
+
+  &--primary-para {
+    padding-top:4rem;
+    font-size: $default-font-size;
+    justify-content: flex-start;
+
+  }
+  &--secondary-para {
+    padding-top: 5rem;
+    font-size: $default-font-size;
+    text-align: center
+  }
+  &--button {
+        margin-top: 5rem;
 
   }
 }
+
+
 
