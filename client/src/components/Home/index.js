@@ -13,7 +13,7 @@ export default function Home() {
         <p className="quotes-section--secondary-para">The Ability to act<br /> first</p>
         <input type="button" className="btn quotes-section--button" value="Contact Us" />
       </section>
-      <section>
+      <section className="four-step-progress-section">
         <h3>The 4 Step Process</h3>
         <div>
           <span>Observe</span>
@@ -24,13 +24,13 @@ export default function Home() {
         <button>Learn More</button>
       </section>
 
-      <section>
+      <section className="how-it-works-section">
         <h3>How It Works</h3>
         <img src="" alt="" />
         <button>Learn More</button>
       </section>
 
-      <section>
+      <section className="performance-metrics-section">
         <h3>Preception Performance Metrics</h3>
         <ul>
           <li>Awareness Rating %</li>
@@ -43,11 +43,11 @@ export default function Home() {
         <button>Learn More</button>
       </section>
 
-      <section>
+      <section className="roadmap-section">
         <h3>Roadmap</h3>
       </section>
 
-      <section>
+      <section className="testimonal-section">
         <h3>Testimonials</h3>
         <div>
           <q>
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="team-section">
         <h3>Preception Team</h3>
 
         <div>
