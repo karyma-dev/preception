@@ -3,17 +3,23 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 3.5rem;
   width: 100%;
-}
-
-.navbar-links {
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-}
 
-.navbar-links-item {
-  margin: 0 1rem;
-  display: inline-block;
+  &-logo {
+    height: 50px;
+  }
+
+  &-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-links-item {
+    margin: 0 1rem;
+    display: inline-block;
+  }
 }

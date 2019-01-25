@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *,
 *::after,
 *::before {
@@ -15,6 +16,10 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -211,16 +216,19 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 3.5rem;
   width: 100%;
-}
-
-.navbar-links {
+  position: fixed;
   display: flex;
   align-items: center;
+}
+.navbar-logo {
+  height: 50px;
+}
+.navbar-links {
+  flex: 1;
+  display: flex;
   justify-content: flex-end;
 }
-
 .navbar-links-item {
   margin: 0 1rem;
   display: inline-block;
