@@ -16,5 +16,9 @@
 }
 
 .navbar {
-  background-color: lightblue;
+  background-image: url('../../images/navbar.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
 }
