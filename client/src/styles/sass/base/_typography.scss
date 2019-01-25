@@ -3,21 +3,6 @@ body {
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.6;
-  color: $primary-font-color;
-}
-
-h1 {
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-}
-
-h3 {
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
+  color: $color-white;
+  font-size: 10%;
 }
