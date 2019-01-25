@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <Fragment>
       <header className="header">
-        <h1 className="header--primary-header">Preception</h1>
-        <h2 className="header--secondary-header">The Future of Training</h2>
+        <div className="header--primary-header">Preception</div>
+        <div className="header--secondary-header">The Future of Training</div>
       </header>
 
       <section>
