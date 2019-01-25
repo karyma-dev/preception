@@ -1,0 +1,46 @@
+
+
+
+@mixin quotes-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    background-image: none;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    height: 30vh;
+    text-align: center;
+  }
+}
+
+
+@mixin quotes-section--primary-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    font-size: 14px;
+    margin: 0 3rem;
+    padding-top: 0;
+  }
+}
+
+
+@mixin quotes-section--secondary-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    padding-top: 1rem;
+    font-size: 14px;
+    margin: 0 4rem;
+  }
+}
+
+
+@mixin quotes-section-MQ() {
+
+}
+
+
+@mixin quotes-section-MQ() {
+
+}
+
+
+@mixin quotes-section-MQ() {
+
+}
