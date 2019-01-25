@@ -1,0 +1,16 @@
+.footer {
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+
+  &-logo {
+    height: 50px;
+  }
+
+  &-copyright {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1rem;
+  }
+}

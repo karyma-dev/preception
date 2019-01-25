@@ -15,12 +15,12 @@ export default class App extends Component {
     return (
       <Fragment>
         <Navbar />
-        <div>
-          <Route exact path='/' component={Home} />
-          <Route path='/process' component={Process} />
-          <Route path='/pod' component={Pod} />
-          <Route path='/dataMetric' component={DataMetric} />
-          <Route path='/contact' component={Contact} />
+        <div className="main">
+          <Route exact path="/" component={Home} />
+          <Route path="/process" component={Process} />
+          <Route path="/pod" component={Pod} />
+          <Route path="/dataMetric" component={DataMetric} />
+          <Route path="/contact" component={Contact} />
         </div>
         <Footer />
       </Fragment>

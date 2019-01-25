@@ -18,7 +18,13 @@ a {
   text-decoration: none;
 }
 
-a {
+.main {
+  min-height: 100vh;
+}
+
+a,
+.navbar,
+.footer {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -232,6 +238,21 @@ body {
 .navbar-links-item {
   margin: 0 1rem;
   display: inline-block;
+}
+
+.footer {
+  background-color: #0c465d;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  height: 50px;
+}
+.footer-copyright {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1rem;
 }
 
 .btn {
