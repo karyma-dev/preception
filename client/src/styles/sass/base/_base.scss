@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: inherit;
   overflow-x: hidden;
-
 }
-
 
 body {
   box-sizing: border-box;
   background-color: $primary-color;
+}
 
+a {
+  color: $primary-font-color;
+  text-decoration: none;
 }

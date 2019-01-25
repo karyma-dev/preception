@@ -7,28 +7,24 @@
   text-align: center;
   margin: $gutter-height 0;
   
-
-
-
-  &--primary-header{
-
+  
+  &--primary-header {
     position: absolute;
     font-size: 5rem;
     transform: translate(-50%, -50%);
     font-weight: 600;
     top: 30%;
     left: 50%;
-    letter-spacing: .2em
+    letter-spacing: 0.2em;
   }
 
-  &--secondary-header{
+  &--secondary-header {
     position: absolute;
     font-size: 2rem;
     transform: translate(-50%, -50%);
     font-weight: 300;
     top: 75%;
     left: 50%;
-    letter-spacing: .1em
+    letter-spacing: 0.1em;
   }
-
 }

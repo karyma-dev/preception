@@ -7,7 +7,6 @@ export default function Home() {
       <header className="header">
         <h1 className="header--primary-header">Preception</h1>
         <h2 className="header--secondary-header">The Future of Training</h2>
-
       </header>
 
       <section>
@@ -28,7 +27,7 @@ export default function Home() {
 
       <section>
         <h3>How It Works</h3>
-        <img src='' alt='' />
+        <img src="" alt="" />
         <button>Learn More</button>
       </section>
 
@@ -77,7 +76,7 @@ export default function Home() {
         <h3>Preception Team</h3>
 
         <div>
-          <img src='' alt='' />
+          <img src="" alt="" />
           <h4>
             Founder CEO <br /> Leigh Sembaluk
           </h4>
@@ -86,28 +85,28 @@ export default function Home() {
         </div>
 
         <div>
-          <img src='' alt='' />
+          <img src="" alt="" />
           <h4>
             Data Analyst <br /> Alex Zucca
           </h4>
         </div>
 
         <div>
-          <img src='' alt='' />
+          <img src="" alt="" />
           <h4>
             Data Analyst <br /> Felipe Pardo
           </h4>
         </div>
 
         <div>
-          <img src='' alt='' />
+          <img src="" alt="" />
           <h4>
             Developer <br /> Yuan Wang
           </h4>
         </div>
 
         <div>
-          <img src='' alt='' />
+          <img src="" alt="" />
           <h4>
             Researcher <br /> Jordan Shimell
           </h4>
