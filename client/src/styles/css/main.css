@@ -178,6 +178,7 @@ h4 {
 }
 
 .how-it-works-section {
+  height: 70h;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -187,7 +188,6 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 10rem;
 }
 .how-it-works-section--header {
   font-size: 1.6rem;
@@ -199,6 +199,8 @@ h4 {
 }
 
 .performance-metrics-section {
+  background-image: url("../../images/testimonial-background.png");
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -238,7 +240,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 60vh;
+  height: 50vh;
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
@@ -254,7 +256,7 @@ h4 {
 
 .testinomal-section {
   background-image: url("../../images/testimonial-background.png");
-  height: 75vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
