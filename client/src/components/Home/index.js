@@ -96,32 +96,47 @@ export default function Home() {
           <div>
             <img src={leigh} alt="Leigh Sembaluk" />
             <h4>
-              Founder CEO <br /> Leigh Sembaluk
+              Leigh Sembaluk
             </h4>
+            <p>
+              Founder, CEO
+            </p>
           </div>
           <div>
             <img src={alex} alt="Alex Zucca" />
             <h4>
-              Data Analyst <br /> Alex Zucca
+              Alex Zucca
             </h4>
+            <p>
+              Data Analyst
+            </p>
           </div>
           <div>
             <img src={felipe} alt="Felipe Pardo" />
             <h4>
-              Data Analyst <br /> Felipe Pardo
+              Felipe Pardo
             </h4>
+            <p>
+              Data Analyst
+            </p>
           </div>
           <div>
             <img src={yuan} alt="Yuan Wang" />
             <h4>
-              Developer <br /> Yuan Wang
+              Yuan Wang
             </h4>
+            <p>
+              Developer
+            </p>
           </div>
           <div>
             <img src={jordan} alt="Jordan Shimell" />
             <h4>
-              Researcher <br /> Jordan Shimell
+              Jordan Shimell
             </h4>
+              <p>
+                Developer
+              </p>
           </div>
         </div>
 

@@ -172,6 +172,7 @@
 
   &--header{
     font-size: $default-panel-header;
+   
     align-items: center;
     justify-content: center;
     display: flex;
@@ -181,18 +182,28 @@
 
   &--members{
     display: flex;
+    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
+    & h4{
+      font-size: 1.2rem;
+    }
 
   }
 
   &--buttons{
+    margin-top: 4rem;
     align-items: center;
-    justify-content: center;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    & button{
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+
   }
 
 }
