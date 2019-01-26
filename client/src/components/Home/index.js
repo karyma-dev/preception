@@ -93,15 +93,7 @@ export default function Home() {
         </div>
 
         <div className="team-section--members">
-          <div>
-            <img src={leigh} alt="Leigh Sembaluk" />
-            <h4>
-              Leigh Sembaluk
-            </h4>
-            <p>
-              Founder, CEO
-            </p>
-          </div>
+
           <div>
             <img src={alex} alt="Alex Zucca" />
             <h4>
@@ -118,6 +110,15 @@ export default function Home() {
             </h4>
             <p>
               Data Analyst
+            </p>
+          </div>
+          <div>
+            <img src={leigh} alt="Leigh Sembaluk" />
+            <h4>
+              Leigh Sembaluk
+            </h4>
+            <p>
+              Founder, CEO
             </p>
           </div>
           <div>

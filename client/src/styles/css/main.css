@@ -316,6 +316,8 @@ h4 {
 .team-section--buttons button {
   margin-top: 1rem;
   font-weight: 400;
+  width: 12rem;
+  font-size: 1rem;
 }
 
 .navbar {
