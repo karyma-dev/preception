@@ -238,7 +238,18 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 10rem;
+  height: 60vh;
+}
+.roadmap-section--header {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+.roadmap-section--img {
+  width: 50vw;
+  height: auto;
+  border: 3px white solid;
+  padding: 2rem;
 }
 
 .testimonal-section {
@@ -315,6 +326,13 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 2em;
+}
+
+.line-orange {
+  width: 50vw;
+  margin: 1rem 0;
+  border: 1.5px #c15236 solid;
+  background-color: #c15236;
 }
 
 /*# sourceMappingURL=main.css.map */

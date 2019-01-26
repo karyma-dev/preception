@@ -50,8 +50,11 @@ export default function Home() {
       </section>
 
       <section className="roadmap-section">
+
         <h3 className="roadmap-section--header">Roadmap</h3>
+        <div className="line-orange" />
         <img className="roadmap-section--img" src={roadmapWeb} alt="roadmap" />
+        <div className="line-orange" />
       </section>
 
       <section className="testimonal-section">

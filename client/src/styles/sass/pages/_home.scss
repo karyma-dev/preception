@@ -122,7 +122,19 @@
 
 .roadmap-section {
   @include homepage-background-properties();
-  margin-top: 10rem;
+  height: 60vh;
+  &--header{
+    margin-bottom: 2rem;
+    font-size: $default-font-size;
+    letter-spacing: $header-letter-spacing;
+  }
+  &--img{
+    width: 50vw;
+    height: auto;
+    border: 3px white solid;
+    padding: 2rem;
+  }
+
 }
 
 .testimonal-section {
