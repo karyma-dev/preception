@@ -65,15 +65,74 @@
 }
 
 
+@mixin quotes-section--button-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    height: 2rem !important;
+    width: 6rem !important;
+    font-size: 0.5rem !important;
+
+  }
+}
+
+
+
+@mixin four-step-progress-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    display: inline-block;
+    height: 40vh;
+    
+    margin-top: 10rem;
+    margin-bottom: 0;
+    text-align: center;
+    &--header {
+      margin-bottom: 1rem;
+    }
+
+    &--img {
+      width: 50vh;
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    &--btn {
+      @include  quotes-section--button-MQ()
+    }
+
+  }
+}
+
+
+@mixin how-it-works-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+
+
+    &--header {
+      
+    }
+    &--img {
+      justify-self: center;
+      width: 80%;
+      height: auto;
+    }
+    &--btn {
+      @include quotes-section--button-MQ();
+
+    }
+  }
+
+
+}
+
 @mixin quotes-section-MQ() {
 
 }
 
-
 @mixin quotes-section-MQ() {
 
 }
-
 
 @mixin quotes-section-MQ() {
 

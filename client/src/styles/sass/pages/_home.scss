@@ -36,7 +36,7 @@
     background-image: none;
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 53%;
     height: 30vh;
     text-align: center;
   }
@@ -57,13 +57,7 @@
   }
 
   &--button {
-
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-      height: 2.5rem !important;
-      width: 10rem !important;
-      font-size: 1rem !important;
-    }
-
+    @include  quotes-section--button-MQ()
   }
 }
 
@@ -72,7 +66,7 @@
   @include homepage-background-properties();
   margin-top: 0;
   height: 50vh;
-  
+
   &--header{
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
@@ -81,6 +75,10 @@
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+
+  @include four-step-progress-section-MQ();
+  
+
 
 }
 
@@ -95,8 +93,9 @@
   }
   &--img{
     margin-bottom: 3rem;
-
   }
+
+  @include how-it-works-section-MQ()
 
 }
 

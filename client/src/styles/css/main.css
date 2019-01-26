@@ -117,7 +117,7 @@ h4 {
     background-image: none;
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 53%;
     height: 30vh;
     text-align: center;
   }
@@ -148,9 +148,9 @@ h4 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section--button {
-    height: 2.5rem !important;
-    width: 10rem !important;
-    font-size: 1rem !important;
+    height: 2rem !important;
+    width: 6rem !important;
+    font-size: 0.5rem !important;
   }
 }
 
@@ -176,6 +176,30 @@ h4 {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .four-step-progress-section {
+    display: inline-block;
+    height: 40vh;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .four-step-progress-section--header {
+    margin-bottom: 1rem;
+  }
+  .four-step-progress-section--img {
+    width: 50vh;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
+  .four-step-progress-section--btn {
+    height: 2rem !important;
+    width: 6rem !important;
+    font-size: 0.5rem !important;
+  }
+}
 
 .how-it-works-section {
   height: 70h;
@@ -196,6 +220,25 @@ h4 {
 }
 .how-it-works-section--img {
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .how-it-works-section {
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+  }
+  .how-it-works-section--img {
+    justify-self: center;
+    width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
+  .how-it-works-section--btn {
+    height: 2rem !important;
+    width: 6rem !important;
+    font-size: 0.5rem !important;
+  }
 }
 
 .performance-metrics-section {
@@ -329,6 +372,7 @@ h4 {
   position: fixed;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 .navbar-logo {
   height: 50px;

@@ -34,13 +34,13 @@ export default function Home() {
       <section className="four-step-progress-section">
         <h3 className="four-step-progress-section--header">The 4-Step Process</h3>
         <img className="four-step-progress-section--img" src={ooda} alt="ooda model" />
-        <button className="btn">Learn More</button>
+        <button className="btn four-step-progress-section--btn">Learn More</button>
       </section>
 
       <section className="how-it-works-section">
         <h3 className="how-it-works-section--header">How It Works</h3>
         <img className="how-it-works-section--img" src={pod} alt="preception on demand system" />
-        <button className="btn">Learn More</button>
+        <button className="btn how-it-works-section--btn">Learn More</button>
       </section>
 
       <section className="performance-metrics-section">
