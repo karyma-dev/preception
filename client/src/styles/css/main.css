@@ -20,6 +20,11 @@ a {
 
 .main {
   min-height: 100vh;
+  padding-top: 3rem;
+}
+
+.container {
+  margin: 0 1.5rem;
 }
 
 body {

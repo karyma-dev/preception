@@ -1,16 +1,12 @@
 import React from 'react'
+import ooda from '../../images/ooda.png'
 
 export default function Process() {
   return (
-    <div>
+    <div className="container">
       <h3>The 4 Step Process</h3>
 
-      <div>
-        <span>Observe</span>
-        <span>Orient</span>
-        <span>Decide</span>
-        <span>Act</span>
-      </div>
+      <img src={ooda} alt="ooda model" />
 
       <div>
         The 4 step linear process outlines every action you make: Observe, orient, decide, act. It
@@ -49,7 +45,7 @@ export default function Process() {
         <p>The result of the first 3 steps ensures the correct action</p>
       </div>
 
-      <button>Contact Us</button>
+      <button className="btn">Contact Us</button>
     </div>
   )
 }
