@@ -5,6 +5,13 @@ import ooda from '../../images/ooda.png'
 import pod from '../../images/pod.png'
 import roadmapWeb from '../../images/roadmap-web.png'
 
+import alex from '../../images/profile/alex-zucca.png'
+import yuan from '../../images/profile/yuan-wang.png'
+import leigh from '../../images/profile/leigh.png'
+import jordan from '../../images/profile/jordan.png'
+import felipe from '../../images/profile/felipe.png'
+
+
 export default function Home() {
   return (
     <Fragment>
@@ -81,43 +88,46 @@ export default function Home() {
       </section>
 
       <section className="team-section">
-        <h3>Preception Team</h3>
+        <div className="team-section--header">
+          <h3>Preception Team</h3>
+        </div>
 
-        <div>
-          <img src="" alt="" />
-          <h4>
-            Founder CEO <br /> Leigh Sembaluk
-          </h4>
+        <div className="team-section--members">
+          <div>
+            <img src={leigh} alt="Leigh Sembaluk" />
+            <h4>
+              Founder CEO <br /> Leigh Sembaluk
+            </h4>
+          </div>
+          <div>
+            <img src={alex} alt="Alex Zucca" />
+            <h4>
+              Data Analyst <br /> Alex Zucca
+            </h4>
+          </div>
+          <div>
+            <img src={felipe} alt="Felipe Pardo" />
+            <h4>
+              Data Analyst <br /> Felipe Pardo
+            </h4>
+          </div>
+          <div>
+            <img src={yuan} alt="Yuan Wang" />
+            <h4>
+              Developer <br /> Yuan Wang
+            </h4>
+          </div>
+          <div>
+            <img src={jordan} alt="Jordan Shimell" />
+            <h4>
+              Researcher <br /> Jordan Shimell
+            </h4>
+          </div>
+        </div>
+
+        <div className="team-section--buttons">
           <button className="btn">Read Blogs</button>
           <button className="btn">Purchase Book</button>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <h4>
-            Data Analyst <br /> Alex Zucca
-          </h4>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <h4>
-            Data Analyst <br /> Felipe Pardo
-          </h4>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <h4>
-            Developer <br /> Yuan Wang
-          </h4>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <h4>
-            Researcher <br /> Jordan Shimell
-          </h4>
         </div>
       </section>
 

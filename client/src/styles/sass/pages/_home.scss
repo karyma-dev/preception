@@ -166,6 +166,33 @@
 }
 
 .team-section {
-  @include homepage-background-properties();
-  flex-direction: row;
+
+  height: 60vh;
+
+
+  &--header{
+    font-size: $default-panel-header;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &--members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+  }
+
+  &--buttons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
 }

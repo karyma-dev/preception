@@ -284,16 +284,27 @@ h4 {
 }
 
 .team-section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 5rem 0;
+  height: 60vh;
+}
+.team-section--header {
+  font-size: 1.6rem;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.team-section--members {
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+.team-section--buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .navbar {
