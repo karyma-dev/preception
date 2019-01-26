@@ -25,20 +25,20 @@ export default function Home() {
       </section>
 
       <section className="four-step-progress-section">
-        <h3>The 4 Step Process</h3>
-        <img src={ooda} alt="ooda model" />
+        <h3 className="four-step-progress-section--header">The 4-Step Process</h3>
+        <img className="four-step-progress-section--img" src={ooda} alt="ooda model" />
         <button className="btn">Learn More</button>
       </section>
 
       <section className="how-it-works-section">
-        <h3>How It Works</h3>
-        <img src={pod} alt="preception on demand system" />
+        <h3 className="how-it-works-section--header">How It Works</h3>
+        <img className="how-it-works-section--img" src={pod} alt="preception on demand system" />
         <button className="btn">Learn More</button>
       </section>
 
       <section className="performance-metrics-section">
-        <h3>Preception Performance Metrics</h3>
-        <ul>
+        <h3 className="performance-metrics-section--header">Preception Performance Metrics</h3>
+        <ul className="performance-metrics-section--list">
           <li>Awareness Rating %</li>
           <li>Scans/Minute</li>
           <li>Average Decision Making Speed</li>
@@ -50,8 +50,8 @@ export default function Home() {
       </section>
 
       <section className="roadmap-section">
-        <h3>Roadmap</h3>
-        <img src={roadmapWeb} alt="roadmap" />
+        <h3 className="roadmap-section--header">Roadmap</h3>
+        <img className="roadmap-section--img" src={roadmapWeb} alt="roadmap" />
       </section>
 
       <section className="testimonal-section">

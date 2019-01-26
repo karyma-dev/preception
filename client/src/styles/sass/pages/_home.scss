@@ -2,16 +2,10 @@
   height: 85vh;
   background-image: url('../../images/hero.png');
   @include homepage-background-properties();
+  margin-top: 1rem;
+  text-transform: uppercase;
+  @include header-section-MQ();
 
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: 60vh;
-
-    margin-top: 0;
-    display: block;
-    text-align: center;
-    background-position-y: 6rem;
-    background-position-x: 50%;
-  }
 
   &--primary-header {
     font-size: 5rem;
@@ -19,27 +13,15 @@
     letter-spacing: 1rem;
     padding-bottom: 15rem;
 
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-      font-size: 2rem;
-      letter-spacing: 0.5rem;
-      padding-bottom: 0;
-    }
+
+    @include header-section--primary-MQ();
   }
 
   &--secondary-header {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.4rem;
-
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-      font-size: 1.83rem;
-      letter-spacing: 0;
-      margin-bottom: 10rem;
-      font-weight: 600;
-      height: 14vh;
-      letter-spacing: 0;
-      background-color: $mobile-secondary-header-background;
-    }
+    @include header-section--secondary-MQ();
   }
 }
 
@@ -47,6 +29,7 @@
   background-image: url('../../images/sidekick.png');
   height: 50vh;
   @include homepage-background-properties();
+  margin-bottom:0;
   justify-content: flex-start;
 
   @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -63,45 +46,83 @@
     font-size: $default-font-size;
     justify-content: flex-start;
 
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-      font-size: 14px;
-      margin: 0 3rem;
-      padding-top: 0;
-    }
+    @include quotes-section--primary-MQ();
   }
+
   &--secondary-para {
     padding-top: 5rem;
     font-size: $default-font-size;
     text-align: center;
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-      padding-top: 1rem;
-      font-size: 14px;
-      margin: 0 4rem;
-    }
+    @include quotes-section--secondary-MQ();
   }
+
   &--button {
+
     @media only screen and (max-width: 767px) and (orientation: portrait) {
       height: 2.5rem !important;
       width: 10rem !important;
       font-size: 1rem !important;
     }
+
   }
 }
 
 .four-step-progress-section {
+  background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
+  margin-top: 0;
+  height: 50vh;
+  
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+  }
+  &--img{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
 }
 
 .how-it-works-section {
   @include homepage-background-properties();
+  margin-bottom: 10rem;
+  &--header{
+    font-size:$default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin: 5rem 0;
+  }
+  &--img{
+    margin-bottom: 3rem;
+  }
+
 }
 
 .performance-metrics-section {
   @include homepage-background-properties();
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 2rem;
+  }
+  &--list{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    li{
+      border: 1px white groove;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .roadmap-section {
   @include homepage-background-properties();
+  margin-top: 10rem;
 }
 
 .testimonal-section {

@@ -1,6 +1,40 @@
+//query for the header section of the home page
+@mixin header-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    height: 60vh;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+    background-position-y: 6rem;
+    background-position-x: 50%;
+  }
+}
+
+@mixin header-section--primary-MQ() {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 0;
+}
+}
+
+@mixin header-section--secondary-MQ(){
+  
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    margin-bottom: 10rem;
+    font-weight: 600;
+    height: 8vh;
+    letter-spacing: 0;
+    background-color: $mobile-secondary-header-background;
+  }
+}
 
 
+//quote section of the home page
 
+//not used
 @mixin quotes-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;

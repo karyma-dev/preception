@@ -20,7 +20,7 @@ a {
 
 .main {
   min-height: 100vh;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .container {
@@ -48,12 +48,14 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
@@ -85,11 +87,11 @@ h4 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header--secondary-header {
-    font-size: 1.83rem;
+    font-size: 1.5rem;
     letter-spacing: 0;
     margin-bottom: 10rem;
     font-weight: 600;
-    height: 14vh;
+    height: 8vh;
     letter-spacing: 0;
     background-color: #3d494f;
   }
@@ -101,12 +103,13 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 0;
   justify-content: flex-start;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -152,58 +155,97 @@ h4 {
 }
 
 .four-step-progress-section {
+  background-image: url("../../images/4-step-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 0;
+  height: 50vh;
+}
+.four-step-progress-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+.four-step-progress-section--img {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .how-it-works-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 10rem;
+}
+.how-it-works-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin: 5rem 0;
+}
+.how-it-works-section--img {
+  margin-bottom: 3rem;
 }
 
 .performance-metrics-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.performance-metrics-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+.performance-metrics-section--list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.performance-metrics-section--list li {
+  border: 1px white groove;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .roadmap-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 10rem;
 }
 
 .testimonal-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -215,7 +257,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -272,6 +314,7 @@ h4 {
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
