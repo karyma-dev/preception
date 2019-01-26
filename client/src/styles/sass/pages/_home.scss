@@ -125,7 +125,7 @@
   height: 60vh;
   &--header{
     margin-bottom: 2rem;
-    font-size: $default-font-size;
+    font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
   }
   &--img{
@@ -137,8 +137,32 @@
 
 }
 
-.testimonal-section {
+.testinomal-section {
+  background-image: url('../../images/testimonial-background.png');
+  height: 75vh;
   @include homepage-background-properties();
+  text-align: center;
+  
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 3rem;
+  }
+
+  &--quote{
+    width: 25%;
+    padding: 1rem;
+  }
+
+  &--quoter{
+    &:not(:last-of-type) {
+      margin-bottom: 6rem;
+    }
+    width: 50%;
+    font-size: 1.1rem;
+
+  }
+
 }
 
 .team-section {

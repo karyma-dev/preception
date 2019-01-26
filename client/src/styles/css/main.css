@@ -242,7 +242,7 @@ h4 {
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.2rem;
 }
 .roadmap-section--img {
@@ -252,7 +252,9 @@ h4 {
   padding: 2rem;
 }
 
-.testimonal-section {
+.testinomal-section {
+  background-image: url("../../images/testimonial-background.png");
+  height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -262,6 +264,23 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
+}
+.testinomal-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.testinomal-section--quote {
+  width: 25%;
+  padding: 1rem;
+}
+.testinomal-section--quoter {
+  width: 50%;
+  font-size: 1.1rem;
+}
+.testinomal-section--quoter:not(:last-of-type) {
+  margin-bottom: 6rem;
 }
 
 .team-section {

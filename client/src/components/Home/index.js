@@ -57,28 +57,27 @@ export default function Home() {
         <div className="line-orange" />
       </section>
 
-      <section className="testimonal-section">
-        <h3>Testimonials</h3>
-        <div>
-          <q>
+      <section className="testinomal-section">
+        <h3 className="testinomal-section--header">Testimonials</h3>
+
+          <q className="testinomal-section--quote">
             If you're not trying to utilize technology in some form, you're going to be left
             behind.. This is something I want to incorportate into every training [as a coach]
           </q>
-          <p>
+          <p className="testinomal-section--quoter">
             Kevin Harmse, Former Professional Soccer Player, Assistant - Simon Fraser University
           </p>
-        </div>
-        <div>
-          <q>
+
+          <q className="testinomal-section--quote">
             The results became visually evident in short time. Players were displaying and repeating
             the habits reinforced through the training (i.e. constant shoulder checking/scanning)
             and then also started to more noticeably apply these habits into their other regular
             training sessions and matches
           </q>
-          <p>
+          <p className="testinomal-section--quoter">
             Josh Smith, CSA <q>A</q> Licensed Coach
           </p>
-        </div>
+
       </section>
 
       <section className="team-section">
