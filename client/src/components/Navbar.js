@@ -14,7 +14,7 @@ export default function Navbar() {
           <Link to="/process">4 Step Process</Link>
         </li>
         <li className="navbar-links-item">
-          <Link to="/guide">How It Works</Link>
+          <Link to="/pod">How It Works</Link>
         </li>
         <li className="navbar-links-item">
           <Link to="/data">Data</Link>
