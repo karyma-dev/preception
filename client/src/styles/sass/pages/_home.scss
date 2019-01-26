@@ -126,7 +126,7 @@
 
 .roadmap-section {
   @include homepage-background-properties();
-  height: 50vh;
+  height: 65vh;
   &--header{
     margin-bottom: 2rem;
     font-size: $default-panel-header;

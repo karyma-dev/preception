@@ -240,7 +240,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 50vh;
+  height: 65vh;
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
