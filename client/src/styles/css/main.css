@@ -416,6 +416,12 @@ h5 {
   padding: 1.5rem;
 }
 
+.contact-form {
+  text-align: left;
+}
+.contact-form-required {
+  font-size: 0.5rem;
+}
 .navbar {
   background-image: url("../../images/navbar.png");
   background-position: center bottom;

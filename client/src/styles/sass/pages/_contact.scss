@@ -1,0 +1,20 @@
+.contact {
+  &-header {
+  }
+
+  &-form {
+    text-align: left;
+
+    &-required {
+      font-size: 0.5rem;
+    }
+    &-group {
+    }
+  }
+
+  input {
+    &[type='text'] {
+      width: 100%;
+    }
+  }
+}
