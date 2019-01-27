@@ -453,7 +453,7 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .team-section {
-    min-height: 200vh;
+    min-height: 150vh;
     background-image: none;
     margin-top: 0;
   }
