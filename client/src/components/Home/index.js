@@ -4,6 +4,7 @@ import Contact from '../Contact'
 import ooda from '../../images/ooda.png'
 import pod from '../../images/pod.png'
 import roadmapWeb from '../../images/roadmap-web.png'
+import roadmapMob from '../../images/roadmap-mobile.png'
 
 import alex from '../../images/profile/alex-zucca.png'
 import yuan from '../../images/profile/yuan-wang.png'
@@ -53,14 +54,15 @@ export default function Home() {
           <li>Awareness Balance</li>
           <li>Orientation Rating</li>
         </ul>
-        <button className="btn">Learn More</button>
+        <button className="btn performance-metrics-section--btn">Learn More</button>
       </section>
 
       <section className="roadmap-section">
 
         <h3 className="roadmap-section--header">Roadmap</h3>
         <div className="line-orange" />
-        <img className="roadmap-section--img" src={roadmapWeb} alt="roadmap" />
+        <img className="roadmap-section--img--1" src={roadmapWeb} alt="roadmap" />
+        <img className="roadmap-section--img--2" src={roadmapMob} alt="roadmap" />
         <div className="line-orange" />
       </section>
 

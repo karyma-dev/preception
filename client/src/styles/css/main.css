@@ -161,9 +161,9 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section--button {
-    height: 2rem !important;
-    width: 6rem !important;
-    font-size: 0.5rem !important;
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -208,9 +208,9 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
   .four-step-progress-section--btn {
-    height: 2rem !important;
-    width: 6rem !important;
-    font-size: 0.5rem !important;
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -240,6 +240,10 @@ h5 {
     margin-top: 0;
     text-align: center;
   }
+  .how-it-works-section--header {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
   .how-it-works-section--img {
     justify-self: center;
     width: 80%;
@@ -248,9 +252,9 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
   .how-it-works-section--btn {
-    height: 2rem !important;
-    width: 6rem !important;
-    font-size: 0.5rem !important;
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -285,6 +289,38 @@ h5 {
   padding: 10px;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .performance-metrics-section {
+    background-image: none;
+    display: flex;
+    margin-top: 0;
+    text-align: center;
+    min-height: 75vh;
+    width: 100%;
+  }
+  .performance-metrics-section--header {
+    font-size: 1.1rem;
+    width: 60%;
+  }
+  .performance-metrics-section--list {
+    columns: 1;
+    border: 1px white solid;
+    width: 60%;
+  }
+  .performance-metrics-section--list li {
+    border: none;
+    text-transform: none;
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
+  .performance-metrics-section--btn {
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
+  }
+}
 
 .roadmap-section {
   background-repeat: no-repeat;
@@ -303,11 +339,25 @@ h5 {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
 }
-.roadmap-section--img {
+.roadmap-section--img--1 {
   width: 50vw;
   height: auto;
   border: 3px white solid;
   padding: 2rem;
+}
+.roadmap-section--img--2 {
+  display: none;
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .roadmap-section {
+    height: 100vh;
+  }
+  .roadmap-section--img--1 {
+    display: none;
+  }
+  .roadmap-section--img--2 {
+    display: inline-block;
+  }
 }
 
 .testinomal-section {

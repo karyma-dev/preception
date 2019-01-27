@@ -121,6 +121,7 @@
       margin-bottom: 5px;
     }
   }
+  @include performance-metrics-section-MQ();
 }
 
 .roadmap-section {
@@ -131,13 +132,16 @@
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
   }
-  &--img{
+  &--img--1{
     width: 50vw;
     height: auto;
     border: 3px white solid;
     padding: 2rem;
   }
-
+  &--img--2{
+    display: none;
+  }
+  @include roadmap-section-MQ();
 }
 
 .testinomal-section {
