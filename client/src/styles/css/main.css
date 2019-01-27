@@ -238,6 +238,7 @@ h5 {
   .how-it-works-section {
     display: inline-block;
     margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
   }
   .how-it-works-section--header {
@@ -293,10 +294,11 @@ h5 {
   .performance-metrics-section {
     background-image: none;
     display: flex;
-    margin-top: 0;
     text-align: center;
     min-height: 75vh;
     width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .performance-metrics-section--header {
     font-size: 1.1rem;
@@ -351,6 +353,8 @@ h5 {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .roadmap-section {
     height: 100vh;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .roadmap-section--img--1 {
     display: none;
@@ -390,6 +394,25 @@ h5 {
 .testinomal-section--quoter:not(:last-of-type) {
   margin-bottom: 6rem;
 }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .testinomal-section {
+    height: 80vh;
+    background-image: none;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .testinomal-section--header {
+    margin-bottom: 0;
+  }
+  .testinomal-section--quote {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .testinomal-section--quoter {
+    width: 80%;
+    font-size: 0.75rem;
+  }
+}
 
 .team-section {
   height: 60vh;
@@ -424,6 +447,54 @@ h5 {
   font-weight: 400;
   width: 12rem;
   font-size: 1rem;
+}
+.team-section--buttons-mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .team-section {
+    min-height: 200vh;
+    background-image: none;
+    margin-top: 0;
+  }
+  .team-section--header {
+    margin-bottom: 0;
+  }
+  .team-section--members {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .team-section--members div {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .team-section--members div span {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 40vw;
+  }
+  .team-section--buttons {
+    flex-direction: row;
+    margin: 0;
+    display: none;
+  }
+  .team-section--buttons-mobile {
+    display: block;
+  }
+  .team-section--buttons-mobile .btn {
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
+  .team-section--buttons-mobile .btn {
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
+  }
 }
 
 .process-image {

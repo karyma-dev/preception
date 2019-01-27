@@ -169,14 +169,11 @@
     font-size: 1.1rem;
 
   }
-
+  @include testinomal-section-MQ()
 }
 
 .team-section {
-
   height: 60vh;
-
-
   &--header{
     font-size: $default-panel-header;
    
@@ -186,7 +183,6 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-
   &--members{
     display: flex;
     text-align: center;
@@ -196,7 +192,6 @@
     & h4{
       font-size: 1.2rem;
     }
-
   }
 
   &--buttons{
@@ -212,7 +207,10 @@
       width: 12rem;
       font-size: 1rem;
     }
-
+    &-mobile{
+      display: none;
+    }
   }
+  @include team-section-MQ()
 
 }

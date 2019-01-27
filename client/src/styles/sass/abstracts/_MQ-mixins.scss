@@ -106,6 +106,7 @@
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     display: inline-block;
     margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
 
 
@@ -131,11 +132,12 @@
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;
     display: flex;
-    margin-top: 0;
+
     text-align: center;
     min-height: 75vh;
     width: 100%;
-    
+    margin-bottom: 0;
+    margin-top: 0;
 
 
     &--header {
@@ -159,10 +161,7 @@
     }
 
     &--btn {
-
       @include quotes-section--button-MQ();
-
-
     }
 
 
@@ -172,8 +171,9 @@
 @mixin roadmap-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     height: 100vh;
-    &--header{
-    }
+    margin-bottom: 0;
+    margin-top:0;
+
     &--img--1{
       display:none
     }
@@ -183,11 +183,70 @@
   }
 }
 
-@mixin quotes-section-MQ() {
-
+@mixin testinomal-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    height: 80vh;
+    background-image: none;
+    margin-top:0;
+    margin-bottom: 3rem;
+    &--header{
+      margin-bottom: 0;
+    }
+    &--quote{
+      font-size: 1rem;
+      width: 80%;
+    }
+    &--quoter{
+      width: 80%;
+      font-size: 0.75rem;
+    }
+  }
 }
 
 
-@mixin quotes-section-MQ() {
+@mixin team-section-MQ() {
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    min-height: 200vh;
+    background-image: none;
+    margin-top:0;
 
+
+    &--header{
+      margin-bottom: 0;
+    }
+    &--members{
+      font-size: 1rem;
+      width: 100%;
+      div {
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+
+        span {
+          text-align: center;
+          justify-self: center;
+          align-self: center;
+          width: 40vw;
+        }
+        
+      }
+    }
+    &--buttons{
+      flex-direction: row;
+      margin: 0;
+      display:none;
+
+      &-mobile{
+
+        display: block;
+        .btn{
+          margin-top: 0;
+          margin-right: 2rem;
+          @include quotes-section--button-MQ()
+        }
+      }
+    }
+
+  }
 }
