@@ -4,6 +4,7 @@ import Contact from '../Contact'
 import ooda from '../../images/ooda.png'
 import pod from '../../images/pod.png'
 import roadmapWeb from '../../images/roadmap-web.png'
+import roadmapMob from '../../images/roadmap-mobile.png'
 
 import alex from '../../images/profile/alex-zucca.png'
 import yuan from '../../images/profile/yuan-wang.png'
@@ -53,14 +54,15 @@ export default function Home() {
           <li>Awareness Balance</li>
           <li>Orientation Rating</li>
         </ul>
-        <button className="btn">Learn More</button>
+        <button className="btn performance-metrics-section--btn">Learn More</button>
       </section>
 
       <section className="roadmap-section">
 
         <h3 className="roadmap-section--header">Roadmap</h3>
         <div className="line-orange" />
-        <img className="roadmap-section--img" src={roadmapWeb} alt="roadmap" />
+        <img className="roadmap-section--img--1" src={roadmapWeb} alt="roadmap" />
+        <img className="roadmap-section--img--2" src={roadmapMob} alt="roadmap" />
         <div className="line-orange" />
       </section>
 
@@ -94,57 +96,78 @@ export default function Home() {
 
         <div className="team-section--members">
 
+        <div>
+            <img src={leigh} alt="Leigh Sembaluk" />
+            <span>
+              <h4>
+                Leigh Sembaluk
+              </h4>
+              <p>
+                Founder, CEO
+              </p>
+
+          </span>
+        <section className="team-section--buttons">
+          <button className="btn">Read Blogs</button>
+          <button className="btn">Purchase Book</button>
+        </section>
+        </div>
+        <div>
+          <section className="team-section--buttons-mobile">
+            <button className="btn">Read Blogs</button>
+            <button className="btn">Purchase Book</button>
+          </section>
+        </div>
           <div>
             <img src={alex} alt="Alex Zucca" />
-            <h4>
-              Alex Zucca
-            </h4>
-            <p>
-              Data Analyst
-            </p>
+            <span>
+              <h4>
+                Alex Zucca
+              </h4>
+              <p>
+                Data Analyst
+              </p>
+            </span>
           </div>
+
           <div>
             <img src={felipe} alt="Felipe Pardo" />
-            <h4>
-              Felipe Pardo
-            </h4>
-            <p>
-              Data Analyst
-            </p>
+            <span>
+              <h4>
+                Felipe Pardo
+              </h4>
+              <p>
+                Data Analyst
+              </p>
+            </span>
           </div>
-          <div>
-            <img src={leigh} alt="Leigh Sembaluk" />
-            <h4>
-              Leigh Sembaluk
-            </h4>
-            <p>
-              Founder, CEO
-            </p>
-          </div>
+
           <div>
             <img src={yuan} alt="Yuan Wang" />
-            <h4>
-              Yuan Wang
-            </h4>
-            <p>
-              Developer
-            </p>
-          </div>
-          <div>
-            <img src={jordan} alt="Jordan Shimell" />
-            <h4>
-              Jordan Shimell
-            </h4>
+            <span>
+              <h4>
+                Yuan Wang
+              </h4>
               <p>
                 Developer
               </p>
+            </span>
+          </div>
+
+          <div>
+            <img src={jordan} alt="Jordan Shimell" />
+            <span>
+              <h4>
+                Jordan Shimell
+              </h4>
+                <p>
+                  Developer
+                </p>
+            </span>
           </div>
         </div>
 
-        <div className="team-section--buttons">
-          <button className="btn">Read Blogs</button>
-          <button className="btn">Purchase Book</button>
-        </div>
+
       </section>
 
       <Contact />
