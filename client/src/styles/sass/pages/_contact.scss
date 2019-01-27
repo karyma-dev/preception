@@ -1,20 +1,32 @@
 .contact {
   &-header {
+    font-size: 2rem;
   }
 
   &-form {
-    text-align: left;
-
     &-required {
+      margin: 0 auto;
+      text-align: left;
       font-size: 0.5rem;
     }
     &-group {
+      margin: 1rem 0;
     }
-  }
 
-  input {
-    &[type='text'] {
+    &-field {
       width: 100%;
+      height: 2rem;
+    }
+
+    &-radio {
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    &-textarea {
+      width: 100%;
+      height: 8rem;
     }
   }
 }
