@@ -6,7 +6,6 @@
     display: block;
     text-align: center;
     background-position-y: 6rem;
-    background-position-x: 50%;
   }
 }
 
@@ -41,17 +40,18 @@
     display: inline-block;
     position: absolute;
     top:50%;
-    height: 30vh;
     text-align: center;
+
   }
 }
 
 
 @mixin quotes-section--primary-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    font-size: 14px;
+    font-size: 0.8rem;
     margin: 0 3rem;
     padding-top: 0;
+    
   }
 }
 
@@ -78,9 +78,8 @@
 
 @mixin four-step-progress-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    display: inline-block;
-    height: 40vh;
     
+    height: 40vh;
     margin-top: 10rem;
     margin-bottom: 0;
     text-align: center;
@@ -89,7 +88,7 @@
     }
 
     &--img {
-      width: 50vh;
+      width: 55vh;
       height: auto;
       margin-bottom: 0;
     }
@@ -104,24 +103,21 @@
 
 @mixin how-it-works-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    display: inline-block;
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
-    text-align: center;
-
 
     &--header {
       margin-top: 0;
       margin-bottom: 2rem;
     }
     &--img {
-      justify-self: center;
       width: 80%;
       height: auto;
+      margin-bottom: 0;
     }
     &--btn {
       @include quotes-section--button-MQ();
-
+      margin-bottom: 2rem;
     }
   }
 
@@ -131,10 +127,8 @@
 @mixin performance-metrics-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;
-    display: flex;
-
     text-align: center;
-    min-height: 75vh;
+    min-height: 80vh;
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
@@ -147,7 +141,6 @@
     
     }
     &--list{
-
       columns: 1;
       border: 1px white solid;
       width: 60%;
@@ -170,7 +163,8 @@
 
 @mixin roadmap-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: 100vh;
+
+  
     margin-bottom: 0;
     margin-top:0;
 
@@ -181,11 +175,20 @@
       display: inline-block;
     }
   }
+  @media only screen and (max-width: 1300px) {
+    &--img--1{
+      width: 70vw;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    height: 110vh;
+  }
 }
 
 @mixin testinomal-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: 95vh;
+
     background-image: none;
     margin-top:0;
     margin-bottom: 3rem;
@@ -205,15 +208,22 @@
       }
     }
   }
+  @media only screen and (max-width: 1300px) {
+    &--quote, &--quoter {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+
+  }
 }
 
 
 @mixin team-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    min-height: 150vh;
     background-image: none;
     margin-top:0;
-
 
     &--header{
       margin-bottom: 0;
@@ -223,17 +233,12 @@
       width: 100%;
       div {
         display: flex;
-        text-align: center;
-        justify-items: center;
-        align-content: center;
-
         span {
           text-align: center;
           justify-self: center;
           align-self: center;
           width: 40vw;
         }
-        
       }
     }
     &--buttons{
@@ -242,7 +247,6 @@
       display:none;
 
       &-mobile{
-
         display: block;
         .btn{
           margin-top: 0;

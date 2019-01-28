@@ -30,16 +30,6 @@
   justify-content: flex-start;
   font-size: $default-font-size;
 
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
-    background-image: none;
-    display: inline-block;
-    position: absolute;
-    top: 53%;
-    height: 30vh;
-    text-align: center;
-
-    
-  }
 
   &--primary-para {
     padding-top: 4rem;
@@ -55,6 +45,7 @@
   &--button {
     @include  quotes-section--button-MQ()
   }
+  @include quotes-section-MQ() 
 }
 
 .four-step-progress-section {
@@ -123,7 +114,7 @@
 
 .roadmap-section {
   @include homepage-background-properties();
-  height: 65vh;
+
   &--header{
     margin-bottom: 2rem;
     font-size: $default-panel-header;
@@ -143,9 +134,10 @@
 
 .testinomal-section {
   background-image: url('../../images/testimonial-background.png');
-  height: 70vh;
+
   @include homepage-background-properties();
   text-align: center;
+  padding: 5rem 0;
   
   &--header{
     font-size: $default-panel-header;
@@ -154,7 +146,7 @@
   }
 
   &--quote{
-    width: 25%;
+    width: 50%;
     padding: 1rem;
   }
 
@@ -167,11 +159,11 @@
   }
   
   @include testinomal-section-MQ();
-  
+
 }
 
 .team-section {
-  height: 60vh;
+
   &--header{
     font-size: $default-panel-header;
     align-items: center;

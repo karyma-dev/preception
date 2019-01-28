@@ -29,7 +29,6 @@
 @media (max-width: 768px) {
   .navbar {
     background: none;
-    background-color: $secondary-color;
     &-toggler {
       display: flex;
       background-image: url('../../images/nav/navbar.png');
@@ -46,11 +45,18 @@
     }
 
     &-links {
+      background-color: $secondary-color;
+      width: 70vw;
+      height: 100vh;
       display: block;
 
       &-item {
         display: block;
       }
     }
+  }
+
+  .hidden {
+    display: none;
   }
 }
