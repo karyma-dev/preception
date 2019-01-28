@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../images/logo/white.png'
 import menu from '../images/nav/menu.svg'
 
-export default class Navbar extends Component() {
+export default class Navbar extends Component {
   render() {
     return (
       <div className='navbar'>
