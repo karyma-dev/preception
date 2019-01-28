@@ -24,9 +24,9 @@
 
 .quotes-section {
   background-image: url('../../images/sidekick.png');
-  height: 50vh;
+
   @include homepage-background-properties();
-  margin-bottom:0;
+  padding: 5rem 0;
   justify-content: flex-start;
   font-size: $default-font-size;
 
@@ -52,8 +52,6 @@
   background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
 
-  height: 50vh;
-
   &--header{
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
@@ -70,7 +68,6 @@
 }
 
 .how-it-works-section {
-  height: 70h;
   @include homepage-background-properties();
 
   &--header{
@@ -89,8 +86,9 @@
 .performance-metrics-section {
   
   background-image: url('../../images/testimonial-background.png');
-  height: 50vh;
+
   @include homepage-background-properties();
+  padding: 5rem 0;
   &--header{
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;

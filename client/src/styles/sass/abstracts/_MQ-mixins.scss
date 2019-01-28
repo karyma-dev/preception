@@ -79,8 +79,8 @@
 @mixin four-step-progress-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     
-    height: 40vh;
-    margin-top: 10rem;
+
+    margin-top: 15rem;
     margin-bottom: 0;
     text-align: center;
     &--header {
@@ -128,7 +128,7 @@
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;
     text-align: center;
-    min-height: 80vh;
+
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
@@ -179,11 +179,14 @@
     &--img--1{
       width: 70vw;
     }
+    div {
+      width: 70vw;
+    }
   }
 
-  @media only screen and (max-width: 580px) {
-    height: 110vh;
-  }
+  // @media only screen and (max-width: 580px) {
+  //   height: 110vh;
+  // }
 }
 
 @mixin testinomal-section-MQ() {

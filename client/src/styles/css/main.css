@@ -118,7 +118,6 @@ h5 {
 
 .quotes-section {
   background-image: url("../../images/sidekick.png");
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -128,7 +127,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 0;
+  padding: 5rem 0;
   justify-content: flex-start;
   font-size: 1.8rem;
 }
@@ -181,7 +180,6 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 50vh;
 }
 .four-step-progress-section--header {
   font-size: 1.6rem;
@@ -193,8 +191,7 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .four-step-progress-section {
-    height: 40vh;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 0;
     text-align: center;
   }
@@ -216,7 +213,6 @@ h5 {
 }
 
 .how-it-works-section {
-  height: 70h;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -263,7 +259,6 @@ h5 {
 
 .performance-metrics-section {
   background-image: url("../../images/testimonial-background.png");
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -273,6 +268,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 5rem 0;
 }
 .performance-metrics-section--header {
   font-size: 1.6rem;
@@ -296,7 +292,6 @@ h5 {
   .performance-metrics-section {
     background-image: none;
     text-align: center;
-    min-height: 80vh;
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
@@ -366,10 +361,8 @@ h5 {
   .roadmap-section--img--1 {
     width: 70vw;
   }
-}
-@media only screen and (max-width: 580px) {
-  .roadmap-section {
-    height: 110vh;
+  .roadmap-section div {
+    width: 70vw;
   }
 }
 
