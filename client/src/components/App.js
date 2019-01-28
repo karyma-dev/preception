@@ -19,7 +19,7 @@ export default class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/process" component={Process} />
           <Route path="/pod" component={Pod} />
-          <Route path="/dataMetric" component={DataMetric} />
+          <Route path="/data" component={DataMetric} />
           <Route path="/contact" component={Contact} />
         </div>
         <Footer />

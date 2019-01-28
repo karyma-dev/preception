@@ -45,6 +45,10 @@ h4 {
   font-family: Copperplate, "Copperplate Gothic Light";
 }
 
+h1 {
+  letter-spacing: 0.5rem;
+}
+
 h6 {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -535,6 +539,64 @@ h5 {
 .pod-section-summary {
   border: 1px solid white;
   padding: 1.5rem;
+}
+
+.data-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.data-metrics--header {
+  margin-bottom: 5rem;
+}
+.data-metrics--list {
+  min-width: 52vw;
+  height: auto;
+  flex-direction: column;
+}
+.data-metrics--list--headers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.data-metrics--list--headers h2 {
+  flex: 0 0 100%;
+  display: inline-block;
+}
+.data-metrics--list li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 10vh;
+  width: auto;
+  margin-bottom: 2rem;
+}
+.data-metrics--list li:not(:first-child) {
+  background-image: url("../../images/sidekick.png");
+  background-position: center;
+  background-size: 40%;
+  -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+}
+.data-metrics--list li:not(:first-child) p {
+  flex: 0 0 100%;
+  height: 100%;
+  width: 20vw;
+  display: inline-block;
+  border: 1px white solid;
+  background-color: #0f2027;
+  justify-self: center;
+  align-self: center;
+  font-size: 0.75rem;
+  padding: 2rem;
+}
+.data-metrics--list li:not(:first-child) p:not(:last-child) {
+  width: 15vw;
 }
 
 .contact-header {
