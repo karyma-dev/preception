@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <Fragment>
       <header className="header">
-        <div className="header--primary-header">Preception</div>
-        <div className="header--secondary-header">The Future of Training</div>
+        <h1 className="header--primary-header">Preception</h1>
+        <h2 className="header--secondary-header">The Future of Training</h2>
       </header>
 
       <section className="quotes-section">

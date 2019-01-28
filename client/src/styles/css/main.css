@@ -92,13 +92,10 @@ h5 {
     display: block;
     text-align: center;
     background-position-y: 6rem;
-    background-position-x: 50%;
   }
 }
 .header--primary-header {
   font-size: 5rem;
-  font-weight: 600;
-  letter-spacing: 1rem;
   padding-bottom: 15rem;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -127,7 +124,6 @@ h5 {
 
 .quotes-section {
   background-image: url("../../images/sidekick.png");
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,34 +133,22 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 0;
+  padding: 5rem 0;
   justify-content: flex-start;
-}
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  .quotes-section {
-    background-image: none;
-    display: inline-block;
-    position: absolute;
-    top: 53%;
-    height: 30vh;
-    text-align: center;
-  }
+  font-size: 1.8rem;
 }
 .quotes-section--primary-para {
   padding-top: 4rem;
-  font-size: 1.8rem;
-  justify-content: flex-start;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section--primary-para {
-    font-size: 14px;
+    font-size: 0.8rem;
     margin: 0 3rem;
     padding-top: 0;
   }
 }
 .quotes-section--secondary-para {
   padding-top: 5rem;
-  font-size: 1.8rem;
   text-align: center;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -181,6 +165,15 @@ h5 {
     font-size: 0.75rem !important;
   }
 }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .quotes-section {
+    background-image: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+}
 
 .four-step-progress-section {
   background-image: url("../../images/4-step-background.png");
@@ -193,8 +186,6 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 0;
-  height: 50vh;
 }
 .four-step-progress-section--header {
   font-size: 1.6rem;
@@ -206,9 +197,7 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .four-step-progress-section {
-    display: inline-block;
-    height: 40vh;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 0;
     text-align: center;
   }
@@ -216,7 +205,7 @@ h5 {
     margin-bottom: 1rem;
   }
   .four-step-progress-section--img {
-    width: 50vh;
+    width: 55vh;
     height: auto;
     margin-bottom: 0;
   }
@@ -230,7 +219,6 @@ h5 {
 }
 
 .how-it-works-section {
-  height: 70h;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -251,19 +239,20 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .how-it-works-section {
-    display: inline-block;
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
-    text-align: center;
   }
   .how-it-works-section--header {
     margin-top: 0;
     margin-bottom: 2rem;
   }
   .how-it-works-section--img {
-    justify-self: center;
     width: 80%;
     height: auto;
+    margin-bottom: 0;
+  }
+  .how-it-works-section--btn {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
@@ -276,7 +265,6 @@ h5 {
 
 .performance-metrics-section {
   background-image: url("../../images/testimonial-background.png");
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -286,6 +274,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 5rem 0;
 }
 .performance-metrics-section--header {
   font-size: 1.6rem;
@@ -308,9 +297,7 @@ h5 {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .performance-metrics-section {
     background-image: none;
-    display: flex;
     text-align: center;
-    min-height: 75vh;
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
@@ -349,7 +336,6 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 65vh;
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
@@ -367,7 +353,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .roadmap-section {
-    height: 100vh;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -378,10 +363,17 @@ h5 {
     display: inline-block;
   }
 }
+@media only screen and (max-width: 1300px) {
+  .roadmap-section--img--1 {
+    width: 70vw;
+  }
+  .roadmap-section div {
+    width: 70vw;
+  }
+}
 
 .testinomal-section {
   background-image: url("../../images/testimonial-background.png");
-  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -392,6 +384,7 @@ h5 {
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  padding: 5rem 0;
 }
 .testinomal-section--header {
   font-size: 1.6rem;
@@ -399,7 +392,7 @@ h5 {
   margin-bottom: 3rem;
 }
 .testinomal-section--quote {
-  width: 25%;
+  width: 50%;
   padding: 1rem;
 }
 .testinomal-section--quoter {
@@ -411,7 +404,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .testinomal-section {
-    height: 80vh;
     background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
@@ -427,18 +419,20 @@ h5 {
     width: 80%;
     font-size: 0.75rem;
   }
+  .testinomal-section--quoter:not(:last-of-type) {
+    margin: 1rem 0;
+  }
 }
-
-.team-section {
-  height: 60vh;
+@media only screen and (max-width: 1300px) {
+  .testinomal-section--quote, .testinomal-section--quoter {
+    width: 80%;
+  }
 }
 .team-section--header {
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .team-section--members {
   display: flex;
@@ -468,7 +462,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .team-section {
-    min-height: 150vh;
     background-image: none;
     margin-top: 0;
   }
@@ -481,9 +474,6 @@ h5 {
   }
   .team-section--members div {
     display: flex;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
   }
   .team-section--members div span {
     text-align: center;
@@ -603,11 +593,13 @@ h5 {
   background-color: #0f2027;
   justify-self: center;
   align-self: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 2rem;
 }
 .data-metrics--list li:not(:first-child) p:not(:last-child) {
   width: 15vw;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .contact-header {

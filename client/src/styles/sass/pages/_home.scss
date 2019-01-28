@@ -9,12 +9,9 @@
 
   &--primary-header {
     font-size: 5rem;
-    font-weight: 600;
-    letter-spacing: 1rem;
     padding-bottom: 15rem;
-
-
     @include header-section--primary-MQ();
+    
   }
 
   &--secondary-header {
@@ -27,31 +24,20 @@
 
 .quotes-section {
   background-image: url('../../images/sidekick.png');
-  height: 50vh;
-  @include homepage-background-properties();
-  margin-bottom:0;
-  justify-content: flex-start;
 
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
-    background-image: none;
-    display: inline-block;
-    position: absolute;
-    top: 53%;
-    height: 30vh;
-    text-align: center;
-  }
+  @include homepage-background-properties();
+  padding: 5rem 0;
+  justify-content: flex-start;
+  font-size: $default-font-size;
+
 
   &--primary-para {
     padding-top: 4rem;
-    font-size: $default-font-size;
-    justify-content: flex-start;
-
     @include quotes-section--primary-MQ();
   }
 
   &--secondary-para {
     padding-top: 5rem;
-    font-size: $default-font-size;
     text-align: center;
     @include quotes-section--secondary-MQ();
   }
@@ -59,13 +45,12 @@
   &--button {
     @include  quotes-section--button-MQ()
   }
+  @include quotes-section-MQ() 
 }
 
 .four-step-progress-section {
   background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
-  margin-top: 0;
-  height: 50vh;
 
   &--header{
     font-size: $default-panel-header;
@@ -83,7 +68,6 @@
 }
 
 .how-it-works-section {
-  height: 70h;
   @include homepage-background-properties();
 
   &--header{
@@ -102,8 +86,9 @@
 .performance-metrics-section {
   
   background-image: url('../../images/testimonial-background.png');
-  height: 50vh;
+
   @include homepage-background-properties();
+  padding: 5rem 0;
   &--header{
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
@@ -127,7 +112,7 @@
 
 .roadmap-section {
   @include homepage-background-properties();
-  height: 65vh;
+
   &--header{
     margin-bottom: 2rem;
     font-size: $default-panel-header;
@@ -147,9 +132,10 @@
 
 .testinomal-section {
   background-image: url('../../images/testimonial-background.png');
-  height: 70vh;
+
   @include homepage-background-properties();
   text-align: center;
+  padding: 5rem 0;
   
   &--header{
     font-size: $default-panel-header;
@@ -158,7 +144,7 @@
   }
 
   &--quote{
-    width: 25%;
+    width: 50%;
     padding: 1rem;
   }
 
@@ -168,22 +154,21 @@
     }
     width: 50%;
     font-size: 1.1rem;
-
   }
-  @include testinomal-section-MQ()
+  
+  @include testinomal-section-MQ();
+
 }
 
 .team-section {
-  height: 60vh;
+
   &--header{
     font-size: $default-panel-header;
-   
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
+  
   &--members{
     display: flex;
     text-align: center;
