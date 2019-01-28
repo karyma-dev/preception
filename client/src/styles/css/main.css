@@ -656,7 +656,6 @@ h5 {
 @media (max-width: 768px) {
   .navbar {
     background: none;
-    background-color: #0c465d;
   }
   .navbar-toggler {
     display: flex;
@@ -672,10 +671,17 @@ h5 {
     margin-left: -33.33px;
   }
   .navbar-links {
+    background-color: #0c465d;
+    width: 70vw;
+    height: 100vh;
     display: block;
   }
   .navbar-links-item {
     display: block;
+  }
+
+  .hidden {
+    display: none;
   }
 }
 .footer {

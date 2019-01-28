@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../images/logo/white.png'
 import menu from '../images/nav/menu.svg'
 
-export default function Navbar() {
-  return (
-    <Fragment>
+export default class Navbar extends Component() {
+  render() {
+    return (
       <div className='navbar'>
         <div className='navbar-toggler'>
           <img src={menu} alt='hamburger menu' />
@@ -35,6 +35,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </Fragment>
-  )
+    )
+  }
 }
