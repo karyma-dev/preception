@@ -31,7 +31,7 @@ export default function Contact() {
             <textarea className="contact-form-textarea" placeholder="Message" />
           </div>
 
-          <button className="btn">Submit</button>
+          <button className="btn contact-btn">Submit</button>
         </form>
       </div>
     </div>
