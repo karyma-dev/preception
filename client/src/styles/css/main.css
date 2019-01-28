@@ -30,6 +30,11 @@ a {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
