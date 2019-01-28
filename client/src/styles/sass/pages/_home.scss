@@ -9,11 +9,7 @@
 
   &--primary-header {
     font-size: 5rem;
-    font-weight: 600;
-    letter-spacing: 1rem;
     padding-bottom: 15rem;
-
-
     @include header-section--primary-MQ();
   }
 

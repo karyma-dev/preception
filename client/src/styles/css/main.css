@@ -86,8 +86,6 @@ h5 {
 }
 .header--primary-header {
   font-size: 5rem;
-  font-weight: 600;
-  letter-spacing: 1rem;
   padding-bottom: 15rem;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -592,11 +590,13 @@ h5 {
   background-color: #0f2027;
   justify-self: center;
   align-self: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 2rem;
 }
 .data-metrics--list li:not(:first-child) p:not(:last-child) {
   width: 15vw;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .contact-header {
