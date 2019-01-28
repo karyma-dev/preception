@@ -26,7 +26,7 @@
   background-image: url('../../images/sidekick.png');
 
   @include homepage-background-properties();
-  padding: 5rem 0;
+  padding: 2rem 0;
   justify-content: flex-start;
   font-size: $default-font-size;
 
