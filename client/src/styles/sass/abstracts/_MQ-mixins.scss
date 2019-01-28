@@ -185,7 +185,7 @@
 
 @mixin testinomal-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: 80vh;
+    height: 95vh;
     background-image: none;
     margin-top:0;
     margin-bottom: 3rem;
@@ -199,6 +199,10 @@
     &--quoter{
       width: 80%;
       font-size: 0.75rem;
+
+      &:not(:last-of-type) {
+        margin: 1rem  0;
+      }
     }
   }
 }

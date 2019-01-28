@@ -131,6 +131,7 @@ h5 {
   flex-direction: column;
   margin-bottom: 0;
   justify-content: flex-start;
+  font-size: 1.8rem;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section {
@@ -144,8 +145,6 @@ h5 {
 }
 .quotes-section--primary-para {
   padding-top: 4rem;
-  font-size: 1.8rem;
-  justify-content: flex-start;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section--primary-para {
@@ -156,7 +155,6 @@ h5 {
 }
 .quotes-section--secondary-para {
   padding-top: 5rem;
-  font-size: 1.8rem;
   text-align: center;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -185,7 +183,6 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 0;
   height: 50vh;
 }
 .four-step-progress-section--header {
@@ -403,7 +400,7 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .testinomal-section {
-    height: 80vh;
+    height: 95vh;
     background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
@@ -419,6 +416,9 @@ h5 {
     width: 80%;
     font-size: 0.75rem;
   }
+  .testinomal-section--quoter:not(:last-of-type) {
+    margin: 1rem 0;
+  }
 }
 
 .team-section {
@@ -429,8 +429,6 @@ h5 {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .team-section--members {
   display: flex;

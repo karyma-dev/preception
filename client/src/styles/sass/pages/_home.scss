@@ -11,6 +11,7 @@
     font-size: 5rem;
     padding-bottom: 15rem;
     @include header-section--primary-MQ();
+    
   }
 
   &--secondary-header {
@@ -27,6 +28,7 @@
   @include homepage-background-properties();
   margin-bottom:0;
   justify-content: flex-start;
+  font-size: $default-font-size;
 
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;
@@ -35,19 +37,17 @@
     top: 53%;
     height: 30vh;
     text-align: center;
+
+    
   }
 
   &--primary-para {
     padding-top: 4rem;
-    font-size: $default-font-size;
-    justify-content: flex-start;
-
     @include quotes-section--primary-MQ();
   }
 
   &--secondary-para {
     padding-top: 5rem;
-    font-size: $default-font-size;
     text-align: center;
     @include quotes-section--secondary-MQ();
   }
@@ -60,7 +60,7 @@
 .four-step-progress-section {
   background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
-  margin-top: 0;
+
   height: 50vh;
 
   &--header{
@@ -164,22 +164,21 @@
     }
     width: 50%;
     font-size: 1.1rem;
-
   }
-  @include testinomal-section-MQ()
+  
+  @include testinomal-section-MQ();
+  
 }
 
 .team-section {
   height: 60vh;
   &--header{
     font-size: $default-panel-header;
-   
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
+  
   &--members{
     display: flex;
     text-align: center;
