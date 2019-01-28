@@ -1,30 +1,202 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: url('../../images/hero.png');
-  background-position: 50%;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  margin: $gutter-height 0;
-  
-  
+  @include homepage-background-properties();
+  margin-top: 1rem;
+  text-transform: uppercase;
+  @include header-section-MQ();
+
+
   &--primary-header {
-    position: absolute;
     font-size: 5rem;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    top: 30%;
-    left: 50%;
-    letter-spacing: 0.2em;
+    padding-bottom: 15rem;
+    @include header-section--primary-MQ();
+    
   }
 
   &--secondary-header {
-    position: absolute;
     font-size: 2rem;
-    transform: translate(-50%, -50%);
     font-weight: 300;
-    top: 75%;
-    left: 50%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.4rem;
+    @include header-section--secondary-MQ();
   }
+}
+
+.quotes-section {
+  background-image: url('../../images/sidekick.png');
+
+  @include homepage-background-properties();
+  padding: 5rem 0;
+  justify-content: flex-start;
+  font-size: $default-font-size;
+
+
+  &--primary-para {
+    padding-top: 4rem;
+    @include quotes-section--primary-MQ();
+  }
+
+  &--secondary-para {
+    padding-top: 5rem;
+    text-align: center;
+    @include quotes-section--secondary-MQ();
+  }
+
+  &--button {
+    @include  quotes-section--button-MQ()
+  }
+  @include quotes-section-MQ() 
+}
+
+.four-step-progress-section {
+  background-image: url('../../images/4-step-background.png');
+  @include homepage-background-properties();
+
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+  }
+  &--img{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @include four-step-progress-section-MQ();
+  
+
+
+}
+
+.how-it-works-section {
+  @include homepage-background-properties();
+
+  &--header{
+    font-size:$default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin: 5rem 0;
+  }
+  &--img{
+    margin-bottom: 3rem;
+  }
+
+  @include how-it-works-section-MQ()
+
+}
+
+.performance-metrics-section {
+  
+  background-image: url('../../images/testimonial-background.png');
+
+  @include homepage-background-properties();
+  padding: 5rem 0;
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 2rem;
+  }
+  &--list{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    li{
+      border: 1px white groove;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  @include performance-metrics-section-MQ();
+}
+
+.roadmap-section {
+  @include homepage-background-properties();
+
+  &--header{
+    margin-bottom: 2rem;
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+  }
+  &--img--1{
+    width: 50vw;
+    height: auto;
+    border: 3px white solid;
+    padding: 2rem;
+  }
+  &--img--2{
+    display: none;
+  }
+  @include roadmap-section-MQ();
+}
+
+.testinomal-section {
+  background-image: url('../../images/testimonial-background.png');
+
+  @include homepage-background-properties();
+  text-align: center;
+  padding: 5rem 0;
+  
+  &--header{
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 3rem;
+  }
+
+  &--quote{
+    width: 50%;
+    padding: 1rem;
+  }
+
+  &--quoter{
+    &:not(:last-of-type) {
+      margin-bottom: 6rem;
+    }
+    width: 50%;
+    font-size: 1.1rem;
+  }
+  
+  @include testinomal-section-MQ();
+
+}
+
+.team-section {
+
+  &--header{
+    font-size: $default-panel-header;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  &--members{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    & h4{
+      font-size: 1.2rem;
+    }
+  }
+
+  &--buttons{
+    margin-top: 4rem;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    & button{
+      margin-top: 1rem;
+      font-weight: 400;
+      width: 12rem;
+      font-size: 1rem;
+    }
+    &-mobile{
+      display: none;
+    }
+  }
+  @include team-section-MQ()
+
 }

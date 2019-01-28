@@ -16,3 +16,21 @@ a {
   color: $primary-font-color;
   text-decoration: none;
 }
+
+.main {
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}

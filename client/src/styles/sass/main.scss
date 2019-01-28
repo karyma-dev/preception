@@ -1,16 +1,18 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
+@import 'abstracts/MQ-mixins';
 
 @import 'base/base';
 @import 'base/typography';
 
 @import 'pages/home';
+@import 'pages/process';
+@import 'pages/pod';
+@import 'pages/data-metric';
+@import 'pages/contact';
 
 @import 'components/navbar';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import 'components/footer';
+@import 'components/btn';
+@import 'components/line';
