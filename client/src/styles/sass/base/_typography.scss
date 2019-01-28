@@ -7,12 +7,15 @@ body {
   color: $primary-font-color;
 }
 
+a {
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
 h4 {
   text-transform: uppercase;
-
   font-family: Copperplate, 'Copperplate Gothic Light';
 }
 
@@ -23,9 +26,11 @@ h1 {
 h6 {
   text-transform: uppercase;
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 h5 {
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight: 400;
 }
