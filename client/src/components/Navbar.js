@@ -30,43 +30,41 @@ export default class Navbar extends Component {
           <img src={menu} alt='hamburger menu' onClick={this.onClick} />
         </div>
 
-        <div className='navbar-flex-container'>
-          <Link to='/'>
-            <img className='navbar-logo' src={logo} alt='navbar logo' onClick={this.closeMenu} />
-          </Link>
+        <Link to='/'>
+          <img className='navbar-logo' src={logo} alt='navbar logo' onClick={this.closeMenu} />
+        </Link>
 
-          <ul className={hiddenToggler}>
-            <li className='navbar-links-exit'>
-              <img src={exit} alt='x' width='20px' onClick={this.closeMenu} />
-            </li>
+        <ul className={hiddenToggler}>
+          <li className='navbar-links-exit'>
+            <img src={exit} alt='x' width='20px' onClick={this.closeMenu} />
+          </li>
 
-            <li className='navbar-links-item'>
-              <Link to='/' onClick={this.closeMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='navbar-links-item'>
-              <Link to='/process' onClick={this.closeMenu}>
-                4 Step Process
-              </Link>
-            </li>
-            <li className='navbar-links-item'>
-              <Link to='/pod' onClick={this.closeMenu}>
-                How It Works
-              </Link>
-            </li>
-            <li className='navbar-links-item'>
-              <Link to='/data' onClick={this.closeMenu}>
-                Data
-              </Link>
-            </li>
-            <li className='navbar-links-item'>
-              <Link to='/contact' onClick={this.closeMenu}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+          <li className='navbar-links-item'>
+            <Link to='/' onClick={this.closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li className='navbar-links-item'>
+            <Link to='/process' onClick={this.closeMenu}>
+              4 Step Process
+            </Link>
+          </li>
+          <li className='navbar-links-item'>
+            <Link to='/pod' onClick={this.closeMenu}>
+              How It Works
+            </Link>
+          </li>
+          <li className='navbar-links-item'>
+            <Link to='/data' onClick={this.closeMenu}>
+              Data
+            </Link>
+          </li>
+          <li className='navbar-links-item'>
+            <Link to='/contact' onClick={this.closeMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
     )
   }
