@@ -1,26 +1,56 @@
 .navbar {
-  background-image: url('../../images/navbar.png');
+  background-image: url('../../images/nav/navbar.png');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   position: fixed;
-  display: flex;
-  align-items: center;
   z-index: 10;
 
   &-logo {
     height: 50px;
+    display: inline-block;
   }
 
   &-links {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
   }
 
   &-links-item {
     margin: 0 1rem;
     display: inline-block;
+  }
+
+  &-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: none;
+    background-color: $secondary-color;
+    &-toggler {
+      display: flex;
+      background-image: url('../../images/nav/navbar.png');
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -33.33px;
+    }
+
+    &-links {
+      display: block;
+
+      &-item {
+        display: block;
+      }
+    }
   }
 }

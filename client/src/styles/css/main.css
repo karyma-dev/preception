@@ -563,29 +563,54 @@ h5 {
 }
 
 .navbar {
-  background-image: url("../../images/navbar.png");
+  background-image: url("../../images/nav/navbar.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   position: fixed;
-  display: flex;
-  align-items: center;
   z-index: 10;
 }
 .navbar-logo {
   height: 50px;
+  display: inline-block;
 }
 .navbar-links {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
 }
 .navbar-links-item {
   margin: 0 1rem;
   display: inline-block;
 }
+.navbar-toggler {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  .navbar {
+    background: none;
+    background-color: #0c465d;
+  }
+  .navbar-toggler {
+    display: flex;
+    background-image: url("../../images/nav/navbar.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -33.33px;
+  }
+  .navbar-links {
+    display: block;
+  }
+  .navbar-links-item {
+    display: block;
+  }
+}
 .footer {
   background-color: #0c465d;
   display: flex;
