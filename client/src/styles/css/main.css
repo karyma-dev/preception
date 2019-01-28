@@ -629,17 +629,24 @@ h5 {
   width: 100%;
   position: fixed;
   z-index: 10;
+  display: flex;
 }
 .navbar-logo {
   height: 50px;
   display: inline-block;
 }
 .navbar-links {
-  display: inline-block;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .navbar-links-item {
   margin: 0 1rem;
   display: inline-block;
+}
+.navbar-links-exit {
+  display: none;
 }
 .navbar-toggler {
   display: none;
@@ -648,6 +655,7 @@ h5 {
 @media (max-width: 768px) {
   .navbar {
     background: none;
+    display: block;
   }
   .navbar-toggler {
     display: flex;
@@ -670,6 +678,13 @@ h5 {
   }
   .navbar-links-item {
     display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+  .navbar-links-exit {
+    display: block;
+    text-align: right;
+    padding: 1rem 1rem 0 0;
   }
 
   .hidden {
