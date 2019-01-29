@@ -125,7 +125,7 @@ export default function Home() {
                 Alex Zucca
               </h4>
               <p>
-                Data Analyst
+                Data Scientist
               </p>
             </span>
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 Yuan Wang
               </h4>
               <p>
-                Developer
+                Neuroscientist
               </p>
             </span>
           </div>
