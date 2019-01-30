@@ -1,29 +1,35 @@
 .header {
-  height: 85vh;
-  background-image: url('../../images/hero.png');
+
+  background-image: url('../../images/stadium.jpg');
   @include homepage-background-properties();
-  margin-top: 1rem;
+  padding: 6rem 0;
+  margin-top: 0.5rem;
   text-transform: uppercase;
   @include header-section-MQ();
 
 
+  &--img{
+    width: 20vw !important;
+    @include header-img-MQ();
+  }
+
   &--primary-header {
-    font-size: 5rem;
-    padding-bottom: 15rem;
+    font-size: 4rem;
     @include header-section--primary-MQ();
     
   }
 
   &--secondary-header {
-    font-size: 2rem;
-    font-weight: 300;
+    text-align: center;
     letter-spacing: 0.4rem;
+    width: 20%;
     @include header-section--secondary-MQ();
   }
 }
 
 .quotes-section {
   background-image: url('../../images/sidekick.png');
+
 
   @include homepage-background-properties();
   padding: 5rem 0;
@@ -144,8 +150,9 @@
   }
 
   &--quote{
-    width: 50%;
+    width: 40%;
     padding: 1rem;
+    font-size: 1.2rem;
   }
 
   &--quoter{
@@ -153,7 +160,7 @@
       margin-bottom: 6rem;
     }
     width: 50%;
-    font-size: 1.1rem;
+
   }
   
   @include testinomal-section-MQ();

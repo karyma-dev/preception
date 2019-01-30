@@ -1,17 +1,20 @@
 //query for the header section of the home page
 @mixin header-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    height: 60vh;
     margin-top: 0;
-    display: block;
     text-align: center;
-    background-position-y: 6rem;
+    height: 60vh;
   }
+}
+
+@mixin header-img-MQ(){
+  width: 60%;
 }
 
 @mixin header-section--primary-MQ() {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-  font-size: 2rem;
+  width: 90%;
+  font-size: 1.5rem;
   letter-spacing: 0.5rem;
   padding-bottom: 0;
 }
@@ -20,13 +23,12 @@
 @mixin header-section--secondary-MQ(){
   
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    font-size: 1.5rem;
+    width: 50%;
+    font-size: 0.8rem;
     letter-spacing: 0;
-    margin-bottom: 10rem;
     font-weight: 600;
-    height: 8vh;
+
     letter-spacing: 0;
-    background-color: $mobile-secondary-header-background;
   }
 }
 
@@ -37,11 +39,8 @@
 @mixin quotes-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     background-image: none;
-    display: inline-block;
-    position: absolute;
-    top:50%;
     text-align: center;
-
+    padding: 0;
   }
 }
 
@@ -78,9 +77,6 @@
 
 @mixin four-step-progress-section-MQ() {
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-    
-
-    margin-top: 15rem;
     margin-bottom: 0;
     text-align: center;
     &--header {
@@ -91,6 +87,9 @@
       width: 55vh;
       height: auto;
       margin-bottom: 0;
+      @media only screen and (max-width: 350px) {
+        width: 40vh;
+      }
     }
 
     &--btn {

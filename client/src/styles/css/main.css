@@ -41,24 +41,34 @@ a {
   font-weight: normal;
   src: local("Venera"), url("../../Venera-font/Venera-900.otf") format("truetype");
 }
+@font-face {
+  font-family: "Venera-light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Venera-light"), url("../../Venera-font/Venera-300.otf") format("truetype");
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: white;
-  text-shadow: 2px 4px 6px black;
+  text-shadow: 2px 4px 1.5rem black;
 }
 
 a {
   text-transform: uppercase;
 }
 
-h1,
+h1 {
+  text-transform: uppercase;
+  font-family: "Venera", sans-serif;
+}
+
 h2,
 h3,
 h4 {
+  font-family: "Venera-light", sans-serif;
   text-transform: uppercase;
-  font-family: "Venera", sans-serif;
 }
 
 h1 {
@@ -78,8 +88,7 @@ h5 {
 }
 
 .header {
-  height: 85vh;
-  background-image: url("../../images/hero.png");
+  background-image: url("../../images/stadium.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,43 +98,44 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 1rem;
+  padding: 6rem 0;
+  margin-top: 0.5rem;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
-    height: 60vh;
     margin-top: 0;
-    display: block;
     text-align: center;
-    background-position-y: 6rem;
+    height: 60vh;
   }
 }
+.header--img {
+  width: 20vw !important;
+  width: 60%;
+}
 .header--primary-header {
-  font-size: 5rem;
-  padding-bottom: 15rem;
+  font-size: 4rem;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header--primary-header {
-    font-size: 2rem;
+    width: 90%;
+    font-size: 1.5rem;
     letter-spacing: 0.5rem;
     padding-bottom: 0;
   }
 }
 .header--secondary-header {
-  font-size: 2rem;
-  font-weight: 300;
+  text-align: center;
   letter-spacing: 0.4rem;
+  width: 20%;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header--secondary-header {
-    font-size: 1.5rem;
+    width: 50%;
+    font-size: 0.8rem;
     letter-spacing: 0;
-    margin-bottom: 10rem;
     font-weight: 600;
-    height: 8vh;
     letter-spacing: 0;
-    background-color: #3d494f;
   }
 }
 
@@ -175,10 +185,8 @@ h5 {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section {
     background-image: none;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -204,7 +212,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .four-step-progress-section {
-    margin-top: 15rem;
     margin-bottom: 0;
     text-align: center;
   }
@@ -215,6 +222,11 @@ h5 {
     width: 55vh;
     height: auto;
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 350px) {
+  .four-step-progress-section--img {
+    width: 40vh;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) and (max-width: 767px) and (orientation: portrait) {
@@ -399,12 +411,12 @@ h5 {
   margin-bottom: 3rem;
 }
 .testinomal-section--quote {
-  width: 50%;
+  width: 40%;
   padding: 1rem;
+  font-size: 1.2rem;
 }
 .testinomal-section--quoter {
   width: 50%;
-  font-size: 1.1rem;
 }
 .testinomal-section--quoter:not(:last-of-type) {
   margin-bottom: 6rem;
