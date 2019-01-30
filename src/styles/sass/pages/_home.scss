@@ -171,7 +171,7 @@
 }
 
 .team-section {
-
+  @include homepage-background-properties();
   &--header{
     font-size: $default-panel-header;
     align-items: center;
