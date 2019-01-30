@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <div className="container">
-      <div className="contact">
+      <div className="contact spacer-top">
         <h3 className="contact-header">Contact</h3>
         <form className="contact-form">
           <div className="contact-form-required">*Required Field</div>

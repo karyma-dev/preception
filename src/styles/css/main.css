@@ -20,7 +20,7 @@ a {
 
 .main {
   min-height: 100vh;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .container {
@@ -28,6 +28,10 @@ a {
   margin: 0 auto;
   width: 50vw;
   padding-bottom: 4rem;
+}
+
+.spacer-top {
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -732,7 +736,7 @@ h5 {
     display: block;
   }
   .navbar-menu {
-    height: 5rem;
+    height: 4em;
   }
   .navbar-toggler {
     display: flex;
@@ -742,12 +746,11 @@ h5 {
     background-size: cover;
   }
   .navbar-logo {
-    height: 4rem;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -53.33px;
-    height: 5rem;
+    margin-left: -43.33px;
+    height: 4rem;
   }
   .navbar-links {
     background-color: #0c465d;
