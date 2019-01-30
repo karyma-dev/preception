@@ -6,7 +6,7 @@ export default function DataMetric() {
       <h1 className="data-metrics--header">Preception Data Metrics</h1>
 
     <ul className="data-metrics--list">
-      <li>
+      <li className="data-metrics--list--header">
           <h2>KPI</h2>
           <h2>Insight</h2>
       </li>
@@ -16,7 +16,7 @@ export default function DataMetric() {
       </li>
       <li>
         <p>Decision Making</p>
-        <p>Time it takes to make a decisio</p>
+        <p>Time it takes to make a decision</p>
       </li>
       <li>
         <p>Complexity of Decisions</p>

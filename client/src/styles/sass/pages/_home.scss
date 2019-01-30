@@ -2,9 +2,9 @@
 
   background-image: url('../../images/stadium.jpg');
   @include homepage-background-properties();
-  margin-top: 0.5rem;
   text-transform: uppercase;
   @include header-section-MQ();
+  margin-bottom: 5rem;
 
 
   &--img{

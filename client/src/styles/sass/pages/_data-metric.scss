@@ -12,58 +12,47 @@
     margin-bottom: 5rem;
   }
   &--list{
-    min-width: 52vw;
-    flex-direction: column;
-    &--headers{
-      display: flex;
-      flex-wrap: wrap;  
-      align-items:center;
-      justify-content: center;
-      flex-direction: column;
-      h2 {
-        flex: 0 0 100%;
-        display: inline-block;
-      }
-    }
+    min-width: 40vw;
+
 
     li {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      height: 12vh;
-      width: auto;
       margin-bottom: 2rem;
-      &:first-child{
-        
-      }
 
       &:not(:first-child){
+        flex-direction: row;
+        
         background-image: url('../../images/sidekick.png');
         background-position: center;
-        background-size: 40%;
+        background-size: cover;
         -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
         clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
 
         p {
-          flex: 0 0 100%;
           height: 100%;
-          width: 20vw;
-          display:inline-block;
+          width: 15vw;
           border: 1px white solid;
           background-color: $primary-color;
-          justify-self: center;
-          align-self: center;
-          font-size: 0.6rem;
+          margin-left: 8vw;
+
+          font-size: 0.88rem;
           padding: 1.5rem;
           &:not(:last-child){
-            width: 15vw;
+            width: 10vw;
+            margin-left: 4vw;
             text-transform: uppercase;
-            font-size: 0.6rem;
-
+            font-size: 0.8rem;
           }
+
         }
+
       }
     }
+          &--header{
+            flex-direction: row;
+          }
+
   }
 
 }
