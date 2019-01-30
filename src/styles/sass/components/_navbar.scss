@@ -39,6 +39,10 @@
     background: none;
     display: block;
 
+    &-menu {
+      height: 5rem;
+    }
+
     &-toggler {
       display: flex;
       background-image: url('../../images/nav/navbar.png');
@@ -48,10 +52,12 @@
     }
 
     &-logo {
+      height: 4rem;
       position: absolute;
       top: 0;
       left: 50%;
-      margin-left: -33.33px;
+      margin-left: -53.33px;
+      height: 5rem;
     }
 
     &-links {

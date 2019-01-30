@@ -702,6 +702,9 @@ h5 {
     background: none;
     display: block;
   }
+  .navbar-menu {
+    height: 5rem;
+  }
   .navbar-toggler {
     display: flex;
     background-image: url("../../images/nav/navbar.png");
@@ -710,10 +713,12 @@ h5 {
     background-size: cover;
   }
   .navbar-logo {
+    height: 4rem;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -33.33px;
+    margin-left: -53.33px;
+    height: 5rem;
   }
   .navbar-links {
     background-color: #0c465d;
