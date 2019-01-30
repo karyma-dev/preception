@@ -603,9 +603,9 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  flex-direction: row;
 }
 .data-metrics--list li:not(:first-child) {
-  flex-direction: row;
   background-image: url("../../images/sidekick.png");
   background-position: center;
   background-size: cover;
@@ -629,7 +629,11 @@ h5 {
   font-size: 0.8rem;
 }
 .data-metrics--list--header {
-  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.data-metrics--list--header h2:last-child {
+  margin-left: 16vw;
 }
 
 .contact-header {

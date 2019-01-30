@@ -17,22 +17,21 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 2rem;
+      flex-direction: row;
+
       &:not(:first-child){
-        flex-direction: row;
         
         background-image: url('../../images/sidekick.png');
         background-position: center;
         background-size: cover;
         -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
         clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
-
         p {
           height: 100%;
           width: 15vw;
           border: 1px white solid;
           background-color: $primary-color;
           margin-left: 8vw;
-
           font-size: 0.88rem;
           padding: 1.5rem;
           &:not(:last-child){
@@ -45,11 +44,18 @@
         }
       }
     }
-    
-          &--header{
-            flex-direction: row;
-          }
 
-  }
+          &--header{
+            justify-content: center;
+            text-align:center;
+
+            h2{
+
+              &:last-child{
+                margin-left: 16vw;
+              }
+            }
+          }
+        }
 
 }
