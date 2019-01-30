@@ -30,8 +30,7 @@ export default function Home() {
           We are a training tool for something that cannot be trained any other way...
         </p>
         <p className='quotes-section--secondary-para'>
-          The Ability to act
-          <br /> first
+          The Ability to act <h4>first</h4>
         </p>
         <Link to='/contact'>
           <input type='button' className='btn quotes-section--button' value='Contact Us' />
