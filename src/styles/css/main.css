@@ -129,7 +129,6 @@ h5 {
 .header--secondary-header {
   text-align: center;
   letter-spacing: 0.4rem;
-  width: 20%;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header--secondary-header {
@@ -545,6 +544,32 @@ h5 {
   }
 }
 
+#header--primary-header {
+  animation: reveal 3s;
+}
+
+#header--secondary-header {
+  animation: slidein 2s;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .process-image {
   max-width: 100%;
   max-height: 100%;
