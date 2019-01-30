@@ -121,8 +121,12 @@ export default function Home() {
           <div>
             <img src={alex} alt='Alex Zucca' />
             <span>
-              <h4>Alex Zucca</h4>
-              <p>Data Analyst</p>
+              <h4>
+                Alex Zucca
+              </h4>
+              <p>
+                Data Scientist
+              </p>
             </span>
           </div>
 
@@ -137,8 +141,12 @@ export default function Home() {
           <div>
             <img src={yuan} alt='Yuan Wang' />
             <span>
-              <h4>Yuan Wang</h4>
-              <p>Developer</p>
+              <h4>
+                Yuan Wang
+              </h4>
+              <p>
+                Neuroscientist
+              </p>
             </span>
           </div>
 
