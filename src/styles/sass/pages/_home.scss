@@ -3,7 +3,9 @@
   @include homepage-background-properties();
   text-transform: uppercase;
   @include header-section-MQ();
+  padding: 0;
   margin-bottom: 5rem;
+  height: 97vh;
 
   &--img {
     width: 20vw !important;
@@ -20,6 +22,11 @@
     letter-spacing: 0.4rem;
 
     @include header-section--secondary-MQ();
+  }
+
+  &--arrow {
+    margin-top:auto;
+    
   }
 }
 

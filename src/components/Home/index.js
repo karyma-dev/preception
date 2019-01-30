@@ -8,6 +8,7 @@ import roadmapWeb from '../../images/roadmap-web.png'
 import roadmapMob from '../../images/roadmap-mobile.png'
 
 import coolLogo from '../../images/logo/cool-logo.png'
+import downArrow from '../../images/arrow.svg'
 
 import alex from '../../images/profile/alex-zucca.png'
 import yuan from '../../images/profile/yuan-wang.png'
@@ -26,6 +27,7 @@ export default function Home() {
         <h2 className="header--secondary-header">
           <span id="header--secondary-header">The Future of Training</span>
         </h2>
+        <img className="header--arrow" src={downArrow} alt="scroll down" />
       </header>
 
       <section className="quotes-section">

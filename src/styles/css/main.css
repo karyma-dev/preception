@@ -20,7 +20,7 @@ a {
 
 .main {
   min-height: 100vh;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .container {
@@ -100,7 +100,9 @@ h5 {
   flex-wrap: wrap;
   flex-direction: column;
   text-transform: uppercase;
+  padding: 0;
   margin-bottom: 5rem;
+  height: 97vh;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
@@ -138,6 +140,9 @@ h5 {
     font-weight: 600;
     letter-spacing: 0;
   }
+}
+.header--arrow {
+  margin-top: auto;
 }
 
 .quotes-section {
