@@ -7,6 +7,9 @@ import pod from '../../images/pod.png'
 import roadmapWeb from '../../images/roadmap-web.png'
 import roadmapMob from '../../images/roadmap-mobile.png'
 
+import coolLogo from '../../images/logo/cool-logo.png'
+
+
 import alex from '../../images/profile/alex-zucca.png'
 import yuan from '../../images/profile/yuan-wang.png'
 import leigh from '../../images/profile/leigh.png'
@@ -17,6 +20,7 @@ export default function Home() {
   return (
     <Fragment>
       <header className='header'>
+        <img className='header--img' src={coolLogo} alt='preception logo' />
         <h1 className='header--primary-header'>Preception</h1>
         <h2 className='header--secondary-header'>The Future of Training</h2>
       </header>
