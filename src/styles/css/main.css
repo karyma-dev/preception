@@ -545,6 +545,49 @@ h5 {
   }
 }
 
+#header--primary-header {
+  animation: showup 7s;
+}
+
+#header--secondary-header {
+  width: 0px;
+  animation: reveal 7s;
+}
+
+#header--secondary-header {
+  animation: slidein 7s;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .process-image {
   max-width: 100%;
   max-height: 100%;

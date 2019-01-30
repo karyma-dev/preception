@@ -1,13 +1,11 @@
 .header {
-
   background-image: url('../../images/stadium.jpg');
   @include homepage-background-properties();
   text-transform: uppercase;
   @include header-section-MQ();
   margin-bottom: 5rem;
 
-
-  &--img{
+  &--img {
     width: 20vw !important;
     @include header-img-MQ();
   }
@@ -15,7 +13,6 @@
   &--primary-header {
     font-size: 4rem;
     @include header-section--primary-MQ();
-    
   }
 
   &--secondary-header {
@@ -27,16 +24,17 @@
 }
 
 .quotes-section {
-  background-image: 
-    linear-gradient(to right bottom, rgb($secondary-color, 0.3), rgba($primary-color, 0.4)),
+  background-image: linear-gradient(
+      to right bottom,
+      rgb($secondary-color, 0.3),
+      rgba($primary-color, 0.4)
+    ),
     url('../../images/section-rugby-blank.jpg');
-
 
   @include homepage-background-properties();
   font-size: $default-font-size;
   align-items: flex-start;
   padding-left: 10rem;
-
 
   &--primary-para {
     padding-top: 3rem;
@@ -46,71 +44,66 @@
 
   &--secondary-para {
     text-align: center;
-    
+
     padding-top: 3rem;
     @include quotes-section--secondary-MQ();
   }
 
   &--button {
-    @include  quotes-section--button-MQ()
+    @include quotes-section--button-MQ();
   }
-  @include quotes-section-MQ() 
+  @include quotes-section-MQ();
 }
 
 .four-step-progress-section {
   background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
 
-  &--header{
+  &--header {
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
   }
-  &--img{
+  &--img {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
 
   @include four-step-progress-section-MQ();
-  
-
-
 }
 
 .how-it-works-section {
   @include homepage-background-properties();
 
-  &--header{
-    font-size:$default-panel-header;
+  &--header {
+    font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
     margin: 5rem 0;
   }
-  &--img{
+  &--img {
     margin-bottom: 3rem;
   }
 
-  @include how-it-works-section-MQ()
-
+  @include how-it-works-section-MQ();
 }
 
 .performance-metrics-section {
-  
   background-image: url('../../images/testimonial-background.png');
 
   @include homepage-background-properties();
   padding: 5rem 0;
-  &--header{
+  &--header {
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
     margin-bottom: 2rem;
   }
-  &--list{
+  &--list {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    li{
+    li {
       border: 1px white groove;
       padding: 10px;
       margin-bottom: 5px;
@@ -122,18 +115,18 @@
 .roadmap-section {
   @include homepage-background-properties();
 
-  &--header{
+  &--header {
     margin-bottom: 2rem;
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
   }
-  &--img--1{
+  &--img--1 {
     width: 50vw;
     height: auto;
     border: 3px white solid;
     padding: 2rem;
   }
-  &--img--2{
+  &--img--2 {
     display: none;
   }
   @include roadmap-section-MQ();
@@ -145,68 +138,93 @@
   @include homepage-background-properties();
   text-align: center;
   padding: 5rem 0;
-  
-  &--header{
+
+  &--header {
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
     margin-bottom: 3rem;
   }
 
-  &--quote{
+  &--quote {
     width: 40%;
     padding: 1rem;
     font-size: 1.2rem;
   }
 
-  &--quoter{
+  &--quoter {
     &:not(:last-of-type) {
       margin-bottom: 6rem;
     }
     width: 50%;
-
   }
-  
-  @include testinomal-section-MQ();
 
+  @include testinomal-section-MQ();
 }
 
 .team-section {
   @include homepage-background-properties();
-  &--header{
+  &--header {
     font-size: $default-panel-header;
     align-items: center;
     justify-content: center;
     display: flex;
   }
-  
-  &--members{
+
+  &--members {
     display: flex;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    & h4{
+    & h4 {
       font-size: 1.2rem;
     }
   }
 
-  &--buttons{
+  &--buttons {
     margin-top: 4rem;
     align-items: center;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    & button{
+    & button {
       margin-top: 1rem;
       font-weight: 400;
       width: 12rem;
       font-size: 1rem;
     }
-    &-mobile{
+    &-mobile {
       display: none;
     }
   }
-  @include team-section-MQ()
+  @include team-section-MQ();
+}
 
+#header--primary-header {
+  animation: reveal 3s;
+}
+
+#header--secondary-header {
+  animation: slidein 7s;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -900px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
