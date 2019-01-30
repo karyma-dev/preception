@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom'
 
 import Navbar from './Navbar'
 import Footer from './Footer'
-
 import Home from './Home'
 import Process from './Process'
 import Pod from './Pod'
