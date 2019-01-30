@@ -40,7 +40,7 @@
     display: block;
 
     &-menu {
-      height: 5rem;
+      height: 4em;
     }
 
     &-toggler {
@@ -52,12 +52,11 @@
     }
 
     &-logo {
-      height: 4rem;
       position: absolute;
       top: 0;
       left: 50%;
-      margin-left: -53.33px;
-      height: 5rem;
+      margin-left: -43.33px;
+      height: 4rem;
     }
 
     &-links {

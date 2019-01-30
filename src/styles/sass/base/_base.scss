@@ -19,7 +19,7 @@ a {
 
 .main {
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 }
 
 .container {
@@ -27,6 +27,10 @@ a {
   margin: 0 auto;
   width: 50vw;
   padding-bottom: 4rem;
+}
+
+.spacer-top {
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {

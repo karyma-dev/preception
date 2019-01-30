@@ -4,10 +4,12 @@
   text-transform: uppercase;
   @include header-section-MQ();
   padding: 0;
-  margin-bottom: 5rem;
-  height: 97vh;
+
+  min-height: 97vh;
+  border-bottom: solid 2rem #061d27;
 
   &--img {
+    margin-top: 10vh;
     width: 20vw !important;
     @include header-img-MQ();
   }
@@ -33,8 +35,8 @@
 .quotes-section {
   background-image: linear-gradient(
       to right bottom,
-      rgb($secondary-color, 0.3),
-      rgba($primary-color, 0.4)
+      rgba($secondary-color, 0.46),
+      rgba($primary-color, 0.1)
     ),
     url('../../images/section-rugby-blank.jpg');
 

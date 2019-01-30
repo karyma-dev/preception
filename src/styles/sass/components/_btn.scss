@@ -9,4 +9,14 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;
+  &-accordion{
+    font-size: 0.8rem;
+    text-transform: none;
+
+    &-inactive{
+      font-size: 0.8rem;
+      background-color: $inactive-accordion-color;
+      text-transform: none;
+    }
+  }
 }

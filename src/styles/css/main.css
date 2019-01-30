@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.mobile-data-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 2rem;
+}
+
 *,
 *::after,
 *::before {
@@ -20,7 +35,7 @@ a {
 
 .main {
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 }
 
 .container {
@@ -28,6 +43,10 @@ a {
   margin: 0 auto;
   width: 50vw;
   padding-bottom: 4rem;
+}
+
+.spacer-top {
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -96,13 +115,14 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-transform: uppercase;
   padding: 0;
-  margin-bottom: 5rem;
-  height: 97vh;
+  min-height: 97vh;
+  border-bottom: solid 2rem #061d27;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
@@ -114,6 +134,7 @@ h5 {
   }
 }
 .header--img {
+  margin-top: 10vh;
   width: 20vw !important;
   width: 60%;
 }
@@ -146,13 +167,14 @@ h5 {
 }
 
 .quotes-section {
-  background-image: linear-gradient(to right bottom, rgba(12, 70, 93, 0.3), rgba(15, 32, 39, 0.4)), url("../../images/section-rugby-blank.jpg");
+  background-image: linear-gradient(to right bottom, rgba(12, 70, 93, 0.46), rgba(15, 32, 39, 0.1)), url("../../images/section-rugby-blank.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -216,6 +238,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -262,6 +285,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -308,6 +332,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -368,6 +393,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -415,6 +441,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -470,6 +497,7 @@ h5 {
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -624,7 +652,7 @@ h5 {
   text-align: center;
 }
 .data-metrics--header {
-  margin-bottom: 5rem;
+  margin: 3rem 0;
 }
 .data-metrics--list {
   min-width: 40vw;
@@ -637,13 +665,12 @@ h5 {
 }
 .data-metrics--list li:not(:first-child) {
   background-image: url("../../images/sidekick.png");
-  background-position: center;
+  background-position: left-top;
   background-size: cover;
   -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
 }
 .data-metrics--list li:not(:first-child) p {
-  height: 100%;
   width: 15vw;
   border: 1px white solid;
   background-color: #0f2027;
@@ -653,7 +680,6 @@ h5 {
 }
 .data-metrics--list li:not(:first-child) p:not(:last-child) {
   width: 10vw;
-  height: 100%;
   margin-left: 4vw;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -737,7 +763,7 @@ h5 {
     display: block;
   }
   .navbar-menu {
-    height: 5rem;
+    height: 4em;
   }
   .navbar-toggler {
     display: flex;
@@ -747,12 +773,11 @@ h5 {
     background-size: cover;
   }
   .navbar-logo {
-    height: 4rem;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -53.33px;
-    height: 5rem;
+    margin-left: -43.33px;
+    height: 4rem;
   }
   .navbar-links {
     background-color: #0c465d;
@@ -801,6 +826,15 @@ h5 {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;
+}
+.btn-accordion {
+  font-size: 0.8rem;
+  text-transform: none;
+}
+.btn-accordion-inactive {
+  font-size: 0.8rem;
+  background-color: #0f5774;
+  text-transform: none;
 }
 
 .line-orange {

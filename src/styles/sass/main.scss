@@ -2,6 +2,7 @@
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
 @import 'abstracts/MQ-mixins';
+@import 'abstracts/MQ-data-mixins';
 
 @import 'base/base';
 @import 'base/typography';
@@ -16,3 +17,4 @@
 @import 'components/footer';
 @import 'components/btn';
 @import 'components/line';
+
