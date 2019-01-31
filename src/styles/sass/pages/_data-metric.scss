@@ -1,0 +1,63 @@
+
+
+.data-metrics {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+  &--header{
+    margin: 3rem 0;
+
+  }
+  &--list{
+    min-width: 40vw;
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      flex-direction: row;
+
+      &:not(:first-child){
+        
+        background-image: url('../../images/sidekick.png');
+        background-position: left-top;
+        background-size: cover;
+
+        -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+        clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+        p {
+          width: 15vw;
+          border: 1px white solid;
+          background-color: $primary-color;
+          margin-left: 8vw;
+          font-size: 0.88rem;
+          padding: 1.5rem;
+          &:not(:last-child){
+            width: 10vw;
+
+            margin-left: 4vw;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+          &--header{
+            justify-content: center;
+            text-align:center;
+
+            h2{
+
+              &:last-child{
+                margin-left: 16vw;
+              }
+            }
+          }
+        }
+
+}

@@ -1,0 +1,12 @@
+@mixin homepage-background-properties() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: $gutter-height 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
