@@ -21,10 +21,10 @@ export default function Contact() {
 
           <div className="contact-form-group contact-form-radio">
             <div className="contact-form-subheader">I am an...</div>
-            <input type="radio" /> Investor <br />
-            <input type="radio" /> Organization <br />
-            <input type="radio" /> Athlete <br />
-            <input type="radio" /> Other <br />
+            <input type="radio" name="affiliation" value="investor" /> Investor <br />
+            <input type="radio" name="affiliation" value="organization" /> Organization <br />
+            <input type="radio" name="affiliation" value="athlete" /> Athlete <br />
+            <input type="radio" name="affiliation" value="other" /> Other <br />
           </div>
 
           <div className="contact-form-group">
