@@ -259,11 +259,13 @@
         display: block;
         .btn{
           margin-top: 0;
-          margin-right: 2rem;
-          @include quotes-section--button-MQ()
+          @include quotes-section--button-MQ();
+          &:not(:last-child){
+            margin-right: 4rem;
+          }
         }
       }
-    }
+    }git
 
   }
 }
