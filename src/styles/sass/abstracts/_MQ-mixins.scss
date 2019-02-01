@@ -1,6 +1,6 @@
 //query for the header section of the home page
 @mixin header-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) and (orientation: portrait)  {
     margin-top: 0;
     text-align: center;
     height: 50vh;
@@ -14,7 +14,7 @@
 }
 
 @mixin header-section--primary-MQ() {
-@media only screen and (max-width: 767px) and (orientation: portrait) {
+@media only screen and (max-width: 767px)  {
   width: 90%;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
@@ -24,7 +24,7 @@
 
 @mixin header-section--secondary-MQ(){
   
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     width: 50%;
     font-size: 0.8rem;
     letter-spacing: 0;
@@ -54,7 +54,7 @@
   @media only screen and (max-width: 1300px) {
     font-size: 1rem;
   }
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     font-size: 0.8rem;
     text-align: left;
     padding-top: 0;
@@ -64,7 +64,7 @@
 
 
 @mixin quotes-section--secondary-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     padding-top: 1rem;
     font-size: 14px;
   }
@@ -72,7 +72,7 @@
 
 
 @mixin quotes-section--button-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     height: 2.5rem !important;
     width: 7rem !important;
     font-size: 0.75rem !important;
@@ -83,7 +83,7 @@
 
 
 @mixin four-step-progress-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     margin-bottom: 0;
     text-align: center;
     &--header {
@@ -91,11 +91,14 @@
     }
 
     &--img {
-      width: 55vh;
+      width: 80vw;
       height: auto;
       margin-bottom: 0;
       @media only screen and (max-width: 350px) {
-        width: 40vh;
+        width: 90vw;
+      }
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        width: 50vw;
       }
     }
 
@@ -108,9 +111,10 @@
 
 
 @mixin how-it-works-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     margin-top: 2rem;
     margin-bottom: 0;
+    padding: 0;
 
     &--header {
       margin-top: 0;
@@ -120,6 +124,9 @@
       width: 80%;
       height: auto;
       margin-bottom: 0;
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        width: 50vw;
+      }
     }
     &--btn {
       @include quotes-section--button-MQ();
@@ -131,7 +138,7 @@
 }
 
 @mixin performance-metrics-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     background-image: none;
     text-align: center;
 
@@ -168,7 +175,7 @@
 }
 
 @mixin roadmap-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px){
 
   
     margin-bottom: 0;
@@ -196,7 +203,7 @@
 }
 
 @mixin testinomal-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px)  {
 
     background-image: none;
     margin-top:0;
@@ -230,7 +237,7 @@
 
 
 @mixin team-section-MQ() {
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-width: 767px) {
     background-image: none;
     margin-top:0;
 
@@ -260,8 +267,10 @@
         display: block;
         .btn{
           margin-top: 0;
-          margin-right: 2rem;
-          @include quotes-section--button-MQ()
+          @include quotes-section--button-MQ();
+          &:not(:last-child){
+            margin-right: 4rem;
+          }
         }
       }
     }
