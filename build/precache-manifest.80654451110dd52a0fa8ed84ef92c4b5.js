@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/yuan-wang.dabd7ecc.png"
   },
   {
-    "revision": "fcb2d843776ff723ee52",
-    "url": "/static/css/main.b730035e.chunk.css"
+    "revision": "bb4b878a698402ed03be",
+    "url": "/static/css/main.7c594e43.chunk.css"
   },
   {
-    "revision": "1094de292e9b9d80d4cf",
-    "url": "/static/js/1.1094de29.chunk.js"
+    "revision": "0846d52c0da3b0f0b0b8",
+    "url": "/static/js/1.0846d52c.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/alex-zucca.ae451a0b.png"
   },
   {
-    "revision": "fcb2d843776ff723ee52",
-    "url": "/static/js/main.fcb2d843.chunk.js"
+    "revision": "bb4b878a698402ed03be",
+    "url": "/static/js/main.bb4b878a.chunk.js"
   },
   {
     "revision": "05e42d8f5beb56d6bfeeb4b2310d01a9",
@@ -76,39 +76,39 @@ self.__precacheManifest = [
     "url": "/static/media/pod-alt.bf638d64.png"
   },
   {
-    "revision": "4de2aa431b68c025cc2beccc90728ed1",
-    "url": "/static/media/4-step-background.4de2aa43.png"
-  },
-  {
-    "revision": "79381790b290ba478621215d86cc2d4a",
-    "url": "/static/media/navbar.79381790.png"
-  },
-  {
-    "revision": "ce762a6d33ea66040bc3ead82583c015",
-    "url": "/static/media/testimonial-background.ce762a6d.png"
-  },
-  {
-    "revision": "2b431dc77f0964f946b693796c96033c",
-    "url": "/static/media/sidekick.2b431dc7.png"
+    "revision": "fddc467daf863255a49bb742d5421b6f",
+    "url": "/static/media/Venera-300.fddc467d.otf"
   },
   {
     "revision": "05f40e99838fb2c3ccc401628e147c48",
     "url": "/static/media/Venera-900.05f40e99.otf"
   },
   {
-    "revision": "fddc467daf863255a49bb742d5421b6f",
-    "url": "/static/media/Venera-300.fddc467d.otf"
+    "revision": "ce762a6d33ea66040bc3ead82583c015",
+    "url": "/static/media/testimonial-background.ce762a6d.png"
+  },
+  {
+    "revision": "4de2aa431b68c025cc2beccc90728ed1",
+    "url": "/static/media/4-step-background.4de2aa43.png"
   },
   {
     "revision": "695f1fd7cbe515ca02e9a79c441bec31",
     "url": "/static/media/stadium.695f1fd7.jpg"
   },
   {
+    "revision": "79381790b290ba478621215d86cc2d4a",
+    "url": "/static/media/navbar.79381790.png"
+  },
+  {
+    "revision": "2b431dc77f0964f946b693796c96033c",
+    "url": "/static/media/sidekick.2b431dc7.png"
+  },
+  {
     "revision": "f703ebc5fb53a8ee0a6b6b6348b62bdf",
     "url": "/static/media/section-rugby-blank.f703ebc5.jpg"
   },
   {
-    "revision": "ce723eb88f61b92660bcb4b39ef1a58c",
+    "revision": "403c677aebe92f36f98191522c2e084f",
     "url": "/index.html"
   }
 ];
