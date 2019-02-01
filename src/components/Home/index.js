@@ -16,7 +16,14 @@ import leigh from '../../images/profile/leigh.png'
 import jordan from '../../images/profile/jordan.png'
 import felipe from '../../images/profile/felipe.png'
 
-export default function Home() {
+export default class Home extends React.Component {
+
+  handleArrowClick = () => {
+    this.refs.arrow.scrollIntoView()
+  }
+
+  render(){
+
   return (
     <Fragment>
       <header className="header">
@@ -27,10 +34,10 @@ export default function Home() {
         <h2 className="header--secondary-header">
           <span id="header--secondary-header">The Future of Training</span>
         </h2>
-        <img className="header--arrow" src={downArrow} alt="scroll down" />
+        <img className="header--arrow" onClick={this.handleArrowClick} src={downArrow} alt="scroll down" />
       </header>
 
-      <section className="quotes-section">
+      <section ref="arrow" className="quotes-section">
         <p className="quotes-section--primary-para">
           We are a training tool for something that cannot be trained any other way...
         </p>
@@ -163,4 +170,5 @@ export default function Home() {
       <Contact />
     </Fragment>
   )
+  }
 }
