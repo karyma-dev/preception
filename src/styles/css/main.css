@@ -179,7 +179,8 @@ h5 {
   flex-wrap: wrap;
   flex-direction: column;
   font-size: 1.8rem;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 10rem;
 }
 .quotes-section--primary-para {
   padding-top: 3rem;
@@ -199,6 +200,7 @@ h5 {
 }
 .quotes-section--secondary-para {
   text-align: center;
+  align-self: center;
   padding-top: 3rem;
 }
 @media only screen and (max-width: 767px) {
@@ -852,7 +854,7 @@ h5 {
   border-radius: 10px;
   border: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;

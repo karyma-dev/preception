@@ -42,9 +42,12 @@
 
   @include homepage-background-properties();
   font-size: $default-font-size;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 10rem;
+
 
   &--primary-para {
+
     padding-top: 3rem;
     font-size: 1.5rem;
     @include quotes-section--primary-MQ();
@@ -52,7 +55,7 @@
 
   &--secondary-para {
     text-align: center;
-    
+    align-self: center;
     padding-top: 3rem;
     @include quotes-section--secondary-MQ();
   }
@@ -200,7 +203,6 @@
       margin-top: 1rem;
       font-weight: 400;
       width: 12rem;
-
       font-size: 1rem;
     }
     &-mobile {
