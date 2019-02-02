@@ -38,6 +38,7 @@ export default class Home extends React.Component {
       </header>
 
       <section ref="arrow" className="quotes-section">
+        <div className="quotes-section-text">
         <p className="quotes-section--primary-para">
           We are a training tool for something that cannot be trained any other way...
         </p>
@@ -47,6 +48,8 @@ export default class Home extends React.Component {
         <Link to="/contact">
           <input type="button" className="btn quotes-section--button" value="Contact Us" />
         </Link>
+        </div>
+
       </section>
 
       <section className="four-step-progress-section">
@@ -57,15 +60,7 @@ export default class Home extends React.Component {
         </Link>
       </section>
 
-      <section className="how-it-works-section">
-        <h3 className="how-it-works-section--header">How It Works</h3>
-        <img className="how-it-works-section--img" src={pod} alt="preception on demand system" />
-        <Link to="/pod">
-          <button className="btn how-it-works-section--btn">Learn More</button>
-        </Link>
-      </section>
-
-      <section className="performance-metrics-section">
+      {/* <section className="performance-metrics-section">
         <h3 className="performance-metrics-section--header">Preception Performance Metrics</h3>
         <ul className="performance-metrics-section--list">
           <li>Awareness Rating %</li>
@@ -78,15 +73,9 @@ export default class Home extends React.Component {
         <Link to="/data">
           <button className="btn performance-metrics-section--btn">Learn More</button>
         </Link>
-      </section>
+      </section> */}
 
-      <section className="roadmap-section">
-        <h3 className="roadmap-section--header">Roadmap</h3>
-        <div className="line-orange" />
-        <img className="roadmap-section--img--1" src={roadmapWeb} alt="roadmap" />
-        <img className="roadmap-section--img--2" src={roadmapMob} alt="roadmap" />
-        <div className="line-orange" />
-      </section>
+
 
       <section className="testinomal-section">
         <h3 className="testinomal-section--header">Testimonials</h3>
@@ -96,7 +85,7 @@ export default class Home extends React.Component {
           This is something I want to incorportate into every training session.
         </q>
         <p className="testinomal-section--quoter">
-          Kevin Harmse, Former Professional Soccer Player, Assistant - Simon Fraser University
+          Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser University
         </p>
 
         <q className="testinomal-section--quote">
@@ -108,6 +97,14 @@ export default class Home extends React.Component {
         <p className="testinomal-section--quoter">
           Josh Smith, CSA <q>A</q> Licensed Coach
         </p>
+      </section>
+
+      <section className="how-it-works-section">
+        <h3 className="how-it-works-section--header">How It Works</h3>
+        <img className="how-it-works-section--img" src={pod} alt="preception on demand system" />
+        <Link to="/pod">
+          <button className="btn how-it-works-section--btn">Learn More</button>
+        </Link>
       </section>
 
       <section className="team-section">
@@ -122,16 +119,16 @@ export default class Home extends React.Component {
               <h4>Leigh Sembaluk</h4>
               <p>Founder, CEO</p>
             </span>
-            <section className="team-section--buttons">
+            {/* <section className="team-section--buttons">
               <button className="btn">Read Blogs</button>
               <button className="btn">Purchase Book</button>
-            </section>
+            </section> */}
           </div>
           <div>
-            <section className="team-section--buttons-mobile">
+            {/* <section className="team-section--buttons-mobile">
               <button className="btn">Read Blogs</button>
               <button className="btn">Purchase Book</button>
-            </section>
+            </section> */}
           </div>
           <div>
             <img src={alex} alt="Alex Zucca" />
@@ -165,6 +162,14 @@ export default class Home extends React.Component {
             </span>
           </div>
         </div>
+      </section>
+
+      <section className="roadmap-section">
+        <h3 className="roadmap-section--header">Roadmap</h3>
+        <div className="line-orange" />
+        <img className="roadmap-section--img--1" src={roadmapWeb} alt="roadmap" />
+        <img className="roadmap-section--img--2" src={roadmapMob} alt="roadmap" />
+        <div className="line-orange" />
       </section>
 
       <Contact />
