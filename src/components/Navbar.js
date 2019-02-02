@@ -31,7 +31,15 @@ export default class Navbar extends Component {
         </div>
 
         <Link to="/">
-          <img className="navbar-logo" src={logo} alt="navbar logo" onClick={this.closeMenu} />
+          <div className="navbar-brand">
+            <img
+              className="navbar-brand-logo"
+              src={logo}
+              alt="navbar logo"
+              onClick={this.closeMenu}
+            />
+            <h1 className="navbar-brand-title">Preception</h1>
+          </div>
         </Link>
 
         <ul className={hiddenToggler}>

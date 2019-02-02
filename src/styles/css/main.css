@@ -752,9 +752,19 @@ h5 {
   z-index: 10;
   display: flex;
 }
-.navbar-logo {
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand-logo {
   height: 50px;
-  display: inline-block;
+  display: block;
+}
+.navbar-brand-title {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-shadow: none;
 }
 .navbar-links {
   flex: 1;
@@ -773,7 +783,7 @@ h5 {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .navbar {
     background: none;
     display: block;
@@ -788,12 +798,16 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .navbar-logo {
+  .navbar-brand-logo {
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -43.33px;
     height: 4rem;
+  }
+  .navbar-brand-title {
+    display: none;
+    font-size: 1rem;
   }
   .navbar-links {
     background-color: #0c465d;
