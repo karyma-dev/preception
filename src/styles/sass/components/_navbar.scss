@@ -8,9 +8,21 @@
   z-index: 10;
   display: flex;
 
-  &-logo {
-    height: 50px;
-    display: inline-block;
+  &-brand {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      height: 50px;
+      display: block;
+    }
+
+    &-title {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-shadow: none;
+    }
   }
 
   &-links {
@@ -34,7 +46,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .navbar {
     background: none;
     display: block;
@@ -51,12 +63,19 @@
       background-size: cover;
     }
 
-    &-logo {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -43.33px;
-      height: 4rem;
+    &-brand {
+      &-logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -43.33px;
+        height: 4rem;
+      }
+
+      &-title {
+        display: none;
+        font-size: 1rem;
+      }
     }
 
     &-links {

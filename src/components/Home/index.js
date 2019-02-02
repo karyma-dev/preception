@@ -89,13 +89,13 @@ export default class Home extends React.Component {
           </p>
         </div>
         <div  className="testinomal-section-part">
-          <q className="testinomal-section-part--quote">
+          <q className="testinomal-section--quote">
             The results became visually evident in short time. Players were displaying and repeating
             the habits reinforced through the training (i.e. constant shoulder checking/scanning) and
             then also started to more noticeably apply these habits into their other regular training
             sessions and matches
           </q>
-          <p className="testinomal-section-part--quoter">
+          <p className="testinomal-section--quoter">
             Josh Smith, CSA <q>A</q> Licensed Coach
           </p>
         </div>
