@@ -211,18 +211,22 @@
     &--header{
       margin-bottom: 0;
     }
-    &--quote{
-      font-size: 1rem;
-      width: 80%;
-    }
-    &--quoter{
-      width: 80%;
-      font-size: 0.75rem;
 
-      &:not(:last-of-type) {
-        margin: 1rem  0;
+    &-part{
+      &--quote{
+        font-size: 1rem;
+        width: 90%;
       }
+      &--quoter{
+        width: 90%;
+        font-size: 0.8rem;
+  
+
+          margin: 1rem  0;
+      }
+
     }
+
   }
   @media only screen and (max-width: 1300px) {
     &--quote, &--quoter {

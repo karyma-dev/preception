@@ -79,24 +79,26 @@ export default class Home extends React.Component {
 
       <section className="testinomal-section">
         <h3 className="testinomal-section--header">Testimonials</h3>
-
-        <q className="testinomal-section--quote">
-          If you're not trying to utilize technology in some form, you're going to be left behind..
-          This is something I want to incorportate into every training session.
-        </q>
-        <p className="testinomal-section--quoter">
-          Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser University
-        </p>
-
-        <q className="testinomal-section--quote">
-          The results became visually evident in short time. Players were displaying and repeating
-          the habits reinforced through the training (i.e. constant shoulder checking/scanning) and
-          then also started to more noticeably apply these habits into their other regular training
-          sessions and matches
-        </q>
-        <p className="testinomal-section--quoter">
-          Josh Smith, CSA <q>A</q> Licensed Coach
-        </p>
+        <div className="testinomal-section-part">
+          <q className="testinomal-section-part--quote">
+            If you're not trying to utilize technology in some form, you're going to be left behind..
+            This is something I want to incorportate into every training session.
+          </q>
+          <p className="testinomal-section-part--quoter">
+            Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser University
+          </p>
+        </div>
+        <div  className="testinomal-section-part">
+          <q className="testinomal-section-part--quote">
+            The results became visually evident in short time. Players were displaying and repeating
+            the habits reinforced through the training (i.e. constant shoulder checking/scanning) and
+            then also started to more noticeably apply these habits into their other regular training
+            sessions and matches
+          </q>
+          <p className="testinomal-section-part--quoter">
+            Josh Smith, CSA <q>A</q> Licensed Coach
+          </p>
+        </div>
       </section>
 
       <section className="how-it-works-section">

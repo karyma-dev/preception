@@ -467,15 +467,24 @@ h5 {
   letter-spacing: 0.2rem;
   margin-bottom: 3rem;
 }
-.testinomal-section--quote {
+.testinomal-section-part {
+  align-items: center;
+  display: flex;
   width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px white solid;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.testinomal-section-part--quote {
   padding: 1rem;
   font-size: 1.2rem;
 }
-.testinomal-section--quoter {
-  width: 50%;
+.testinomal-section-part--quoter {
+  width: 80%;
 }
-.testinomal-section--quoter:not(:last-of-type) {
+.testinomal-section-part--quoter:not(:last-of-type) {
   margin-bottom: 6rem;
 }
 @media only screen and (max-width: 767px) {
@@ -487,15 +496,13 @@ h5 {
   .testinomal-section--header {
     margin-bottom: 0;
   }
-  .testinomal-section--quote {
+  .testinomal-section-part--quote {
     font-size: 1rem;
-    width: 80%;
+    width: 90%;
   }
-  .testinomal-section--quoter {
-    width: 80%;
-    font-size: 0.75rem;
-  }
-  .testinomal-section--quoter:not(:last-of-type) {
+  .testinomal-section-part--quoter {
+    width: 90%;
+    font-size: 0.8rem;
     margin: 1rem 0;
   }
 }
