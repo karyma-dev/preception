@@ -93,7 +93,7 @@ export default class Home extends React.Component {
 
         <q className="testinomal-section--quote">
           If you're not trying to utilize technology in some form, you're going to be left behind..
-          This is something I want to incorportate into every training [as a coach]
+          This is something I want to incorportate into every training session.
         </q>
         <p className="testinomal-section--quoter">
           Kevin Harmse, Former Professional Soccer Player, Assistant - Simon Fraser University
@@ -153,7 +153,7 @@ export default class Home extends React.Component {
             <img src={yuan} alt="Yuan Wang" />
             <span>
               <h4>Yuan Wang</h4>
-              <p>Neuroscientist</p>
+              <p>Software Guru</p>
             </span>
           </div>
 
@@ -161,7 +161,7 @@ export default class Home extends React.Component {
             <img src={jordan} alt="Jordan Shimell" />
             <span>
               <h4>Jordan Shimell</h4>
-              <p>Developer</p>
+              <p>Neuroscientist</p>
             </span>
           </div>
         </div>

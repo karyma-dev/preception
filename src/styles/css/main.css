@@ -179,8 +179,7 @@ h5 {
   flex-wrap: wrap;
   flex-direction: column;
   font-size: 1.8rem;
-  align-items: flex-start;
-  padding-left: 10rem;
+  align-items: center;
 }
 .quotes-section--primary-para {
   padding-top: 3rem;
@@ -417,7 +416,7 @@ h5 {
   letter-spacing: 0.2rem;
 }
 .roadmap-section--img--1 {
-  width: 50vw;
+  width: 70vw;
   height: auto;
   border: 3px white solid;
   padding: 2rem;
@@ -855,7 +854,7 @@ h5 {
 }
 
 .line-orange {
-  width: 50vw;
+  width: 70vw;
   margin: 1rem 0;
   border: 1.5px #c15236 solid;
   background-color: #c15236;
