@@ -62,11 +62,11 @@ export default class Navbar extends Component {
               How It Works
             </Link>
           </li>
-          <li className="navbar-links-item">
+          {/* <li className="navbar-links-item">
             <Link to="/data" onClick={this.closeMenu}>
               Data
             </Link>
-          </li>
+          </li> */}
           <li className="navbar-links-item">
             <Link to="/contact" onClick={this.closeMenu}>
               Contact
