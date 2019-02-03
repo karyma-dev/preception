@@ -384,7 +384,7 @@ h5 {
   letter-spacing: 0.2rem;
 }
 .roadmap-section--img--1 {
-  width: 70vw;
+  width: 60vw;
   height: auto;
   border: 3px white solid;
   padding: 2rem;
@@ -567,10 +567,14 @@ h5 {
 .what-we-do-section--header {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
-}
-.what-we-do-section--img {
-  margin-top: 1rem;
   margin-bottom: 3rem;
+}
+.what-we-do-section-para {
+  word-spacing: 0.2rem;
+  padding-bottom: 1.5rem;
+}
+.what-we-do-section-para--bolded {
+  text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
   .what-we-do-section {
@@ -579,21 +583,6 @@ h5 {
   }
   .what-we-do-section--header {
     margin-bottom: 1rem;
-  }
-  .what-we-do-section--img {
-    width: 80vw;
-    height: auto;
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 767px) and (max-width: 350px) {
-  .what-we-do-section--img {
-    width: 90vw;
-  }
-}
-@media only screen and (max-width: 767px) and (max-width: 767px) and (orientation: landscape) {
-  .what-we-do-section--img {
-    width: 50vw;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 767px) {
@@ -853,7 +842,7 @@ h5 {
 }
 
 .line-orange {
-  width: 70vw;
+  width: 60vw;
   margin: 1rem 0;
   border: 1.5px #c15236 solid;
   background-color: #c15236;
