@@ -712,6 +712,10 @@ h5 {
   padding: 2rem;
 }
 
+.contact-group {
+  margin: 1rem 0;
+}
+
 .navbar {
   background-image: url("../../images/nav/navbar.png");
   background-position: center bottom;

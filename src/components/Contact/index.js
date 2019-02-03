@@ -26,30 +26,55 @@ export default class Contact extends Component {
             <img
               src={exit}
               alt="exit icon for modal box"
-              width="20px"
+              style={{
+                float: 'right',
+                width: '20px'
+              }}
               onClick={this.closeHandler}
             />
-            <form>
-              <div>
-                <label>Name</label>
+            <form className="contact">
+              <div className="contact-group">
+                <label className="contact-label">Name</label>
                 <br />
-                <input type="text" />
+                <input className="contact-input" type="text" />
               </div>
-              <div>
-                <label>E-Mail</label>
+              <div className="contact-group">
+                <label className="contact-label">E-Mail</label>
                 <br />
-                <input type="text" />
+                <input className="contact-input" type="email" />
               </div>
-              <div>
-                <label>Phone Number</label>
+              <div className="contact-group">
+                <label className="contact-label">Phone Number</label>
                 <br />
-                <input type="text" />
+                <input className="contact-input" type="tel" />
               </div>
-              <div>
-                <label>Message</label>
+              <div className="contact-group">
+                <label>
+                  <input type="checkbox" />
+                  <span>Investor</span>
+                </label>
+
+                <label>
+                  <input type="checkbox" />
+                  <span>Organization</span>
+                </label>
+
+                <label>
+                  <input type="checkbox" />
+                  <span>Athlete</span>
+                </label>
+
+                <label>
+                  <input type="checkbox" />
+                  <span>Other</span>
+                </label>
+              </div>
+              <div className="contact-group">
+                <label className="contact-label">Message</label>
                 <br />
                 <textarea rows="4" cols="50" />
               </div>
+              <button className="contact-button">Submit</button>
             </form>
           </div>
         </div>
