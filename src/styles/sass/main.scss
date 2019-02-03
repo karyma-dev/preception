@@ -1,13 +1,24 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
+@import 'abstracts/animations';
 @import 'abstracts/MQ-mixins';
 @import 'abstracts/MQ-data-mixins';
 
 @import 'base/base';
 @import 'base/typography';
 
-@import 'pages/home';
+@import 'pages/home/header';
+@import 'pages/home/how-it-works';
+@import 'pages/home/performance';
+@import 'pages/home/quotes';
+@import 'pages/home/roadmap';
+@import 'pages/home/team';
+@import 'pages/home/testimonial';
+@import 'pages/home/what-we-do';
+
+
+
 @import 'pages/process';
 @import 'pages/pod';
 @import 'pages/data-metric';

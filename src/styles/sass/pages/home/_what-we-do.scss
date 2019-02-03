@@ -1,0 +1,38 @@
+.what-we-do-section {
+  background-image: url('../../images/4-step-background.png');
+  @include homepage-background-properties();
+
+  &--header {
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+  }
+  &--img {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 0;
+    text-align: center;
+    &--header {
+      margin-bottom: 1rem;
+    }
+
+    &--img {
+      width: 80vw;
+      height: auto;
+      margin-bottom: 0;
+      @media only screen and (max-width: 350px) {
+        width: 90vw;
+      }
+      @media only screen and (max-width: 767px) and (orientation: landscape) {
+        width: 50vw;
+      }
+    }
+
+    &--btn {
+      @include  quotes-section--button-MQ()
+    }
+
+  }
+}

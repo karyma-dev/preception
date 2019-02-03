@@ -1,0 +1,54 @@
+.header {
+  background-image: url('../../images/stadium.jpg');
+  @include homepage-background-properties();
+  text-transform: uppercase;
+  padding: 0;
+  min-height: 97vh;
+  border-bottom: solid 2rem #061d27;
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    margin-top: 0;
+    text-align: center;
+    height: 50vh;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &--img {
+    margin-top: 10vh;
+    width: 20vw;
+
+  }
+
+  &--primary-header {
+    font-size: 4rem;
+    animation: reveal 3s;
+
+    @media only screen and (max-width: 767px) {
+      width: 90%;
+      font-size: 1.5rem;
+      letter-spacing: 0.5rem;
+      padding-bottom: 0;
+    }
+
+  }
+
+  &--secondary-header {
+    text-align: center;
+    letter-spacing: 0.4rem;
+    animation: slidein 2s;
+
+    @media only screen and (max-width: 767px) {
+      width: 50%;
+      font-size: 0.8rem;
+      letter-spacing: 0;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+  }
+
+  &--arrow {
+    margin-top: auto;
+
+  }
+}

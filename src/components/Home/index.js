@@ -29,10 +29,10 @@ export default class Home extends React.Component {
       <header className="header">
         <img className="header--img" src={coolLogo} alt="preception logo" />
         <h1 className="header--primary-header">
-          <span id="header--primary-header">Preception</span>
+          Preception
         </h1>
         <h2 className="header--secondary-header">
-          <span id="header--secondary-header">The Future of Training</span>
+          The Future of Training
         </h2>
         <img className="header--arrow" onClick={this.handleArrowClick} src={downArrow} alt="scroll down" />
       </header>
@@ -52,12 +52,20 @@ export default class Home extends React.Component {
 
       </section>
 
-      <section className="four-step-progress-section">
-        <h3 className="four-step-progress-section--header">The 4-Step Process</h3>
-        <img className="four-step-progress-section--img" src={ooda} alt="ooda model" />
-        <Link to="/process">
-          <button className="btn four-step-progress-section--btn">Learn More</button>
-        </Link>
+      <section className="what-we-do-section">
+        <h3 className="what-we-do-section--header">What We Do</h3>
+        <p className="what-we-do-section-para">
+          Preception specifically trains Mental Speed and Awareness
+        </p>
+        <p className="what-we-do-section-para">
+          Our results in a total of 4 hours of training is <br />
+          0.24 Seconds <br />
+          quicker in all directions
+        </p>
+        
+        {/* <Link to="/process">
+          <button className="btn what-we-do-section--btn">Learn More</button>
+        </Link> */}
       </section>
 
       {/* <section className="performance-metrics-section">

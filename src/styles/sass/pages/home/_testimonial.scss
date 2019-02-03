@@ -1,0 +1,71 @@
+.testinomal-section {
+  background-image: url('../../images/testimonial-background.png');
+
+  @include homepage-background-properties();
+  text-align: center;
+  padding: 5rem 0;
+
+  &--header {
+    font-size: $default-panel-header;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 3rem;
+  }
+
+  &-part {
+    align-items: center;
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px white solid;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    &--quote {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    &--quoter {
+      &:not(:last-of-type) {
+        margin-bottom: 6rem;
+      }
+
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    background-image: none;
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+    &--header {
+      margin-bottom: 0;
+    }
+
+    &-part {
+      width: 100%;
+      border: 0;
+
+      &--quote {
+        font-size: 1rem;
+        width: 90%;
+      }
+
+      &--quoter {
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+
+    &--quote,
+    &--quoter {
+      width: 80%;
+    }
+  }
+}

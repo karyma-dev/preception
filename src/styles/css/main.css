@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@keyframes slidein {
+  0% {
+    margin-left: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .mobile-data-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,11 +153,11 @@ h5 {
 }
 .header--img {
   margin-top: 10vh;
-  width: 20vw !important;
-  width: 60%;
+  width: 20vw;
 }
 .header--primary-header {
   font-size: 4rem;
+  animation: reveal 3s;
 }
 @media only screen and (max-width: 767px) {
   .header--primary-header {
@@ -152,6 +170,7 @@ h5 {
 .header--secondary-header {
   text-align: center;
   letter-spacing: 0.4rem;
+  animation: slidein 2s;
 }
 @media only screen and (max-width: 767px) {
   .header--secondary-header {
@@ -164,124 +183,6 @@ h5 {
 }
 .header--arrow {
   margin-top: auto;
-}
-
-.quotes-section {
-  background-image: linear-gradient(to right bottom, rgba(12, 70, 93, 0.46), rgba(15, 32, 39, 0.1)), url("../../images/section-rugby-blank.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-size: 1.8rem;
-  align-items: flex-start;
-  padding-left: 10rem;
-}
-.quotes-section--primary-para {
-  padding-top: 3rem;
-  font-size: 1.5rem;
-}
-@media only screen and (max-width: 1300px) {
-  .quotes-section--primary-para {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .quotes-section--primary-para {
-    font-size: 0.8rem;
-    text-align: left;
-    padding-top: 0;
-  }
-}
-.quotes-section--secondary-para {
-  text-align: center;
-  align-self: center;
-  padding-top: 3rem;
-}
-@media only screen and (max-width: 767px) {
-  .quotes-section--secondary-para {
-    padding-top: 1rem;
-    font-size: 14px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .quotes-section--button {
-    height: 2.5rem !important;
-    width: 7rem !important;
-    font-size: 0.75rem !important;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .quotes-section {
-    text-align: center;
-    padding-left: 4rem;
-  }
-}
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  .quotes-section {
-    height: 50vh;
-    text-align: center;
-    padding-left: 3rem;
-    padding-top: 2rem;
-  }
-}
-
-.four-step-progress-section {
-  background-image: url("../../images/4-step-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.four-step-progress-section--header {
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-}
-.four-step-progress-section--img {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-@media only screen and (max-width: 767px) {
-  .four-step-progress-section {
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .four-step-progress-section--header {
-    margin-bottom: 1rem;
-  }
-  .four-step-progress-section--img {
-    width: 80vw;
-    height: auto;
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 767px) and (max-width: 350px) {
-  .four-step-progress-section--img {
-    width: 90vw;
-  }
-}
-@media only screen and (max-width: 767px) and (max-width: 767px) and (orientation: landscape) {
-  .four-step-progress-section--img {
-    width: 50vw;
-  }
-}
-@media only screen and (max-width: 767px) and (max-width: 767px) {
-  .four-step-progress-section--btn {
-    height: 2.5rem !important;
-    width: 7rem !important;
-    font-size: 0.75rem !important;
-  }
 }
 
 .how-it-works-section {
@@ -400,6 +301,71 @@ h5 {
   }
 }
 
+.quotes-section {
+  background-image: linear-gradient(to right bottom, rgba(12, 70, 93, 0.46), rgba(15, 32, 39, 0.1)), url("../../images/section-rugby-blank.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.8rem;
+  align-items: flex-start;
+  padding-left: 10rem;
+}
+.quotes-section--primary-para {
+  padding-top: 3rem;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 1300px) {
+  .quotes-section--primary-para {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .quotes-section--primary-para {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+.quotes-section--secondary-para {
+  text-align: center;
+  align-self: center;
+  padding-top: 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .quotes-section--secondary-para {
+    padding-top: 1rem;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .quotes-section--button {
+    height: 2.5rem !important;
+    width: 7rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .quotes-section {
+    text-align: center;
+    padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .quotes-section {
+    height: 50vh;
+    text-align: center;
+    padding-left: 3rem;
+    padding-top: 2rem;
+  }
+}
+
 .roadmap-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -447,71 +413,8 @@ h5 {
   }
 }
 
-.testinomal-section {
-  background-image: url("../../images/testimonial-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  padding: 5rem 0;
-}
-.testinomal-section--header {
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 3rem;
-}
-.testinomal-section-part {
-  align-items: center;
-  display: flex;
-  width: 40%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border: 2px white solid;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-.testinomal-section-part--quote {
-  padding: 1rem;
-  font-size: 1.2rem;
-}
-.testinomal-section-part--quoter {
-  width: 80%;
-}
-.testinomal-section-part--quoter:not(:last-of-type) {
-  margin-bottom: 6rem;
-}
-@media only screen and (max-width: 767px) {
-  .testinomal-section {
-    background-image: none;
-    margin-top: 0;
-    margin-bottom: 3rem;
-  }
-  .testinomal-section--header {
-    margin-bottom: 0;
-  }
-  .testinomal-section-part--quote {
-    font-size: 1rem;
-    width: 90%;
-  }
-  .testinomal-section-part--quoter {
-    width: 90%;
-    font-size: 0.8rem;
-    margin: 1rem 0;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .testinomal-section--quote, .testinomal-section--quoter {
-    width: 80%;
-  }
-}
 .team-section {
+  background-image: url("../../images/4-step-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -577,57 +480,130 @@ h5 {
     align-self: center;
     width: 40vw;
   }
-  .team-section--buttons {
-    flex-direction: row;
-    margin: 0;
-    display: none;
-  }
-  .team-section--buttons-mobile {
-    display: block;
-  }
-  .team-section--buttons-mobile .btn {
+}
+
+.testinomal-section {
+  background-image: url("../../images/testimonial-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 0;
+}
+.testinomal-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.testinomal-section-part {
+  align-items: center;
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px white solid;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.testinomal-section-part--quote {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.testinomal-section-part--quoter {
+  width: 80%;
+}
+.testinomal-section-part--quoter:not(:last-of-type) {
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 767px) {
+  .testinomal-section {
+    background-image: none;
     margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .testinomal-section--header {
+    margin-bottom: 0;
+  }
+  .testinomal-section-part {
+    width: 100%;
+    border: 0;
+  }
+  .testinomal-section-part--quote {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .testinomal-section-part--quoter {
+    width: 90%;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .testinomal-section--quote, .testinomal-section--quoter {
+    width: 80%;
+  }
+}
+
+.what-we-do-section {
+  background-image: url("../../images/4-step-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.what-we-do-section--header {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+.what-we-do-section--img {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .what-we-do-section {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .what-we-do-section--header {
+    margin-bottom: 1rem;
+  }
+  .what-we-do-section--img {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 350px) {
+  .what-we-do-section--img {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 767px) and (orientation: landscape) {
+  .what-we-do-section--img {
+    width: 50vw;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 767px) {
-  .team-section--buttons-mobile .btn {
+  .what-we-do-section--btn {
     height: 2.5rem !important;
     width: 7rem !important;
     font-size: 0.75rem !important;
   }
 }
-@media only screen and (max-width: 767px) {
-  .team-section--buttons-mobile .btn:not(:last-child) {
-    margin-right: 4rem;
-  }
-}
 
-#header--primary-header {
-  animation: reveal 3s;
-}
-
-#header--secondary-header {
-  animation: slidein 2s;
-}
-
-@keyframes slidein {
-  0% {
-    margin-left: -400px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0px;
-  }
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .process-image {
   max-width: 100%;
   max-height: 100%;
