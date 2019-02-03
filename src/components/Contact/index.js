@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import exit from '../../images/nav/exit.svg'
 
 export default class Contact extends Component {
-  state = { display: false }
+  state = { display: true }
 
   modalHandler = () => {
     this.setState({
@@ -49,24 +49,24 @@ export default class Contact extends Component {
                 <input className="contact-input" type="tel" />
               </div>
               <div className="contact-group">
-                <label>
+                <label className="check-container">
                   <input type="checkbox" />
-                  <span>Investor</span>
+                  <span className="check-title">Investor</span>
                 </label>
 
-                <label>
+                <label className="check-container">
                   <input type="checkbox" />
-                  <span>Organization</span>
+                  <span className="check-title">Organization</span>
                 </label>
 
-                <label>
+                <label className="check-container">
                   <input type="checkbox" />
-                  <span>Athlete</span>
+                  <span className="check-title">Athlete</span>
                 </label>
 
-                <label>
+                <label className="check-container">
                   <input type="checkbox" />
-                  <span>Other</span>
+                  <span className="check-title">Other</span>
                 </label>
               </div>
               <div className="contact-group">
