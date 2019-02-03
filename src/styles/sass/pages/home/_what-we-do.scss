@@ -5,10 +5,15 @@
   &--header {
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
-  }
-  &--img {
-    margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+
+  &-para {
+    word-spacing: 0.2rem;
+    padding-bottom: 1.5rem;
+    &--bolded {
+      text-decoration: underline;
+    }
   }
 
   @media only screen and (max-width: 767px) {
@@ -16,18 +21,6 @@
     text-align: center;
     &--header {
       margin-bottom: 1rem;
-    }
-
-    &--img {
-      width: 80vw;
-      height: auto;
-      margin-bottom: 0;
-      @media only screen and (max-width: 350px) {
-        width: 90vw;
-      }
-      @media only screen and (max-width: 767px) and (orientation: landscape) {
-        width: 50vw;
-      }
     }
 
     &--btn {

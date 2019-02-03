@@ -36,8 +36,8 @@ export default class Home extends React.Component {
         </h2>
         <img className="header--arrow" onClick={this.handleArrowClick} src={downArrow} alt="scroll down" />
       </header>
-
-      <section ref="arrow" className="quotes-section">
+      <div ref="arrow" />
+      <section  className="quotes-section">
         <div className="quotes-section-text">
         <p className="quotes-section--primary-para">
           We are a training tool for something that cannot be trained any other way...
@@ -55,11 +55,11 @@ export default class Home extends React.Component {
       <section className="what-we-do-section">
         <h3 className="what-we-do-section--header">What We Do</h3>
         <p className="what-we-do-section-para">
-          Preception specifically trains Mental Speed and Awareness
+          Preception specifically trains <text className="what-we-do-section-para--bolded">Mental Speed</text> and <text className="what-we-do-section-para--bolded">Awareness</text>
         </p>
         <p className="what-we-do-section-para">
           Our results in a total of 4 hours of training is <br />
-          0.24 Seconds <br />
+          <text className="what-we-do-section-para--bolded"> 0.24 Seconds</text> <br />
           quicker in all directions
         </p>
         
