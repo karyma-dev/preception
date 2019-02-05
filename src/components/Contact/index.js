@@ -15,12 +15,13 @@ export default class Contact extends Component {
   }
 
   render() {
-    const style = this.state.display ? { display: 'block' } : { display: 'none' }
+    const style = this.state.display ? { display: 'flex' } : { display: 'none' }
     return (
       <Fragment>
         <button className="btn" onClick={this.modalHandler}>
           Contact
         </button>
+
         <div className="modal" style={style}>
           <div class="modal-content">
             <img
@@ -38,17 +39,20 @@ export default class Contact extends Component {
                 <br />
                 <input className="contact-input" type="text" />
               </div>
+
               <div className="contact-group">
                 <label className="contact-label">E-Mail</label>
                 <br />
                 <input className="contact-input" type="email" />
               </div>
+
               <div className="contact-group">
                 <label className="contact-label">Phone Number</label>
                 <br />
                 <input className="contact-input" type="tel" />
               </div>
-              <div className="contact-group">
+
+              <div className="check">
                 <label className="check-container">
                   <input type="checkbox" />
                   <span className="check-title">Investor</span>
@@ -69,6 +73,7 @@ export default class Contact extends Component {
                   <span className="check-title">Other</span>
                 </label>
               </div>
+
               <div className="contact-group">
                 <label className="contact-label">Message</label>
                 <br />
