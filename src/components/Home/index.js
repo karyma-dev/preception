@@ -59,7 +59,7 @@ export default class Home extends React.Component {
         </p>
         <p className="what-we-do-section-para">
           Our results in a total of 4 hours of training is <br />
-          <text className="what-we-do-section-para--bolded"> 0.24 Seconds</text> <br />
+          <text className="what-we-do-section-para--bolded--bigger"> 0.24 Seconds</text> <br />
           quicker in all directions
         </p>
         
@@ -129,16 +129,8 @@ export default class Home extends React.Component {
               <h4>Leigh Sembaluk</h4>
               <p>Founder, CEO</p>
             </span>
-            {/* <section className="team-section--buttons">
-              <button className="btn">Read Blogs</button>
-              <button className="btn">Purchase Book</button>
-            </section> */}
           </div>
           <div>
-            {/* <section className="team-section--buttons-mobile">
-              <button className="btn">Read Blogs</button>
-              <button className="btn">Purchase Book</button>
-            </section> */}
           </div>
           <div>
             <img src={alex} alt="Alex Zucca" />
@@ -172,14 +164,17 @@ export default class Home extends React.Component {
             </span>
           </div>
         </div>
+        <p className="team-section--para">
+        Lorem ipsum dolor sit amet, sollicitudin quis ultrices et quisque, diam elit ultricies congue suspendisse curabitur, lobortis tortor. Ut mi eleifend nisl. Cras ut auctor libero, faucibus posuere semper consectetuer, donec mauris est pellentesque augue, congue accumsan lobortis justo integer leo. Ligula quis porta suspendisse malesuada adipiscing fermentum, tempor pede, adipiscing diam, id semper auctor consectetuer consectetuer fusce, malesuada urna sed felis wisi. Non lectus ipsum purus nulla, vel etiam suspendisse neque turpis. Voluptatibus volutpat id egestas, vestibulum commodo eget, scelerisque ultricies congue magna massa elit, convallis tincidunt id. Mollis convallis nec ac integer urna veniam, sapien ante at nullam. Vulputate pharetra commodo proin. Urna congue maiores id in dolor, montes dolor fusce sit ipsum, lorem duis dignissim imperdiet, pellentesque magnis ut. Egestas aliquam suscipit orci feugiat curabitur, porta eget volutpat, diam sodales mauris dui arcu mi, cras vestibulum non ipsum.
+        </p>
+        <Link to="/teampage">
+          <button className="btn">Learn More</button>
+        </Link>
       </section>
 
       <section className="roadmap-section">
         <h3 className="roadmap-section--header">Roadmap</h3>
-        <div className="line-orange" />
-        <img className="roadmap-section--img--1" src={roadmapWeb} alt="roadmap" />
-        <img className="roadmap-section--img--2" src={roadmapMob} alt="roadmap" />
-        <div className="line-orange" />
+        <h1 className="roadmap-section--coming">Coming in 2020...</h1>
       </section>
 
       <Contact />

@@ -200,10 +200,11 @@ h5 {
 .how-it-works-section--header {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
-  margin: 5rem 0;
+  margin-bottom: 2rem;
 }
 .how-it-works-section--img {
   margin-bottom: 3rem;
+  width: 50%;
 }
 @media only screen and (max-width: 767px) {
   .how-it-works-section {
@@ -340,8 +341,10 @@ h5 {
 }
 @media only screen and (max-width: 767px) {
   .quotes-section--secondary-para {
+    text-align: left;
     padding-top: 1rem;
     font-size: 14px;
+    align-self: flex-start;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -349,6 +352,12 @@ h5 {
     height: 2.5rem !important;
     width: 7rem !important;
     font-size: 0.75rem !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .quotes-section--button {
+    align-self: flex-start;
+    margin-right: 15rem;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -361,12 +370,13 @@ h5 {
   .quotes-section {
     height: 50vh;
     text-align: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-top: 2rem;
   }
 }
 
 .roadmap-section {
+  background-image: url("../../images/soccer.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -377,39 +387,17 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 10rem 0;
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
 }
-.roadmap-section--img--1 {
-  width: 60vw;
-  height: auto;
-  border: 3px white solid;
-  padding: 2rem;
-}
-.roadmap-section--img--2 {
-  display: none;
-}
 @media only screen and (max-width: 767px) {
   .roadmap-section {
     margin-bottom: 0;
     margin-top: 0;
-  }
-  .roadmap-section--img--1 {
-    display: none;
-  }
-  .roadmap-section--img--2 {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .roadmap-section--img--1 {
-    width: 70vw;
-  }
-  .roadmap-section div {
-    width: 70vw;
   }
 }
 
@@ -442,21 +430,8 @@ h5 {
 .team-section--members h4 {
   font-size: 1.1rem;
 }
-.team-section--buttons {
-  margin-top: 4rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.team-section--buttons button {
-  margin-top: 1rem;
-  font-weight: 400;
-  width: 12rem;
-  font-size: 1rem;
-}
-.team-section--buttons-mobile {
-  display: none;
+.team-section--para {
+  margin-top: 3rem;
 }
 @media only screen and (max-width: 767px) {
   .team-section {
@@ -501,6 +476,7 @@ h5 {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   margin-bottom: 3rem;
+  border-bottom: 4px #c35337 solid;
 }
 .testinomal-section-part {
   align-items: center;
@@ -575,6 +551,11 @@ h5 {
 }
 .what-we-do-section-para--bolded {
   text-decoration: underline;
+}
+.what-we-do-section-para--bolded--bigger {
+  font-size: 2rem;
+  color: #c35337;
+  border-bottom: 2px #c35337 solid;
 }
 @media only screen and (max-width: 767px) {
   .what-we-do-section {

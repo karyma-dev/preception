@@ -9,6 +9,7 @@
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
     margin-bottom: 3rem;
+    border-bottom: 4px $btn-color solid;
   }
 
   &-part {

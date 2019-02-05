@@ -27,19 +27,27 @@
     }
   }
 
+  
   &--secondary-para {
     text-align: center;
     align-self: center;
     padding-top: 3rem;
     @media only screen and (max-width: 767px) {
+      text-align:left;
       padding-top: 1rem;
       font-size: 14px;
+      align-self: flex-start;
     }
   }
 
   &--button {
     
     @include quotes-section--button-MQ();
+    @media only screen and (max-width: 767px) {
+      align-self: flex-start;
+      margin-right: 15rem;
+    }
+
     
   }
   @media only screen and (max-width: 1300px) {
@@ -50,7 +58,7 @@
     
     height: 50vh;
     text-align: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-top: 2rem;
   }
 }
