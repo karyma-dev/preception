@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import exit from '../../images/nav/exit.svg'
 
 export default class Contact extends Component {
-  state = { display: true }
+  state = { display: false }
 
   modalHandler = () => {
     this.setState({

@@ -2,19 +2,12 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../Contact'
 
-import ooda from '../../images/ooda.png'
 import pod from '../../images/pod.png'
-import roadmapWeb from '../../images/roadmap-web.png'
-import roadmapMob from '../../images/roadmap-mobile.png'
-
 import coolLogo from '../../images/logo/cool-logo.png'
 import downArrow from '../../images/arrow.svg'
 
-import alex from '../../images/profile/alex-zucca.png'
-import yuan from '../../images/profile/yuan-wang.png'
-import leigh from '../../images/profile/leigh.png'
-import jordan from '../../images/profile/jordan.png'
-import felipe from '../../images/profile/felipe.png'
+import { teamMembers } from '../TeamMember'
+import { Members } from './Members'
 
 export default class Home extends React.Component {
 
@@ -23,7 +16,7 @@ export default class Home extends React.Component {
   }
 
   render(){
-
+    let members = teamMembers.map((member, i)=><Members key={i} name={member.name} image={member.image} position={member.position} />)
   return (
     <Fragment>
       <header className="header">
@@ -123,47 +116,9 @@ export default class Home extends React.Component {
         </div>
 
         <div className="team-section--members">
-          <div>
-            <img src={leigh} alt="Leigh Sembaluk" />
-            <span>
-              <h4>Leigh Sembaluk</h4>
-              <p>Founder, CEO</p>
-            </span>
-          </div>
-          <div>
-          </div>
-          <div>
-            <img src={alex} alt="Alex Zucca" />
-            <span>
-              <h4>Alex Zucca</h4>
-              <p>Data Scientist</p>
-            </span>
-          </div>
-
-          <div>
-            <img src={felipe} alt="Felipe Pardo" />
-            <span>
-              <h4>Felipe Pardo</h4>
-              <p>Data Analyst</p>
-            </span>
-          </div>
-
-          <div>
-            <img src={yuan} alt="Yuan Wang" />
-            <span>
-              <h4>Yuan Wang</h4>
-              <p>Software Guru</p>
-            </span>
-          </div>
-
-          <div>
-            <img src={jordan} alt="Jordan Shimell" />
-            <span>
-              <h4>Jordan Shimell</h4>
-              <p>Neuroscientist</p>
-            </span>
-          </div>
+          {members}
         </div>
+        
         <p className="team-section--para">
         Lorem ipsum dolor sit amet, sollicitudin quis ultrices et quisque, diam elit ultricies congue suspendisse curabitur, lobortis tortor. Ut mi eleifend nisl. Cras ut auctor libero, faucibus posuere semper consectetuer, donec mauris est pellentesque augue, congue accumsan lobortis justo integer leo. Ligula quis porta suspendisse malesuada adipiscing fermentum, tempor pede, adipiscing diam, id semper auctor consectetuer consectetuer fusce, malesuada urna sed felis wisi. Non lectus ipsum purus nulla, vel etiam suspendisse neque turpis. Voluptatibus volutpat id egestas, vestibulum commodo eget, scelerisque ultricies congue magna massa elit, convallis tincidunt id. Mollis convallis nec ac integer urna veniam, sapien ante at nullam. Vulputate pharetra commodo proin. Urna congue maiores id in dolor, montes dolor fusce sit ipsum, lorem duis dignissim imperdiet, pellentesque magnis ut. Egestas aliquam suscipit orci feugiat curabitur, porta eget volutpat, diam sodales mauris dui arcu mi, cras vestibulum non ipsum.
         </p>

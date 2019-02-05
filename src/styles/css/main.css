@@ -725,6 +725,12 @@ h5 {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 960px) {
+  .modal-content {
+    width: 70%;
+    padding: 2rem;
+  }
+}
 .navbar {
   background-image: url("../../images/nav/navbar.png");
   background-position: center bottom;
