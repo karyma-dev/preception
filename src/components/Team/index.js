@@ -16,7 +16,7 @@ export default class TeamPage extends React.Component {
 
     return(
       <React.Fragment>
-        <h1>Team Members</h1>
+        <h1 className='ourteam-header'>Team Members</h1>
         {members}
       </React.Fragment>
     )
