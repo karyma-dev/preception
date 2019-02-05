@@ -8,6 +8,8 @@ import Process from './Process'
 import Pod from './Pod'
 import DataMetric from './DataMetric'
 import Contact from './Contact'
+import TeamPage from './Team'
+
 
 export default class App extends Component {
   render() {
@@ -20,6 +22,8 @@ export default class App extends Component {
           <Route path="/pod" component={Pod} />
           <Route path="/data" component={DataMetric} />
           <Route path="/contact" component={Contact} />
+          <Route path="/teampage" component={TeamPage} />
+
         </div>
         <Footer />
       </Fragment>

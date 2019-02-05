@@ -1,39 +1,45 @@
 .roadmap-section {
+  background-image: url('../../images/soccer.png');
   @include homepage-background-properties();
+  padding: 10rem 0;
 
   &--header {
     margin-bottom: 2rem;
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
   }
-  &--img--1 {
-    width: 60vw;
-    height: auto;
-    border: 3px white solid;
-    padding: 2rem;
-  }
-  &--img--2 {
-    display: none;
-  }
-  @media only screen and (max-width: 767px){
 
+  &--coming {
+
+  }
+  // &--img--1 {
+  //   width: 60vw;
+  //   height: auto;
+  //   border: 3px white solid;
+  //   padding: 2rem;
+  // }
+  // &--img--2 {
+  //   display: none;
+  // }
   
+  @media only screen and (max-width: 767px){
     margin-bottom: 0;
     margin-top:0;
 
-    &--img--1{
-      display:none
-    }
-    &--img--2{
-      display: inline-block;
-    }
+    // &--img--1{
+    //   display:none
+    // }
+    // &--img--2{
+    //   display: inline-block;
+    // }
   }
-  @media only screen and (max-width: 1300px) {
-    &--img--1{
-      width: 70vw;
-    }
-    div {
-      width: 70vw;
-    }
-  }
+
+  // @media only screen and (max-width: 1300px) {
+  //   &--img--1{
+  //     width: 70vw;
+  //   }
+  //   div {
+  //     width: 70vw;
+  //   }
+  // }
 }

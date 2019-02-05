@@ -4,10 +4,11 @@
   &--header {
     font-size: $default-panel-header;
     letter-spacing: $header-letter-spacing;
-    margin: 5rem 0;
+    margin-bottom: 2rem;
   }
   &--img {
     margin-bottom: 3rem;
+    width: 50%;
   }
 
   @media only screen and (max-width: 767px) {
