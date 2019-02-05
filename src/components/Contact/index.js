@@ -24,6 +24,7 @@ export default class Contact extends Component {
 
         <div className="modal" style={style}>
           <div class="modal-content">
+            <h2 style={{ display: 'inline-block' }}>Contact Us</h2>
             <img
               src={exit}
               alt="exit icon for modal box"
@@ -77,9 +78,9 @@ export default class Contact extends Component {
               <div className="contact-group">
                 <label className="contact-label">Message</label>
                 <br />
-                <textarea rows="4" cols="50" />
+                <textarea />
               </div>
-              <button className="contact-button">Submit</button>
+              <button className="btn btn-contact">Submit</button>
             </form>
           </div>
         </div>
