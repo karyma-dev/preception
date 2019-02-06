@@ -373,7 +373,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .quotes-section {
-    height: 50vh;
     text-align: center;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -439,6 +438,8 @@ h5 {
 }
 .team-section--para {
   margin-top: 3rem;
+  width: 90vw;
+  text-align: left;
 }
 @media only screen and (max-width: 767px) {
   .team-section {
@@ -548,6 +549,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-attachment: inherit;
 }
 .what-we-do-section--header {
   font-size: 1.6rem;
@@ -596,7 +598,8 @@ h5 {
   margin: 1rem;
 }
 .Members-image {
-  flex: 1 0 25%;
+  text-align: center;
+  flex: 1 1 25%;
 }
 @media only screen and (max-width: 786px) {
   .Members-image {
@@ -605,6 +608,16 @@ h5 {
 }
 .Members-content {
   flex: 1 0 75%;
+}
+.Members-content-icons i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.Members-content-icons-linkedin {
+  color: #0077B5;
+}
+.Members-content-icons-twitter {
+  color: #1DA1F2;
 }
 .Members-content-description {
   font-size: 0.8rem;

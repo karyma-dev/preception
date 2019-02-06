@@ -1,6 +1,7 @@
 .what-we-do-section {
   background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
+  background-attachment: inherit;
 
   &--header {
     font-size: $default-panel-header;
