@@ -11,14 +11,13 @@
   margin: 1rem;
   &-image{
     text-align:center;
-    flex: 1 1 25%;
     @media only screen and (max-width: 786px) {
       flex: 1 1 100%;
     }
   }
 
   &-content{
-    flex: 1 0 75%;
+
     &-icons{
       i {
         margin-right: 0.5rem;
@@ -33,11 +32,13 @@
     }
     &-description{
       font-size: 0.8rem;
+      width: 40vw;
     }
     @media only screen and (max-width: 786px) {
       text-align: center;
       &-description{
         text-align: left;
+        width: 100%;
       }
     }
   }

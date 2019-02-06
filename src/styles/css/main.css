@@ -591,15 +591,11 @@ h5 {
 }
 .Members-image {
   text-align: center;
-  flex: 1 1 25%;
 }
 @media only screen and (max-width: 786px) {
   .Members-image {
     flex: 1 1 100%;
   }
-}
-.Members-content {
-  flex: 1 0 75%;
 }
 .Members-content-icons i {
   margin-right: 0.5rem;
@@ -613,6 +609,7 @@ h5 {
 }
 .Members-content-description {
   font-size: 0.8rem;
+  width: 40vw;
 }
 @media only screen and (max-width: 786px) {
   .Members-content {
@@ -620,6 +617,7 @@ h5 {
   }
   .Members-content-description {
     text-align: left;
+    width: 100%;
   }
 }
 

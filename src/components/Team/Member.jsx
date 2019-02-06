@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Member = ({ name, desc, image, position }) => (
   <div className="Members">
     <div className="Members-image">
@@ -14,5 +15,6 @@ export const Member = ({ name, desc, image, position }) => (
       </div>
       <p className="Members-content-description">{desc}</p>
     </div>
+
   </div>
 )
