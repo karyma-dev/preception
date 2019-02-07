@@ -72,11 +72,6 @@ export default class Navbar extends Component {
               Data
             </Link>
           </li> */}
-          <li className="navbar-links-item">
-            <Link to="/contact" onClick={this.closeMenu}>
-              Contact
-            </Link>
-          </li>
         </ul>
       </div>
     )

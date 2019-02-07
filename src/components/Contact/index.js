@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import exit from '../../images/nav/exit.svg'
+import contactIcon from '../../images/contact.svg'
 
 export default class Contact extends Component {
   state = { display: false }
@@ -18,8 +19,8 @@ export default class Contact extends Component {
     const style = this.state.display ? { display: 'flex' } : { display: 'none' }
     return (
       <Fragment>
-        <button className="btn" onClick={this.modalHandler}>
-          Contact
+        <button className="btn-contact" onClick={this.modalHandler}>
+          <img className="contact-image" src={contactIcon} alt="" />
         </button>
 
         <div className="modal" style={style}>
@@ -80,7 +81,7 @@ export default class Contact extends Component {
                 <br />
                 <textarea />
               </div>
-              <button className="btn btn-contact">Submit</button>
+              <button className="btn">Submit</button>
             </form>
           </div>
         </div>
