@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import pod from '../../images/pod-alt.png'
 
 export default function Pod() {
@@ -36,10 +35,6 @@ export default function Pod() {
             it takes them to notice an opportunity and how long it takes to start their movement.
           </p>
         </div>
-
-        <Link to="/contact">
-          <button className="btn">Contact Us</button>
-        </Link>
       </div>
     </div>
   )
