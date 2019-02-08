@@ -3,15 +3,15 @@ import contactIcon from '../../images/contact.svg'
 
 export default class Button extends Component {
   buttonConfig = () => {
-    if (this.props.className === 'btn-contact') {
+    if (this.props.buttonName === 'btn-contact') {
       return (
-        <button className={this.props.className} onClick={this.props.modalHandler}>
+        <button className={this.props.buttonName} onClick={this.props.modalHandler}>
           <img className='contact-image' src={contactIcon} alt='' />
         </button>
       )
-    } else if (this.props.className === 'btn') {
+    } else if (this.props.buttonName === 'btn') {
       return (
-        <button className={this.props.className} onClick={this.props.modalHandler}>
+        <button className={this.props.buttonName} onClick={this.props.modalHandler}>
           {this.props.buttonText}
         </button>
       )

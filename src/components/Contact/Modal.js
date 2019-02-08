@@ -1,26 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import Button from './Button'
 
 import exitIcon from '../../images/nav/exit.svg'
 
 export default class Modal extends Component {
-  state = { display: false }
-
-  closeHandler = () => {
-    this.setState({ display: false })
-  }
-
-  modalHandler = () => {
-    this.setState({
-      display: !this.state.display
-    })
-  }
-
   render() {
-    const style = this.state.display ? { display: 'flex' } : { display: 'none' }
+    const style = this.props.display ? { display: 'flex' } : { display: 'none' }
     return (
       <Fragment>
-        <Button modalHandler={this.modalHandler} className='btn-contact' />
         <div className='modal' style={style}>
           <div class='modal-content'>
             <h2 style={{ display: 'inline-block' }}>Contact Us</h2>
@@ -31,7 +17,7 @@ export default class Modal extends Component {
                 float: 'right',
                 width: '20px'
               }}
-              onClick={this.closeHandler}
+              onClick={this.props.closeHandler}
             />
             <form className='contact'>
               <div className='contact-group'>

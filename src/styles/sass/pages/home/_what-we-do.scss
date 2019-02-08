@@ -12,8 +12,8 @@
     word-spacing: 0.2rem;
     padding-bottom: 1.5rem;
     &--bolded {
-      text-decoration: underline;
-      &--bigger{
+      font-weight: 700;
+      &--bigger {
         font-size: 2rem;
         color: $btn-color;
         border-bottom: 2px $btn-color solid;
@@ -29,8 +29,7 @@
     }
 
     &--btn {
-      @include  quotes-section--button-MQ()
+      @include quotes-section--button-MQ();
     }
-
   }
 }

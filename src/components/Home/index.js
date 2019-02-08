@@ -15,6 +15,7 @@ export default class Home extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     let members = teamMembers.map((member, i) => (
       <Members key={i} name={member.name} image={member.image} position={member.position} />
     ))
@@ -40,7 +41,12 @@ export default class Home extends React.Component {
             <p className='quotes-section--secondary-para'>
               The Ability to act <h4>first</h4>
             </p>
-            <Button className='btn' buttonText='Contact Us' />
+
+            <Button
+              buttonName='btn'
+              buttonText='Contact Us'
+              modalHandler={this.props.modalHandler}
+            />
           </div>
         </section>
 
