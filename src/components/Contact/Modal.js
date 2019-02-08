@@ -1,9 +1,14 @@
 import React, { Component, Fragment } from 'react'
-import exit from '../../images/nav/exit.svg'
-import contactIcon from '../../images/contact.svg'
+import Button from './Button'
 
-export default class Contact extends Component {
+import exitIcon from '../../images/nav/exit.svg'
+
+export default class Modal extends Component {
   state = { display: false }
+
+  closeHandler = () => {
+    this.setState({ display: false })
+  }
 
   modalHandler = () => {
     this.setState({
@@ -11,39 +16,16 @@ export default class Contact extends Component {
     })
   }
 
-  closeHandler = () => {
-    this.setState({ display: false })
-  }
-
-  buttonConfig = () => {
-    if (this.props.className === 'btn-contact') {
-      return (
-        <button className={this.props.className} onClick={this.modalHandler}>
-          <img className='contact-image' src={contactIcon} alt='' />
-        </button>
-      )
-    } else if (this.props.className === 'btn') {
-      return (
-        <button className={this.props.className} onClick={this.modalHandler}>
-          {this.props.buttonText}
-        </button>
-      )
-    }
-  }
-
   render() {
     const style = this.state.display ? { display: 'flex' } : { display: 'none' }
-    const button = this.buttonConfig()
-
     return (
       <Fragment>
-        {button}
-
+        <Button modalHandler={this.modalHandler} className='btn-contact' />
         <div className='modal' style={style}>
           <div class='modal-content'>
             <h2 style={{ display: 'inline-block' }}>Contact Us</h2>
             <img
-              src={exit}
+              src={exitIcon}
               alt='exit icon for modal box'
               style={{
                 float: 'right',

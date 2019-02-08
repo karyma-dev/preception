@@ -8,7 +8,7 @@ import Home from './Home'
 import Process from './Process'
 import Pod from './Pod'
 import DataMetric from './DataMetric'
-import Contact from './Contact'
+import Modal from './Contact/Modal'
 import TeamPage from './Team'
 
 export default class App extends Component {
@@ -17,7 +17,7 @@ export default class App extends Component {
       <Fragment>
         <Navbar />
         <div className='main'>
-          <Contact className='btn-contact' />
+          <Modal className='btn-contact' />
           <Route exact path='/' component={Home} />
           <Route path='/process' component={Process} />
           <Route path='/pod' component={Pod} />

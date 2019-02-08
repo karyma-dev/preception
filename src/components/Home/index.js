@@ -5,7 +5,7 @@ import pod from '../../images/pod.png'
 import coolLogo from '../../images/logo/cool-logo.png'
 import downArrow from '../../images/arrow.svg'
 
-import Contact from '../Contact'
+import Button from '../Contact/Button'
 import { teamMembers } from '../TeamMember'
 import { Members } from './Members'
 
@@ -40,7 +40,7 @@ export default class Home extends React.Component {
             <p className='quotes-section--secondary-para'>
               The Ability to act <h4>first</h4>
             </p>
-            <Contact className='btn' buttonText='Contact Us' />
+            <Button className='btn' buttonText='Contact Us' />
           </div>
         </section>
 
