@@ -15,7 +15,6 @@ export default class Home extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     let members = teamMembers.map((member, i) => (
       <Members key={i} name={member.name} image={member.image} position={member.position} />
     ))
@@ -59,7 +58,7 @@ export default class Home extends React.Component {
           </p>
           <p className='what-we-do-section-para'>
             Our results in a total of 4 hours of training is <br />
-            <text className='what-we-do-section-para--bolded--bigger'> 0.24 Seconds</text> <br />
+            <h4 className='what-we-do-section-para--bolded--bigger'> 0.24 Seconds</h4> <br />
             quicker in all directions
           </p>
 
@@ -90,19 +89,21 @@ export default class Home extends React.Component {
               If you're not trying to utilize technology in some form, you're going to be left
               behind.. This is something I want to incorportate into every training session.
             </q>
+            <div className="line-orange line-orange-testimonial" />
             <p className='testinomal-section-part--quoter'>
               Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser
               University
             </p>
           </div>
           <div className='testinomal-section-part'>
-            <q className='testinomal-section--quote'>
+            <q className='testinomal-section-part--quote'>
               The results became visually evident in short time. Players were displaying and
               repeating the habits reinforced through the training (i.e. constant shoulder
               checking/scanning) and then also started to more noticeably apply these habits into
               their other regular training sessions and matches
             </q>
-            <p className='testinomal-section--quoter'>
+            <div className="line-orange line-orange-testimonial" />
+            <p className='testinomal-section-part--quoter'>
               Josh Smith, CSA <q>A</q> Licensed Coach
             </p>
           </div>
