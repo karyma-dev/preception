@@ -19,7 +19,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     border: 2px white solid;
-    margin-bottom: 2rem;
     padding: 1rem;
 
     &--quote {
@@ -37,7 +36,6 @@
   }
 
   @media only screen and (max-width: 767px) {
-    background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
 

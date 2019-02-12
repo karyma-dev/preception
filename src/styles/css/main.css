@@ -384,7 +384,7 @@ h5 {
 }
 
 .roadmap-section {
-  background-image: linear-gradient(to top, #0c465d, #0f2027);
+  background-image: url("../../images/4-step-background.png"), linear-gradient(to top, rgba(12, 70, 93, 0.5), rgba(15, 32, 39, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -409,7 +409,7 @@ h5 {
 }
 
 .team-section {
-  background-image: url("../../images/4-step-background.png");
+  background-image: url("../../images/testimonial-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -426,6 +426,7 @@ h5 {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 3rem;
 }
 .team-section--members {
   display: flex;
@@ -444,7 +445,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) {
   .team-section {
-    background-image: none;
     margin-top: 0;
   }
   .team-section--header {
@@ -494,7 +494,6 @@ h5 {
   flex-wrap: wrap;
   flex-direction: column;
   border: 2px white solid;
-  margin-bottom: 2rem;
   padding: 1rem;
 }
 .testinomal-section-part--quote {
@@ -509,7 +508,6 @@ h5 {
 }
 @media only screen and (max-width: 767px) {
   .testinomal-section {
-    background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
   }
@@ -537,7 +535,6 @@ h5 {
 }
 
 .what-we-do-section {
-  background-image: url("../../images/4-step-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -557,22 +554,34 @@ h5 {
 .what-we-do-section-para {
   word-spacing: 0.2rem;
   padding-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 .what-we-do-section-para--bolded {
   font-weight: 700;
 }
 .what-we-do-section-para--bolded--bigger {
-  font-size: 2rem;
+  display: inline-block;
+  margin: 1rem 0;
   color: #c35337;
+  font-size: 2rem;
   border-bottom: 2px #c35337 solid;
 }
 @media only screen and (max-width: 767px) {
   .what-we-do-section {
     margin-bottom: 0;
     text-align: center;
+    align-content: center;
+    justify-content: center;
   }
   .what-we-do-section--header {
     margin-bottom: 1rem;
+  }
+  .what-we-do-section-para {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  .what-we-do-section-para--bolded--bigger {
+    font-size: 1.75rem;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 767px) {
@@ -935,10 +944,13 @@ h5 {
 }
 
 .line-orange {
-  width: 60vw;
-  margin: 1rem 0;
-  border: 1.5px #c15236 solid;
+  width: inherit;
+  margin: 2rem 0;
+  border: 1.5px #c15236 outset;
   background-color: #c15236;
+}
+.line-orange-testimonial {
+  width: 20vw;
 }
 
 /*# sourceMappingURL=main.css.map */

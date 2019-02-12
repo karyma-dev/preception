@@ -1,5 +1,7 @@
 .roadmap-section {
-  background-image: linear-gradient(to top, rgba($secondary-color, 1), rgba($primary-color, 1));
+
+  background-image: url('../../images/4-step-background.png'),
+  linear-gradient(to top, rgba($secondary-color, 0.5), rgba($primary-color, 0.5));
   @include homepage-background-properties();
   height: 75vh;
 
