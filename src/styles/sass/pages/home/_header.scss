@@ -1,8 +1,6 @@
 .header {
   background-image: url('../../images/stadium.jpg');
   @include homepage-background-properties();
-  background-attachment: fixed;
-
   text-transform: uppercase;
   padding: 0;
   min-height: 97vh;

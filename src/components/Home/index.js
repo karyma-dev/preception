@@ -138,8 +138,7 @@ export default class Home extends React.Component {
         </section>
 
         <section className='roadmap-section'>
-          <h3 className='roadmap-section--header'>Roadmap</h3>
-          <h1 className='roadmap-section--coming'>Coming in 2020...</h1>
+          <h1 className='roadmap-section--coming'>The Future of Training in 2020...</h1>
         </section>
       </Fragment>
     )
