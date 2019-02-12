@@ -37,8 +37,7 @@ export default class Home extends React.Component {
               We are a training tool for something that cannot be trained any other way...
             </p>
             <p className="quotes-section--secondary-para">
-              The Ability to act <h4>first</h4>
-            </p>
+              The Ability to act</p> <h4>first</h4>
             <Link to="/contact">
               <input type="button" className="btn quotes-section--button" value="Contact Us" />
             </Link>
@@ -49,7 +48,7 @@ export default class Home extends React.Component {
           <h3 className="what-we-do-section--header">What We Do</h3>
           <p className="what-we-do-section-para">
             Preception specifically trains{' '}
-            <text className="what-we-do-section-para--bolded">Mental Speed</text> and{' '}
+            <text className="what-we-do-section-para--bolded">Mental Speed</text> and
             <text className="what-we-do-section-para--bolded">Awareness</text>
           </p>
           <p className="what-we-do-section-para">
@@ -125,13 +124,7 @@ export default class Home extends React.Component {
             congue accumsan lobortis justo integer leo. Ligula quis porta suspendisse malesuada
             adipiscing fermentum, tempor pede, adipiscing diam, id semper auctor consectetuer
             consectetuer fusce, malesuada urna sed felis wisi. Non lectus ipsum purus nulla, vel
-            etiam suspendisse neque turpis. Voluptatibus volutpat id egestas, vestibulum commodo
-            eget, scelerisque ultricies congue magna massa elit, convallis tincidunt id. Mollis
-            convallis nec ac integer urna veniam, sapien ante at nullam. Vulputate pharetra commodo
-            proin. Urna congue maiores id in dolor, montes dolor fusce sit ipsum, lorem duis
-            dignissim imperdiet, pellentesque magnis ut. Egestas aliquam suscipit orci feugiat
-            curabitur, porta eget volutpat, diam sodales mauris dui arcu mi, cras vestibulum non
-            ipsum.
+            etiam suspendisse neque turpis. 
           </p>
           <Link to="/teampage">
             <button className="btn">Learn More</button>

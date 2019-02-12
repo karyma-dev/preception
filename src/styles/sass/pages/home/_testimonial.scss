@@ -2,6 +2,7 @@
   background-image: url('../../images/testimonial-background.png');
 
   @include homepage-background-properties();
+  background-attachment: fixed;
   text-align: center;
   padding: 5rem 0;
 

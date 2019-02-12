@@ -2,8 +2,7 @@
   background-image: url('../../images/soccer.png');
   background-attachment: fixed;
   @include homepage-background-properties();
-  padding: 20rem 0;
-
+  height: 75vh;
   &--header {
     margin-bottom: 2rem;
     font-size: $default-panel-header;

@@ -17,6 +17,16 @@
     opacity: 1;
   }
 }
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .mobile-data-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,7 +398,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20rem 0;
+  height: 75vh;
 }
 .roadmap-section--header {
   margin-bottom: 2rem;
@@ -473,6 +483,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-attachment: fixed;
   text-align: center;
   padding: 5rem 0;
 }
@@ -913,6 +924,10 @@ h5 {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;
+}
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
 }
 .btn-accordion {
   font-size: 0.8rem;

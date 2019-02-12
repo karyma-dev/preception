@@ -24,7 +24,7 @@ export default class Contact extends Component {
         </button>
 
         <div className="modal" style={style}>
-          <div class="modal-content">
+          <div className="modal-content">
             <h2 style={{ display: 'inline-block' }}>Contact Us</h2>
             <img
               src={exit}
