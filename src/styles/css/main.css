@@ -151,7 +151,6 @@ h5 {
   text-transform: uppercase;
   padding: 0;
   min-height: 97vh;
-  border-bottom: solid 2rem #061d27;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
@@ -386,8 +385,7 @@ h5 {
 }
 
 .roadmap-section {
-  background-image: url("../../images/soccer.png");
-  background-attachment: fixed;
+  background-image: linear-gradient(to top, #0c465d, #0f2027);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -564,7 +562,7 @@ h5 {
   padding-bottom: 1.5rem;
 }
 .what-we-do-section-para--bolded {
-  text-decoration: underline;
+  font-weight: 700;
 }
 .what-we-do-section-para--bolded--bigger {
   font-size: 2rem;
