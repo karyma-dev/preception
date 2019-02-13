@@ -1,14 +1,15 @@
 import React from 'react'
 
-const Testimonial = ({ quote, quoter }) => (
+const Testimonial = ({ quote, quoter, job }) => (
   <div className='testinomal-section-part'>
     <q className='testinomal-section-part--quote'>
-      { quote }
+      <em>{ quote }</em>
     </q>
     <div className="line-orange line-orange-testimonial" />
     <p className='testinomal-section-part--quoter'>
-      { quoter }
+      { quoter } - { job }
     </p>
+
   </div>
 
 )

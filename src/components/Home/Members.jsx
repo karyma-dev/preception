@@ -5,7 +5,7 @@ export const Members = ({ name, image, position }) => (
   <img src={image} alt={name} />
   <span>
     <h4>{name}</h4>
-    <p>{position}</p>
+    <p className="team-section--members--position">{position}</p>
   </span>
 </div>
 )

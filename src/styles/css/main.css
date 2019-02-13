@@ -407,6 +407,9 @@ h5 {
 .roadmap-section--coming {
   font-size: 3rem;
 }
+.roadmap-section--date {
+  font-size: 6rem;
+}
 
 .team-section {
   background-image: url("../../images/testimonial-background.png");
@@ -441,9 +444,13 @@ h5 {
 .team-section--members h4 {
   font-size: 1.1rem;
 }
+.team-section--members--position {
+  color: #c35337;
+  text-shadow: 2px 4px 1rem black;
+}
 .team-section--para {
   margin-top: 3rem;
-  width: 90vw;
+  width: 60vw;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
@@ -471,7 +478,7 @@ h5 {
 }
 
 .testinomal-section {
-  background-image: url("../../images/testimonial-background.png");
+  background-color: #05141A;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -482,7 +489,6 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-attachment: fixed;
   text-align: center;
   padding: 5rem 0;
 }
@@ -497,16 +503,17 @@ h5 {
   width: 40%;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 2px white solid;
+  border: 1px white solid;
   padding: 1rem;
   margin-bottom: 3rem;
 }
 .testinomal-section-part--quote {
   padding: 1rem;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 .testinomal-section-part--quoter {
-  width: 80%;
+  width: 60%;
 }
 .testinomal-section-part--quoter:not(:last-of-type) {
   margin-bottom: 6rem;
@@ -934,7 +941,7 @@ h5 {
   background-color: #c15236;
 }
 .line-orange-testimonial {
-  width: 20vw;
+  width: 8vw;
 }
 
 /*# sourceMappingURL=main.css.map */

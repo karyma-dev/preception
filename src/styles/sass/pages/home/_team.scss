@@ -22,11 +22,16 @@
     & h4 {
       font-size: 1.1rem;
     }
+    &--position {
+      color: $btn-color;
+      text-shadow: 2px 4px 1rem black;
+
+    }    
   }
 
   &--para{
     margin-top: 3rem;
-    width: 90vw;
+    width: 60vw;
     text-align: left;
   }
   @media only screen and (max-width: 767px) {
@@ -42,6 +47,7 @@
       div {
         display: flex;
         margin-right: 0;
+
         span {
           text-align: center;
           justify-self: center;
@@ -50,5 +56,6 @@
         }
       }
     }
+
   }
 }

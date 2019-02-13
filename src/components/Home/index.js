@@ -21,7 +21,7 @@ export default class Home extends React.Component {
     const members = teamMembers.map((member, i) => (
       <Members key={i} name={member.name} image={member.image} position={member.position} />
     ))
-    const testimonial = testimonials.map(( elem, i )=><Testimonials key={i} quote={elem.quote} quoter={elem.quoter} />)
+    const testimonial = testimonials.map(( elem, i )=><Testimonials key={i} quote={elem.quote} quoter={elem.quoter} job={elem.job} />)
     return (
       <Fragment>
         <header className='header'>
@@ -121,7 +121,9 @@ export default class Home extends React.Component {
         </section>
 
         <section className='roadmap-section'>
-          <h1 className='roadmap-section--coming'>The Future of Training in 2020...</h1>
+          <h1 className='roadmap-section--coming'>Product Launch</h1>
+          <h1 className='roadmap-section--date'>2020</h1>
+
         </section>
       </Fragment>
     )
