@@ -5,6 +5,7 @@ export const Member = ({ name, desc, image, position, links }) => (
   <div className="Members">
     <div className="Members-image">
       <img src={image} alt={name} />
+      
     </div>
     <div className="Members-content">
       <h3>{name}</h3>
