@@ -4,6 +4,8 @@ import logo from '../images/logo/white.png'
 import menu from '../images/nav/menu.svg'
 import exit from '../images/nav/exit.svg'
 
+import ContactButton from './Contact/Button'
+
 export default class Navbar extends Component {
   state = {
     hidden: true
@@ -52,11 +54,6 @@ export default class Navbar extends Component {
               Home
             </Link>
           </li>
-          {/* <li className="navbar-links-item">
-            <Link to="/process" onClick={this.closeMenu}>
-              4 Step Process
-            </Link>
-          </li> */}
           <li className="navbar-links-item">
             <Link to="/pod" onClick={this.closeMenu}>
               How It Works
@@ -67,11 +64,13 @@ export default class Navbar extends Component {
               Our Team
             </Link>
           </li>
-          {/* <li className="navbar-links-item">
-            <Link to="/data" onClick={this.closeMenu}>
-              Data
-            </Link>
-          </li> */}
+          <li className="navbar-links-item">
+            <ContactButton
+              modalHandler={this.props.modalHandler}
+              buttonName="navbar-links-button"
+              buttonText="Contact"
+            />
+          </li>
         </ul>
       </div>
     )
