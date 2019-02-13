@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import contactIcon from '../../images/contact.svg'
 
 export default class Button extends Component {
+
   buttonConfig = () => {
     if (this.props.className === 'btn-contact') {
       return (
@@ -19,6 +20,7 @@ export default class Button extends Component {
   }
 
   render() {
+    
     const button = this.buttonConfig()
     return <Fragment>{button}</Fragment>
   }
