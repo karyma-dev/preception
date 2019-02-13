@@ -68,7 +68,7 @@ export default class Navbar extends Component {
             <ContactButton
               modalHandler={this.props.modalHandler}
               buttonName="navbar-links-button"
-              buttonText="Contact"
+              buttonText="Contact Us"
             />
           </li>
         </ul>
