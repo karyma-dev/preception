@@ -1,4 +1,5 @@
 .btn {
+
   background-color: $btn-color;
   width: 14rem;
   height: 3rem;
@@ -9,13 +10,17 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;
-  cursor: pointer;
 
-  &-accordion {
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .7);
+  }
+  
+  &-accordion{
     font-size: 0.8rem;
     text-transform: none;
 
-    &-inactive {
+    &-inactive{
       font-size: 0.8rem;
       background-color: $inactive-accordion-color;
       text-transform: none;
