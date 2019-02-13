@@ -15,19 +15,40 @@ export const teamMembers = [
     name:"Leigh Sembaluk",
     position: "Founder, CEO",
     image: leigh,
+    links: {
+      linkedin: "https://www.linkedin.com/in/leighsembaluk/",
+      medium: "https://medium.com/@sembaluk",
+      amazon: "https://www.amazon.ca/Preception-Secret-Professional-High-Performance-Environments-ebook/dp/B0787LZML5"
+    },
     desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
+  },
+  {
+    name:"Jordan Shimell",
+    position: "Neuroscientist",
+    image: jordan,
+    links: {
+      linkedin: "https://www.linkedin.com/in/jordanshimell/"
+    },
+    desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
+
+  },
+  {
+    name:"Artyom Mamzhiev",
+    position: "Business Operators",
+    image: felipe,
+    links: {
+      linkedin: "https://www.linkedin.com/in/artem-mamzhiev/"
+    },
+    desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
+    
   },
   {
     name:"Alex Zucca",
     position: "Data Scientist",
     image: alex,
-    desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
-
-  },
-  {
-    name:"Felipe Pardo",
-    position: "Data Analyst",
-    image: felipe,
+    links: {
+      linkedin: "https://www.linkedin.com/in/alex-zucca-40a396149/"
+    },
     desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
 
   },
@@ -35,14 +56,10 @@ export const teamMembers = [
     name:"Yuan Wang",
     position: "Software Guru",
     image: yuan,
+    links: {
+      linkedin: "https://www.linkedin.com/in/theyuanwang/"
+    },
     desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
 
   },
-  {
-    name:"Jordan Shimell",
-    position: "Neuroscientist",
-    image: jordan,
-    desc: "Lorem ipsum dolor sit amet, a adipiscing. Lacus iaculis at magna augue, consectetuer vivamus, enim nibh, magna amet donec non tempor, enim accumsan. Id tempus consectetuer blandit magna non pellentesque, sollicitudin vel per varius metus at purus, diam augue pulvinar numquam quam vitae, facilisi risus nunc nec, velit lacus sed posuere suspendisse curabitur. "
-
-  }
 ]

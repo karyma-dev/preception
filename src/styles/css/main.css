@@ -435,6 +435,9 @@ h5 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.team-section--members div {
+  margin-right: 1rem;
+}
 .team-section--members h4 {
   font-size: 1.1rem;
 }
@@ -457,6 +460,7 @@ h5 {
   }
   .team-section--members div {
     display: flex;
+    margin-right: 0;
   }
   .team-section--members div span {
     text-align: center;
@@ -495,6 +499,7 @@ h5 {
   flex-direction: column;
   border: 2px white solid;
   padding: 1rem;
+  margin-bottom: 3rem;
 }
 .testinomal-section-part--quote {
   padding: 1rem;
@@ -619,11 +624,8 @@ h5 {
 .Members-content-icons-linkedin {
   color: #0077B5;
 }
-.Members-content-icons-twitter {
-  color: #1DA1F2;
-}
-.Members-content-icons-blog {
-  color: #c35337;
+.Members-content-icons-amazon {
+  color: #FF922B;
 }
 .Members-content-description {
   font-size: 0.8rem;
@@ -945,7 +947,7 @@ h5 {
 
 .line-orange {
   width: inherit;
-  margin: 2rem 0;
+  margin: 1rem 0;
   border: 1.5px #c15236 outset;
   background-color: #c15236;
 }

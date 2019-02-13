@@ -6,8 +6,11 @@ import coolLogo from '../../images/logo/cool-logo.png'
 import downArrow from '../../images/arrow.svg'
 
 import Button from '../Contact/Button'
+import Testimonials from './Testimonials'
 import { teamMembers } from '../TeamMember'
 import { Members } from './Members'
+import { testimonials } from './testimonial_quotes'
+
 
 export default class Home extends React.Component {
   handleArrowClick = () => {
@@ -15,9 +18,10 @@ export default class Home extends React.Component {
   }
 
   render() {
-    let members = teamMembers.map((member, i) => (
+    const members = teamMembers.map((member, i) => (
       <Members key={i} name={member.name} image={member.image} position={member.position} />
     ))
+    const testimonial = testimonials.map(( elem, i )=><Testimonials key={i} quote={elem.quote} quoter={elem.quoter} />)
     return (
       <Fragment>
         <header className='header'>
@@ -84,29 +88,7 @@ export default class Home extends React.Component {
 
         <section className='testinomal-section'>
           <h3 className='testinomal-section--header'>Testimonials</h3>
-          <div className='testinomal-section-part'>
-            <q className='testinomal-section-part--quote'>
-              If you're not trying to utilize technology in some form, you're going to be left
-              behind.. This is something I want to incorportate into every training session.
-            </q>
-            <div className="line-orange line-orange-testimonial" />
-            <p className='testinomal-section-part--quoter'>
-              Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser
-              University
-            </p>
-          </div>
-          <div className='testinomal-section-part'>
-            <q className='testinomal-section-part--quote'>
-              The results became visually evident in short time. Players were displaying and
-              repeating the habits reinforced through the training (i.e. constant shoulder
-              checking/scanning) and then also started to more noticeably apply these habits into
-              their other regular training sessions and matches
-            </q>
-            <div className="line-orange line-orange-testimonial" />
-            <p className='testinomal-section-part--quoter'>
-              Josh Smith, CSA <q>A</q> Licensed Coach
-            </p>
-          </div>
+          {testimonial}
         </section>
 
         <section className='how-it-works-section'>

@@ -16,6 +16,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    div {
+      margin-right: 1rem;
+    }
     & h4 {
       font-size: 1.1rem;
     }
@@ -38,6 +41,7 @@
       width: 100%;
       div {
         display: flex;
+        margin-right: 0;
         span {
           text-align: center;
           justify-self: center;

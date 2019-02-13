@@ -11,7 +11,9 @@ export default class TeamPage extends React.Component {
       name={member.name} 
       image={member.image} 
       position={member.position}
+      links ={member.links}
       desc={member.desc}
+      
     />)
 
     return(
