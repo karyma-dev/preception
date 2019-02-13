@@ -1,6 +1,10 @@
 .line-orange {
-  width: 60vw;
+  width: inherit;
   margin: 1rem 0;
-  border: 1.5px #c15236 solid;
+  border: 1.5px #c15236 outset;
   background-color: #c15236;
+
+  &-testimonial{
+    width: 8vw;
+  }
 }

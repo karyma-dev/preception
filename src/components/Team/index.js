@@ -6,12 +6,14 @@ import { Member } from './Member'
 export default class TeamPage extends React.Component {
 
   render(){
-    let members = teamMembers.map((member,i)=><Member 
+    let members = teamMembers.map(( member, i )=><Member 
       key={i} 
       name={member.name} 
       image={member.image} 
       position={member.position}
+      links ={member.links}
       desc={member.desc}
+      
     />)
 
     return(

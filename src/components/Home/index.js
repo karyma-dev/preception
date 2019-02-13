@@ -6,8 +6,11 @@ import coolLogo from '../../images/logo/cool-logo.png'
 import downArrow from '../../images/arrow.svg'
 
 import Button from '../Contact/Button'
+import Testimonials from './Testimonials'
 import { teamMembers } from '../TeamMember'
 import { Members } from './Members'
+import { testimonials } from './testimonial_quotes'
+
 
 export default class Home extends React.Component {
   handleArrowClick = () => {
@@ -15,9 +18,10 @@ export default class Home extends React.Component {
   }
 
   render() {
-    let members = teamMembers.map((member, i) => (
+    const members = teamMembers.map((member, i) => (
       <Members key={i} name={member.name} image={member.image} position={member.position} />
     ))
+    const testimonial = testimonials.map(( elem, i )=><Testimonials key={i} quote={elem.quote} quoter={elem.quoter} job={elem.job} />)
     return (
       <Fragment>
         <header className='header'>
@@ -40,7 +44,12 @@ export default class Home extends React.Component {
             <p className='quotes-section--secondary-para'>
               The Ability to act <h4>first</h4>
             </p>
-            <Button className='btn' buttonText='Contact Us' />
+
+            <Button
+              buttonName='btn'
+              buttonText='Contact Us'
+              modalHandler={this.props.modalHandler}
+            />
           </div>
         </section>
 
@@ -53,7 +62,7 @@ export default class Home extends React.Component {
           </p>
           <p className='what-we-do-section-para'>
             Our results in a total of 4 hours of training is <br />
-            <text className='what-we-do-section-para--bolded--bigger'> 0.24 Seconds</text> <br />
+            <h4 className='what-we-do-section-para--bolded--bigger'> 0.24 Seconds</h4> <br />
             quicker in all directions
           </p>
 
@@ -79,27 +88,7 @@ export default class Home extends React.Component {
 
         <section className='testinomal-section'>
           <h3 className='testinomal-section--header'>Testimonials</h3>
-          <div className='testinomal-section-part'>
-            <q className='testinomal-section-part--quote'>
-              If you're not trying to utilize technology in some form, you're going to be left
-              behind.. This is something I want to incorportate into every training session.
-            </q>
-            <p className='testinomal-section-part--quoter'>
-              Kevin Harmse, Former Professional Soccer Player, Assistant Coach - Simon Fraser
-              University
-            </p>
-          </div>
-          <div className='testinomal-section-part'>
-            <q className='testinomal-section--quote'>
-              The results became visually evident in short time. Players were displaying and
-              repeating the habits reinforced through the training (i.e. constant shoulder
-              checking/scanning) and then also started to more noticeably apply these habits into
-              their other regular training sessions and matches
-            </q>
-            <p className='testinomal-section--quoter'>
-              Josh Smith, CSA <q>A</q> Licensed Coach
-            </p>
-          </div>
+          {testimonial}
         </section>
 
         <section className='how-it-works-section'>
@@ -124,13 +113,7 @@ export default class Home extends React.Component {
             congue accumsan lobortis justo integer leo. Ligula quis porta suspendisse malesuada
             adipiscing fermentum, tempor pede, adipiscing diam, id semper auctor consectetuer
             consectetuer fusce, malesuada urna sed felis wisi. Non lectus ipsum purus nulla, vel
-            etiam suspendisse neque turpis. Voluptatibus volutpat id egestas, vestibulum commodo
-            eget, scelerisque ultricies congue magna massa elit, convallis tincidunt id. Mollis
-            convallis nec ac integer urna veniam, sapien ante at nullam. Vulputate pharetra commodo
-            proin. Urna congue maiores id in dolor, montes dolor fusce sit ipsum, lorem duis
-            dignissim imperdiet, pellentesque magnis ut. Egestas aliquam suscipit orci feugiat
-            curabitur, porta eget volutpat, diam sodales mauris dui arcu mi, cras vestibulum non
-            ipsum.
+            etiam suspendisse neque turpis. 
           </p>
           <Link to='/teampage'>
             <button className='btn'>Learn More</button>
@@ -138,8 +121,9 @@ export default class Home extends React.Component {
         </section>
 
         <section className='roadmap-section'>
-          <h3 className='roadmap-section--header'>Roadmap</h3>
-          <h1 className='roadmap-section--coming'>Coming in 2020...</h1>
+          <h1 className='roadmap-section--coming'>Product Launch</h1>
+          <h1 className='roadmap-section--date'>2020</h1>
+
         </section>
       </Fragment>
     )

@@ -1,5 +1,4 @@
 .what-we-do-section {
-  background-image: url('../../images/4-step-background.png');
   @include homepage-background-properties();
 
   &--header {
@@ -11,26 +10,37 @@
   &-para {
     word-spacing: 0.2rem;
     padding-bottom: 1.5rem;
+    font-size:1.5rem;
     &--bolded {
-      text-decoration: underline;
-      &--bigger{
-        font-size: 2rem;
+      font-weight: 700;
+      &--bigger {
+        display: inline-block;
+        margin: 1rem 0;
         color: $btn-color;
+        font-size: 2rem;
         border-bottom: 2px $btn-color solid;
       }
+
     }
   }
 
   @media only screen and (max-width: 767px) {
     margin-bottom: 0;
     text-align: center;
+    align-content: center;
+    justify-content: center;
     &--header {
       margin-bottom: 1rem;
     }
-
-    &--btn {
-      @include  quotes-section--button-MQ()
+    &-para{
+      font-size: 1rem;
+      width: 80vw;
+      &--bolded--bigger{
+        font-size: 1.75rem;
+      }
     }
-
+    &--btn {
+      @include quotes-section--button-MQ();
+    }
   }
 }

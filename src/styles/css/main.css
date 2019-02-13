@@ -17,6 +17,16 @@
     opacity: 1;
   }
 }
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .mobile-data-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,11 +147,9 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-attachment: fixed;
   text-transform: uppercase;
   padding: 0;
   min-height: 97vh;
-  border-bottom: solid 2rem #061d27;
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .header {
@@ -205,7 +213,7 @@ h5 {
 }
 .how-it-works-section--img {
   margin-bottom: 3rem;
-  width: 50%;
+  width: 40%;
 }
 @media only screen and (max-width: 767px) {
   .how-it-works-section {
@@ -376,8 +384,7 @@ h5 {
 }
 
 .roadmap-section {
-  background-image: url("../../images/soccer.png");
-  background-attachment: fixed;
+  background-image: url("../../images/4-step-background.png"), linear-gradient(to top, rgba(12, 70, 93, 0.5), rgba(15, 32, 39, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,12 +395,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20rem 0;
-}
-.roadmap-section--header {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
+  height: 75vh;
 }
 @media only screen and (max-width: 767px) {
   .roadmap-section {
@@ -402,9 +404,15 @@ h5 {
     padding: 10rem 0;
   }
 }
+.roadmap-section--coming {
+  font-size: 3rem;
+}
+.roadmap-section--date {
+  font-size: 6rem;
+}
 
 .team-section {
-  background-image: url("../../images/4-step-background.png");
+  background-image: url("../../images/testimonial-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -421,6 +429,7 @@ h5 {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 3rem;
 }
 .team-section--members {
   display: flex;
@@ -429,17 +438,23 @@ h5 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.team-section--members div {
+  margin-right: 1rem;
+}
 .team-section--members h4 {
   font-size: 1.1rem;
 }
+.team-section--members--position {
+  color: #c35337;
+  text-shadow: 2px 4px 1rem black;
+}
 .team-section--para {
   margin-top: 3rem;
-  width: 90vw;
+  width: 60vw;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
   .team-section {
-    background-image: none;
     margin-top: 0;
   }
   .team-section--header {
@@ -452,6 +467,7 @@ h5 {
   }
   .team-section--members div {
     display: flex;
+    margin-right: 0;
   }
   .team-section--members div span {
     text-align: center;
@@ -462,7 +478,7 @@ h5 {
 }
 
 .testinomal-section {
-  background-image: url("../../images/testimonial-background.png");
+  background-color: #05141A;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -487,23 +503,23 @@ h5 {
   width: 40%;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 2px white solid;
-  margin-bottom: 2rem;
+  border: 1px white solid;
   padding: 1rem;
+  margin-bottom: 3rem;
 }
 .testinomal-section-part--quote {
   padding: 1rem;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 .testinomal-section-part--quoter {
-  width: 80%;
+  width: 60%;
 }
 .testinomal-section-part--quoter:not(:last-of-type) {
   margin-bottom: 6rem;
 }
 @media only screen and (max-width: 767px) {
   .testinomal-section {
-    background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
   }
@@ -531,7 +547,6 @@ h5 {
 }
 
 .what-we-do-section {
-  background-image: url("../../images/4-step-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -551,22 +566,34 @@ h5 {
 .what-we-do-section-para {
   word-spacing: 0.2rem;
   padding-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 .what-we-do-section-para--bolded {
-  text-decoration: underline;
+  font-weight: 700;
 }
 .what-we-do-section-para--bolded--bigger {
-  font-size: 2rem;
+  display: inline-block;
+  margin: 1rem 0;
   color: #c35337;
+  font-size: 2rem;
   border-bottom: 2px #c35337 solid;
 }
 @media only screen and (max-width: 767px) {
   .what-we-do-section {
     margin-bottom: 0;
     text-align: center;
+    align-content: center;
+    justify-content: center;
   }
   .what-we-do-section--header {
     margin-bottom: 1rem;
+  }
+  .what-we-do-section-para {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  .what-we-do-section-para--bolded--bigger {
+    font-size: 1.75rem;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 767px) {
@@ -604,11 +631,8 @@ h5 {
 .Members-content-icons-linkedin {
   color: #0077B5;
 }
-.Members-content-icons-twitter {
-  color: #1DA1F2;
-}
-.Members-content-icons-blog {
-  color: #c35337;
+.Members-content-icons-amazon {
+  color: #FF922B;
 }
 .Members-content-description {
   font-size: 0.8rem;
@@ -770,24 +794,6 @@ h5 {
   background-color: #0c465d;
 }
 
-.btn-contact {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  z-index: 100;
-  background-color: #c35337;
-  border: none;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  overflow: hidden;
-}
-
-.contact-image {
-  width: 100%;
-  height: 100%;
-}
-
 .check-title {
   border: solid 1px white;
   padding: 0.5rem 1rem;
@@ -914,6 +920,10 @@ h5 {
   text-transform: uppercase;
   margin-top: 2em;
 }
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
+}
 .btn-accordion {
   font-size: 0.8rem;
   text-transform: none;
@@ -925,10 +935,13 @@ h5 {
 }
 
 .line-orange {
-  width: 60vw;
+  width: inherit;
   margin: 1rem 0;
-  border: 1.5px #c15236 solid;
+  border: 1.5px #c15236 outset;
   background-color: #c15236;
+}
+.line-orange-testimonial {
+  width: 8vw;
 }
 
 /*# sourceMappingURL=main.css.map */

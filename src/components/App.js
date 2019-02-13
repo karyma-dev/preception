@@ -12,17 +12,32 @@ import Modal from './Contact/Modal'
 import TeamPage from './Team'
 
 export default class App extends Component {
+  state = { display: false }
+
+  closeHandler = () => {
+    this.setState({ display: false })
+  }
+
+  modalHandler = () => {
+    this.setState({
+      display: !this.state.display
+    })
+  }
   render() {
     return (
       <Fragment>
-        <Navbar />
-        <div className='main'>
-          <Modal className='btn-contact' />
-          <Route exact path='/' component={Home} />
-          <Route path='/process' component={Process} />
-          <Route path='/pod' component={Pod} />
-          <Route path='/data' component={DataMetric} />
-          <Route path='/teampage' component={TeamPage} />
+        <Navbar modalHandler={this.modalHandler} />
+        <div className="main">
+          <Modal display={this.state.display} closeHandler={this.closeHandler} />
+          <Route
+            exact
+            path="/"
+            render={props => <Home {...props} modalHandler={this.modalHandler} />}
+          />
+          <Route path="/process" component={Process} />
+          <Route path="/pod" component={Pod} />
+          <Route path="/data" component={DataMetric} />
+          <Route path="/teampage" component={TeamPage} />
         </div>
         <Footer />
       </Fragment>

@@ -1,6 +1,6 @@
 .testinomal-section {
-  background-image: url('../../images/testimonial-background.png');
-
+  // background-image: url('../../images/testimonial-background.png');
+  background-color: #05141A;
   @include homepage-background-properties();
   text-align: center;
   padding: 5rem 0;
@@ -17,13 +17,14 @@
     width: 40%;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px white solid;
-    margin-bottom: 2rem;
+    border: 1px white solid;
     padding: 1rem;
+    margin-bottom: 3rem;
 
     &--quote {
       padding: 1rem;
       font-size: 1.2rem;
+      font-weight: 300;
     }
 
     &--quoter {
@@ -31,12 +32,11 @@
         margin-bottom: 6rem;
       }
 
-      width: 80%;
+      width: 60%;
     }
   }
 
   @media only screen and (max-width: 767px) {
-    background-image: none;
     margin-top: 0;
     margin-bottom: 3rem;
 
