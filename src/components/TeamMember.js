@@ -2,7 +2,7 @@ import alex from '../images/profile/alex-zucca.png'
 import yuan from '../images/profile/yuan-wang.png'
 import leigh from '../images/profile/leigh.png'
 import jordan from '../images/profile/jordan.png'
-import felipe from '../images/profile/felipe.png'
+import artyom from '../images/profile/artyom.png'
 
 /**
  * This is where you can add or alter team members, the order of the members dictate their position
@@ -35,7 +35,7 @@ export const teamMembers = [
   {
     name:"Artyom Mamzhiev",
     position: "Business Operators",
-    image: felipe,
+    image: artyom,
     links: {
       linkedin: "https://www.linkedin.com/in/artem-mamzhiev/"
     },
