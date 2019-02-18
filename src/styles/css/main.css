@@ -49,6 +49,7 @@
   padding: 0;
   box-sizing: inherit;
   overflow-x: hidden;
+  outline: none;
 }
 
 body {
@@ -842,6 +843,18 @@ h5 {
 .navbar-links-exit {
   display: none;
 }
+.navbar-links-button {
+  background-color: #c35337;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+.navbar-links-button:hover {
+  background-color: #cb6248;
+}
 .navbar-toggler {
   display: none;
 }
@@ -921,8 +934,8 @@ h5 {
   margin-top: 2em;
 }
 .btn:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  background-color: #cb6248;
 }
 .btn-accordion {
   font-size: 0.8rem;

@@ -39,6 +39,20 @@
     &-exit {
       display: none;
     }
+
+    &-button {
+      background-color: $btn-color;
+      border: none;
+      border-radius: 10px;
+      color: $primary-font-color;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: lighten($btn-color, 5%);
+      }
+    }
   }
 
   &-toggler {
