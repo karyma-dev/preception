@@ -21,7 +21,11 @@ export default class TeamPage extends React.Component {
         <h1 className='ourteam-header'>Team Members</h1>
         <div className="ourteam-members"> 
           {members}
+          <p className="ourteam-last-para">
+        The Preception team also includes many other talented individuals who have contributed, and continue to contribute in the following areas: Advisory/Mentorship, Hardware Development, Software Development, Database Management, Cloud Services, Business Strategy, Research, Customer Discovery/Acquisition, Fundraising, plus more.
+        </p>
         </div>
+
       </React.Fragment>
     )
   }

@@ -28,9 +28,11 @@
 
     }    
   }
-
+  &--quote{
+    margin: 3rem 0;
+    width: 80vw;
+  }
   &--para{
-    margin-top: 3rem;
     width: 60vw;
     text-align: left;
   }
@@ -56,6 +58,8 @@
         }
       }
     }
-
+    &--para{
+      display:none;
+    }
   }
 }

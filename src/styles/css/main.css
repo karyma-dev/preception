@@ -449,8 +449,11 @@ h5 {
   color: #c35337;
   text-shadow: 2px 4px 1rem black;
 }
+.team-section--quote {
+  margin: 3rem 0;
+  width: 80vw;
+}
 .team-section--para {
-  margin-top: 3rem;
   width: 60vw;
   text-align: left;
 }
@@ -475,6 +478,9 @@ h5 {
     justify-self: center;
     align-self: center;
     width: 40vw;
+  }
+  .team-section--para {
+    display: none;
   }
 }
 
@@ -608,6 +614,19 @@ h5 {
 .ourteam-header {
   text-align: center;
   margin-top: 3rem;
+}
+
+.ourteam-last-para {
+  margin: 4rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  border: white 1px solid;
+}
+@media only screen and (max-width: 786px) {
+  .ourteam-last-para {
+    text-align: left;
+  }
 }
 
 .Members {

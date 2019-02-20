@@ -105,15 +105,12 @@ export default class Home extends React.Component {
           </div>
 
           <div className='team-section--members'>{members}</div>
-
+          <p className='team-section--quote'>
+            <em>"The strength of the team is each individual member. The strength of each member is the team."</em> <br />  Phil Jackson
+          </p>
           <p className='team-section--para'>
-            Lorem ipsum dolor sit amet, sollicitudin quis ultrices et quisque, diam elit ultricies
-            congue suspendisse curabitur, lobortis tortor. Ut mi eleifend nisl. Cras ut auctor
-            libero, faucibus posuere semper consectetuer, donec mauris est pellentesque augue,
-            congue accumsan lobortis justo integer leo. Ligula quis porta suspendisse malesuada
-            adipiscing fermentum, tempor pede, adipiscing diam, id semper auctor consectetuer
-            consectetuer fusce, malesuada urna sed felis wisi. Non lectus ipsum purus nulla, vel
-            etiam suspendisse neque turpis. 
+          At the heart of the Preception team is experience, knowledge and an unwavering desire to excel.  Professional and varsity athletes, human performance expert, bestselling author, 2 PHD's, 1 MBA, 12 years IBM/KPMG, founding experience.
+
           </p>
           <Link to='/teampage'>
             <button className='btn'>Learn More</button>

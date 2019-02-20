@@ -3,6 +3,17 @@
   margin-top: 3rem;
 }
 
+.ourteam-last-para{
+  margin: 4rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  border: white 1px solid;
+  @media only screen and (max-width: 786px) {
+  text-align: left;
+  }
+}
+
 .Members{
   display: flex;
   flex-wrap: wrap;
