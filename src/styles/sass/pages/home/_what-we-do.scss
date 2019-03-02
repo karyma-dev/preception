@@ -1,5 +1,6 @@
 .what-we-do-section {
   @include homepage-background-properties();
+  background-color: #05141A;
 
   &--header {
     font-size: $default-panel-header;

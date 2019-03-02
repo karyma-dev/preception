@@ -6,6 +6,7 @@
     ),
     url('../../images/section-rugby-blank.jpg');
 
+
   @include homepage-background-properties();
   font-size: $default-font-size;
   align-items: flex-start;
@@ -13,10 +14,9 @@
 
 
   &--primary-para {
-
     padding-top: 3rem;
-    font-size: 1.5rem;
-    @media only screen and (max-width: 1300px) {
+    
+    @media only screen and (max-width: 1400px) {
       font-size: 1rem;
     }
     @media only screen and (max-width: 767px) {

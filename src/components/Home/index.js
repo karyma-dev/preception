@@ -62,7 +62,7 @@ export default class Home extends React.Component {
           </p>
           <p className='what-we-do-section-para'>
             Our results in a total of 4 hours of training is <br />
-            <h4 className='what-we-do-section-para--bolded--bigger'> 0.24 Seconds</h4> <br />
+            <h4 className='what-we-do-section-para--bolded--bigger'> a full step</h4> <br />
             quicker in all directions
           </p>
 
@@ -86,11 +86,6 @@ export default class Home extends React.Component {
         </Link>
       </section> */}
 
-        <section className='testinomal-section'>
-          <h3 className='testinomal-section--header'>Testimonials</h3>
-          {testimonial}
-        </section>
-
         <section className='how-it-works-section'>
           <h3 className='how-it-works-section--header'>How It Works</h3>
           <img className='how-it-works-section--img' src={pod} alt='preception on demand system' />
@@ -98,6 +93,13 @@ export default class Home extends React.Component {
             <button className='btn how-it-works-section--btn'>Learn More</button>
           </Link>
         </section>
+
+        <section className='testinomal-section'>
+          <h3 className='testinomal-section--header'>Testimonials</h3>
+          {testimonial}
+        </section>
+
+
 
         <section className='team-section'>
           <div className='team-section--header'>
