@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
-import emailjs from 'emailjs-com'
 
 import exitIcon from '../../images/nav/exit.svg'
 
@@ -23,7 +22,6 @@ export default class Modal extends Component {
   handleType = e => {
     const { investor, organization, athlete, other } = this.state
     const evt = e.target.name
-    console.log(evt)
     this.setState({
       investor: evt === "investor" ? !investor : investor,
       organization: evt === "organization" ? !organization : organization,
@@ -33,18 +31,9 @@ export default class Modal extends Component {
 }
   handleMessage = e => this.setState({ message: e.target.value })
   handleSubmit = e => {
-
     e.preventDefault()
-
-    
-    window.emailjs.send('gmail', 'template_OLvOhgVl', this.state,)
-    .then((res)=>{
-      console.log('Success', res.status, res.text)
-
-    }, (error) => {
-      console.log('Failed', error)
-    }
-    )
+    console.log(this.state)
+    axios.post("hello", { ...this.state})
   }
 
   render() {
