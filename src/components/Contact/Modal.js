@@ -34,10 +34,9 @@ export default class Modal extends Component {
     console.log(this.state);
     axios({
       method: "put",
-      withCredentials: true,
-      crossDomain: true,
+      headers: { "Content-Type": "application/json" },
       url:
-        "https://o6moj9v1og.execute-api.us-east-1.amazonaws.com/default/ContactForm",
+        "https://13oxbtb4d7.execute-api.us-west-2.amazonaws.com/default/NewForm",
       data: {
         ...this.state
       }
