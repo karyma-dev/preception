@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/jordan.1e2ce7af.png"
   },
   {
-    "revision": "84276b379a5ed89ab3b0",
-    "url": "/static/css/main.b4bd3736.chunk.css"
+    "revision": "573d108fda3f8fae3a31",
+    "url": "/static/css/main.de3897b8.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/static/media/leigh.004a3bf9.png"
   },
   {
-    "revision": "84276b379a5ed89ab3b0",
-    "url": "/static/js/main.9dad1c8a.chunk.js"
+    "revision": "573d108fda3f8fae3a31",
+    "url": "/static/js/main.679812f6.chunk.js"
   },
   {
     "revision": "79e27c0072a425d1f3ed0360f968fb37",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/static/media/section-rugby-blank.f703ebc5.jpg"
   },
   {
-    "revision": "3ea3bed931054758707a83b2f70ac36b",
+    "revision": "5a01d6fd7c77de125a631d23e23855ef",
     "url": "/index.html"
   }
 ];

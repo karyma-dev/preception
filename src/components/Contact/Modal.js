@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
+import { Redirect } from "react-router-dom";
 
 import exitIcon from "../../images/nav/exit.svg";
 
@@ -12,7 +13,8 @@ export default class Modal extends Component {
     investor: false,
     organization: false,
     athlete: false,
-    other: false
+    other: false,
+    redirect: false
   };
 
   handleName = e => this.setState({ name: e.target.value });
@@ -31,7 +33,6 @@ export default class Modal extends Component {
   handleMessage = e => this.setState({ message: e.target.value });
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
     axios({
       method: "put",
       headers: { "Content-Type": "application/json" },
@@ -40,10 +41,22 @@ export default class Modal extends Component {
       data: {
         ...this.state
       }
-    }).then(res => console.log(res.data));
+    }).then(res => {
+      if (res.data.message) {
+        this.setState({ redirect: true });
+        alert(
+          "Thank You for Filling out the form! You will be redirect in 2 seconds!"
+        );
+      }
+    });
   };
 
   render() {
+    if (this.state.redirect === true) {
+      setTimeout(() => {
+        return (window.location.href = "/");
+      }, 2000);
+    }
     const style = this.props.display
       ? { display: "flex" }
       : { display: "none" };
