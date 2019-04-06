@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/jordan.1e2ce7af.png"
   },
   {
-    "revision": "573d108fda3f8fae3a31",
-    "url": "/static/css/main.de3897b8.chunk.css"
+    "revision": "d31724a3af88f9e07d30",
+    "url": "/static/css/main.1780b464.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/static/media/leigh.004a3bf9.png"
   },
   {
-    "revision": "573d108fda3f8fae3a31",
-    "url": "/static/js/main.679812f6.chunk.js"
+    "revision": "d31724a3af88f9e07d30",
+    "url": "/static/js/main.e37fd76d.chunk.js"
   },
   {
     "revision": "79e27c0072a425d1f3ed0360f968fb37",
@@ -68,22 +68,6 @@ self.__precacheManifest = [
     "url": "/static/media/pod-alt.bf638d64.png"
   },
   {
-    "revision": "4de2aa431b68c025cc2beccc90728ed1",
-    "url": "/static/media/4-step-background.4de2aa43.png"
-  },
-  {
-    "revision": "79381790b290ba478621215d86cc2d4a",
-    "url": "/static/media/navbar.79381790.png"
-  },
-  {
-    "revision": "ce762a6d33ea66040bc3ead82583c015",
-    "url": "/static/media/testimonial-background.ce762a6d.png"
-  },
-  {
-    "revision": "2b431dc77f0964f946b693796c96033c",
-    "url": "/static/media/sidekick.2b431dc7.png"
-  },
-  {
     "revision": "05f40e99838fb2c3ccc401628e147c48",
     "url": "/static/media/Venera-900.05f40e99.otf"
   },
@@ -96,11 +80,27 @@ self.__precacheManifest = [
     "url": "/static/media/stadium.695f1fd7.jpg"
   },
   {
+    "revision": "ce762a6d33ea66040bc3ead82583c015",
+    "url": "/static/media/testimonial-background.ce762a6d.png"
+  },
+  {
     "revision": "f703ebc5fb53a8ee0a6b6b6348b62bdf",
     "url": "/static/media/section-rugby-blank.f703ebc5.jpg"
   },
   {
-    "revision": "5a01d6fd7c77de125a631d23e23855ef",
+    "revision": "4de2aa431b68c025cc2beccc90728ed1",
+    "url": "/static/media/4-step-background.4de2aa43.png"
+  },
+  {
+    "revision": "2b431dc77f0964f946b693796c96033c",
+    "url": "/static/media/sidekick.2b431dc7.png"
+  },
+  {
+    "revision": "79381790b290ba478621215d86cc2d4a",
+    "url": "/static/media/navbar.79381790.png"
+  },
+  {
+    "revision": "6668261c5da9b2a0f38cb484af2397f4",
     "url": "/index.html"
   }
 ];
