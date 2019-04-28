@@ -111,8 +111,7 @@ export default class Home extends React.Component {
             <em>"The strength of the team is each individual member. The strength of each member is the team."</em> <br />  Phil Jackson
           </p>
           <p className='team-section--para'>
-          At the heart of the Preception team is experience, knowledge and an unwavering desire to excel.  Professional and varsity athletes, human performance expert, bestselling author, 2 PHD's, 1 MBA, 12 years IBM/KPMG, founding experience.
-
+          At the heart of the Preception team is experience, knowledge and an unwavering desire to excel. Professional and varsity athletes, human performance expert, bestselling author, 2 PHD's, 2 Masters degrees, senior-level experience with IBM, KPMG, Qualcomm, Sony Ericsson, and previous founding experience.
           </p>
           <Link to='/teampage'>
             <button className='btn'>Learn More</button>

@@ -19,7 +19,7 @@ export default class Modal extends Component {
 
   handleName = e => this.setState({ name: e.target.value });
   handleEmail = e => this.setState({ email: e.target.value });
-  handlePhone = e => this.setState({ phone: Number(e.target.value) });
+  handlePhone = e => this.setState({ phone: e.target.value ? Number(e.target.value) : 0 });
   handleType = e => {
     const { investor, organization, athlete, other } = this.state;
     const evt = e.target.name;

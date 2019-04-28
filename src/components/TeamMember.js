@@ -3,6 +3,7 @@ import yuan from '../images/profile/yuan-wang.png'
 import leigh from '../images/profile/leigh.png'
 import jordan from '../images/profile/jordan.png'
 import artyom from '../images/profile/artyom.png'
+import andre from '../images/profile/andre.png'
 
 /**
  * This is where you can add or alter team members, the order of the members dictate their position
@@ -39,7 +40,7 @@ export const teamMembers = [
     links: {
       linkedin: "https://www.linkedin.com/in/artem-mamzhiev/"
     },
-    desc: "A combined 12 years of project and product management experience with IBM and KPMG in Russia while founding an online marketplace and small family business created the perfect platform of tech and business.  This led to Artyom completing his MBA at one of the top business schools in North America before his passion for tech startups led him to join Preception."
+    desc: "A combined 12 years of project and product management experience with IBM and KPMG while founding an online marketplace and small family business created the perfect platform of tech and business.  This led to Artyom completing his MBA at one of the top business schools in North America before his passion for tech startups led him to join Preception."
     
   },
   {
@@ -53,6 +54,18 @@ export const teamMembers = [
 
   },
   {
+    name:"Andre Narkevitch",
+    position: "Hardware Engineer",
+    image: andre,
+    links: {
+      linkedin: "https://www.linkedin.com/in/andrei-narkevitch-a726784/"
+    },
+    desc: "Bringing over 20 years of hands-on experience with embedded systems and a Masters in Electrical Engineering, Andrei has been leading the hardware development.  A combination of passion for startups, hardware design and a resume as a Principal/Senior Engineer with companies such as Broadcom, Qualcomm and Sony Ericsson makes Andrei an invaluable part of the team."
+  }
+]
+
+export const otherTeamMembers = [
+  {
     name:"Yuan Wang",
     position: "Software Guru",
     image: yuan,
@@ -61,5 +74,5 @@ export const teamMembers = [
     },
     desc: "Taking more of an advisory role, Yuan boasts over two decades experience in the tech industry.  During this time he has built multiple startups, served as an executive at Blizzard Entertainment, Disney, and Midway Games and has spent the past few years focused on AI, data and decentralized technologies.  His passion for trans formative technologies and human performance drew him to Preception."
 
-  },
+  }
 ]
